@@ -1,0 +1,37 @@
+---
+import ProviderTag from "./ProviderTag.astro";
+
+interface Agent {
+  agent_id: string;
+  name: string;
+  role_id: string;
+  provider: string;
+  model_id: string;
+}
+
+interface Props {
+  agent: Agent;
+  link?: boolean;
+}
+
+const { agent, link = true } = Astro.props;
+
+const roleLabels: Record<string, string> = {
+  wheat_farm: "🌾 wheat_farm",
+  dairy_ranch: "🐄 dairy_ranch",
+  mill: "⚙️ mill",
+  dairy_processor: "🧈 dairy_processor",
+  bakery: "🥖 bakery",
+};
+---
+
+<a
+  href={link ? `/agents/${agent.agent_id}` : "#"}
+  class={`inline-flex items-center gap-2 px-3 py-1.5 rounded border border-(--color-border) bg-(--color-bg-card) ${
+    link ? "hover:border-(--color-accent) transition" : ""
+  }`}
+>
+  <span class="font-mono text-sm">{agent.name}</span>
+  <span class="text-(--color-text-muted) text-xs">{roleLabels[agent.role_id] ?? agent.role_id}</span>
+  <ProviderTag provider={agent.provider} model={agent.model_id} size="sm" />
+</a>

@@ -1,0 +1,1649 @@
+[
+  {
+    "message_id": "msg-822911bf-6fc5-402d-9b63-b7f716ef0a18",
+    "session_id": "session-2ef4c547-2765-4ee6-85e3-0c27aa3e3890",
+    "round_number": 5,
+    "channel_id": "ch-212cf71c-9485-497c-9cf0-5732bdb324c2",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Confirming order: 2 @ 23. Will deliver same round.",
+    "created_at": "2026-05-05T14:01:55Z"
+  },
+  {
+    "message_id": "msg-e8bc84e0-df0c-4900-946b-55cf5b72a436",
+    "session_id": "session-2ef4c547-2765-4ee6-85e3-0c27aa3e3890",
+    "round_number": 1,
+    "channel_id": "ch-965df700-f245-4bc4-b9d3-3da9f571d7d4",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Counter-proposal: 2 at 22. Accept by next round?",
+    "created_at": "2026-05-05T14:00:15Z"
+  },
+  {
+    "message_id": "msg-b73175e0-c81e-4f9b-bfbd-50cd461feb83",
+    "session_id": "session-2ef4c547-2765-4ee6-85e3-0c27aa3e3890",
+    "round_number": 8,
+    "channel_id": "ch-6caa47de-fa54-4b58-b499-92f59c85f2ae",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 2 at 7. Accept by next round?",
+    "created_at": "2026-05-05T14:03:10Z"
+  },
+  {
+    "message_id": "msg-b7c39c9f-8a38-459e-a3ff-7969848a794a",
+    "session_id": "session-2ef4c547-2765-4ee6-85e3-0c27aa3e3890",
+    "round_number": 6,
+    "channel_id": "ch-4791697c-4c98-4d05-84d5-435c22fb0b40",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Confirming order: 2 @ 9. Will deliver same round.",
+    "created_at": "2026-05-05T14:02:20Z"
+  },
+  {
+    "message_id": "msg-8bcda50e-1507-4e35-8716-0764cde57a61",
+    "session_id": "session-2ef4c547-2765-4ee6-85e3-0c27aa3e3890",
+    "round_number": 3,
+    "channel_id": "ch-2cab48cc-1927-4f2f-851a-6e25f14c0bbd",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Confirming order: 4 @ 23. Will deliver same round.",
+    "created_at": "2026-05-05T14:01:05Z"
+  },
+  {
+    "message_id": "msg-a813697f-4151-41cb-a657-859525158d25",
+    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
+    "round_number": 9,
+    "channel_id": "ch-0bddbb97-44ca-4d33-bdbc-c88f2b01dd84",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Pass — 23 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-05T18:03:35Z"
+  },
+  {
+    "message_id": "msg-c18fd5c5-79ba-4399-a9b0-cf4766602e30",
+    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
+    "round_number": 2,
+    "channel_id": "ch-20b9dcdc-d9a3-4d83-9b9a-a6ba9f70464a",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "I have 1 units of wheat available. Best offer welcome.",
+    "created_at": "2026-05-05T18:00:40Z"
+  },
+  {
+    "message_id": "msg-adcea296-d7e5-436a-92a9-b9e50f3241dd",
+    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
+    "round_number": 4,
+    "channel_id": "ch-546a9b44-823f-4930-a1b6-dbe5dc29fb0c",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Round 3: still need flour. Anyone else producing?",
+    "created_at": "2026-05-05T18:01:30Z"
+  },
+  {
+    "message_id": "msg-04d693c1-2620-44b7-b4a0-26ed2b3d29db",
+    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
+    "round_number": 10,
+    "channel_id": "ch-18ea0cf0-9240-43b6-bc68-37916a8e2e85",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Pass — 7 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-05T18:04:00Z"
+  },
+  {
+    "message_id": "msg-343ea771-0289-4957-a5e0-49ccadaa2f4e",
+    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
+    "round_number": 8,
+    "channel_id": "ch-a4505628-3d5f-4b12-8498-dabf9f5584e8",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Settled at 21? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-05T18:03:10Z"
+  },
+  {
+    "message_id": "msg-e2b38f64-22c1-47c2-b709-1bc86f2b3b97",
+    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
+    "round_number": 6,
+    "channel_id": "ch-4997fd2a-0a47-4e41-a020-30ff9e98e9da",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Settled at 49? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-05T18:02:20Z"
+  },
+  {
+    "message_id": "msg-431d6eca-3d46-46ae-b73e-a5389e079350",
+    "session_id": "session-156bf26a-ee81-4b80-8238-55afcfea3ecf",
+    "round_number": 2,
+    "channel_id": "ch-45356649-1e0a-4706-83ce-51bab409f2ec",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Confirming order: 4 @ 20. Will deliver same round.",
+    "created_at": "2026-05-05T22:00:40Z"
+  },
+  {
+    "message_id": "msg-d82f439e-3d57-471f-8204-ab4db0f472ee",
+    "session_id": "session-1c5f2a50-4488-4443-b85b-46c010c29add",
+    "round_number": 1,
+    "channel_id": "ch-121d81fa-922f-47a6-99e9-7126521eb0ae",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 52. Match?",
+    "created_at": "2026-05-06T02:00:15Z"
+  },
+  {
+    "message_id": "msg-2da015d3-2a55-4e8a-a790-0832547cce97",
+    "session_id": "session-1c5f2a50-4488-4443-b85b-46c010c29add",
+    "round_number": 2,
+    "channel_id": "ch-216c643d-795c-458b-bd26-bdc7a6bf9469",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Looking to buy flour at 16/each. Quantity needed: 1.",
+    "created_at": "2026-05-06T02:00:40Z"
+  },
+  {
+    "message_id": "msg-529bf34e-a189-41f6-82d6-d8740111b84e",
+    "session_id": "session-1c5f2a50-4488-4443-b85b-46c010c29add",
+    "round_number": 1,
+    "channel_id": "ch-9d3bc8e7-b9fa-4152-9490-2d66c4275bc2",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 53. Match?",
+    "created_at": "2026-05-06T02:00:15Z"
+  },
+  {
+    "message_id": "msg-4ece9b8d-2cd8-45ac-9b4c-8bc19e15f812",
+    "session_id": "session-7859e8f5-3757-4558-b184-49c29a7e2237",
+    "round_number": 7,
+    "channel_id": "ch-89b841dd-065a-4c29-a4ca-478737888247",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "My production is steady — can commit 5 more this round.",
+    "created_at": "2026-05-06T06:02:45Z"
+  },
+  {
+    "message_id": "msg-74c0a409-dbe4-49f2-9402-60c537ded669",
+    "session_id": "session-7859e8f5-3757-4558-b184-49c29a7e2237",
+    "round_number": 5,
+    "channel_id": "ch-9a396e70-9f6a-401b-988e-eed76a9b5180",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Price too low for me — others offering 25. Match?",
+    "created_at": "2026-05-06T06:01:55Z"
+  },
+  {
+    "message_id": "msg-658b71c2-75b7-46e3-93de-e124b26f5c9f",
+    "session_id": "session-7859e8f5-3757-4558-b184-49c29a7e2237",
+    "round_number": 4,
+    "channel_id": "ch-1bc544b3-cb92-4cfd-9d25-312d113b83f9",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Price too low for me — others offering 20. Match?",
+    "created_at": "2026-05-06T06:01:30Z"
+  },
+  {
+    "message_id": "msg-cf007142-ddeb-4c56-978f-7d362f44778d",
+    "session_id": "session-7859e8f5-3757-4558-b184-49c29a7e2237",
+    "round_number": 6,
+    "channel_id": "ch-f9fadb92-66ff-4a2e-ad78-520fdfa30421",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Looking to buy butter at 22/each. Quantity needed: 2.",
+    "created_at": "2026-05-06T06:02:20Z"
+  },
+  {
+    "message_id": "msg-c7300889-d3a2-4934-a1b6-e4fad94b85e0",
+    "session_id": "session-aa053e4d-f375-40e9-b313-5168ab0fefe0",
+    "round_number": 1,
+    "channel_id": "ch-6fc1b5a9-4c20-4dcf-960b-9205eaa40d4d",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Confirming order: 3 @ 49. Will deliver same round.",
+    "created_at": "2026-05-06T10:00:15Z"
+  },
+  {
+    "message_id": "msg-3b4b3494-fa81-467a-9cc3-1bfc33f99232",
+    "session_id": "session-aa053e4d-f375-40e9-b313-5168ab0fefe0",
+    "round_number": 4,
+    "channel_id": "ch-93a4c61b-65f4-4a20-8223-7c9ce294d490",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "I have 2 units of milk available. Best offer welcome.",
+    "created_at": "2026-05-06T10:01:30Z"
+  },
+  {
+    "message_id": "msg-70ea1b68-5f70-4255-adf3-eb3cd266dde6",
+    "session_id": "session-aa053e4d-f375-40e9-b313-5168ab0fefe0",
+    "round_number": 9,
+    "channel_id": "ch-ff171280-2a34-41f2-ba4b-92146eedeebc",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Pass — 10 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-06T10:03:35Z"
+  },
+  {
+    "message_id": "msg-dade8ddd-5fc2-4511-8e98-374fc65efc49",
+    "session_id": "session-aa053e4d-f375-40e9-b313-5168ab0fefe0",
+    "round_number": 6,
+    "channel_id": "ch-da7caf60-3e23-4344-a1ec-e8f745375adb",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Confirming order: 4 @ 11. Will deliver same round.",
+    "created_at": "2026-05-06T10:02:20Z"
+  },
+  {
+    "message_id": "msg-c79548be-244a-492c-8c1d-1cd783c29d21",
+    "session_id": "session-acadf526-6080-475e-9777-28bc62f2bfef",
+    "round_number": 2,
+    "channel_id": "ch-9d3f3eff-3b40-4d48-bd17-4b247fdd8d7f",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Settled at 7? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-06T14:00:40Z"
+  },
+  {
+    "message_id": "msg-74c65f26-2e2b-4416-a7c0-dedfd21618a7",
+    "session_id": "session-acadf526-6080-475e-9777-28bc62f2bfef",
+    "round_number": 6,
+    "channel_id": "ch-82fb0f47-e281-4e81-86fd-38e6a05d592b",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Price too low for me — others offering 26. Match?",
+    "created_at": "2026-05-06T14:02:20Z"
+  },
+  {
+    "message_id": "msg-725686f1-9b3f-40ee-a669-bfc8afab84e4",
+    "session_id": "session-acadf526-6080-475e-9777-28bc62f2bfef",
+    "round_number": 1,
+    "channel_id": "ch-9e7cd5af-e87a-4944-af6f-45d32e464655",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Pass — 22 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-06T14:00:15Z"
+  },
+  {
+    "message_id": "msg-4ee2d7ce-a9eb-45b3-8709-eaa286942910",
+    "session_id": "session-922146a1-2171-4c42-90ba-32d32a16f38e",
+    "round_number": 11,
+    "channel_id": "ch-d4c4077c-d551-4290-928a-ed08b297fa84",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Settled at 21? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-06T18:04:25Z"
+  },
+  {
+    "message_id": "msg-481d72ec-3ab9-4ea9-a766-ea85fb2ba0d9",
+    "session_id": "session-922146a1-2171-4c42-90ba-32d32a16f38e",
+    "round_number": 11,
+    "channel_id": "ch-7fcda305-4649-49f0-af7e-53c6c70cda97",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Round 6: still need flour. Anyone else producing?",
+    "created_at": "2026-05-06T18:04:25Z"
+  },
+  {
+    "message_id": "msg-ba283326-3498-4a8c-a4e3-75a31ea0383a",
+    "session_id": "session-4692fda9-cd96-4122-a8ec-8a0fa857b15d",
+    "round_number": 5,
+    "channel_id": "ch-aee7dd30-97a5-4583-ba38-c9cbe91dfd74",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Can you do 10 per unit? Stock running low here.",
+    "created_at": "2026-05-06T22:01:55Z"
+  },
+  {
+    "message_id": "msg-5bbe974f-6239-4b55-9c56-7d9b0ef8c29e",
+    "session_id": "session-4692fda9-cd96-4122-a8ec-8a0fa857b15d",
+    "round_number": 1,
+    "channel_id": "ch-e3555766-d03c-4399-9211-8d2c68572d38",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "I have 2 units of bread available. Best offer welcome.",
+    "created_at": "2026-05-06T22:00:15Z"
+  },
+  {
+    "message_id": "msg-4d085900-7fb8-4399-9201-8a13f723ba98",
+    "session_id": "session-4692fda9-cd96-4122-a8ec-8a0fa857b15d",
+    "round_number": 8,
+    "channel_id": "ch-bb76cf24-4b20-45f2-8ffc-63ff8c53802f",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "I have 5 units of flour available. Best offer welcome.",
+    "created_at": "2026-05-06T22:03:10Z"
+  },
+  {
+    "message_id": "msg-e1e1b482-aa66-4ff2-96ac-e357f3fa8a1e",
+    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
+    "round_number": 4,
+    "channel_id": "ch-5eec493b-368a-4bba-a8bf-ff6d94cb08da",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "My production is steady — can commit 1 more this round.",
+    "created_at": "2026-05-07T02:01:30Z"
+  },
+  {
+    "message_id": "msg-c9104db6-c2a5-47bd-9473-7a4b4c0da1ab",
+    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
+    "round_number": 11,
+    "channel_id": "ch-eefa9c66-a614-4a40-9368-0ccb0c26bf1c",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Settled at 11? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-07T02:04:25Z"
+  },
+  {
+    "message_id": "msg-42d03290-d3be-4e7a-986c-12199124be34",
+    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
+    "round_number": 2,
+    "channel_id": "ch-a61c49f0-4cfb-407b-9cc1-c15a6d2a6b3e",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Price too low for me — others offering 25. Match?",
+    "created_at": "2026-05-07T02:00:40Z"
+  },
+  {
+    "message_id": "msg-fd1c4e0f-c0c2-4774-afc1-a462fe125b6a",
+    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
+    "round_number": 4,
+    "channel_id": "ch-2955146d-e53b-4baf-a25e-a6752aa29dc7",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 2 at 19. Accept by next round?",
+    "created_at": "2026-05-07T02:01:30Z"
+  },
+  {
+    "message_id": "msg-72f635f9-4b6d-432b-a166-764e92d0e40d",
+    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
+    "round_number": 4,
+    "channel_id": "ch-f87ee8a5-95bc-4050-b812-e8f1c447a5fd",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Price too low for me — others offering 24. Match?",
+    "created_at": "2026-05-07T02:01:30Z"
+  },
+  {
+    "message_id": "msg-bbbb908b-2159-4035-8a15-7f9f5f3e8ebd",
+    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
+    "round_number": 11,
+    "channel_id": "ch-0a853d96-6f20-4655-80b4-c5755c56f7f6",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Looking to buy flour at 17/each. Quantity needed: 4.",
+    "created_at": "2026-05-07T02:04:25Z"
+  },
+  {
+    "message_id": "msg-568d5de0-8943-4984-8b9f-33053fa61d4e",
+    "session_id": "session-c1a0a2d7-0fa2-480d-a170-6fdcd589e8f8",
+    "round_number": 2,
+    "channel_id": "ch-eaa7cd92-842d-4a0c-aeac-5568c0c8be3f",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Confirming order: 1 @ 19. Will deliver same round.",
+    "created_at": "2026-05-07T06:00:40Z"
+  },
+  {
+    "message_id": "msg-9979bf47-b5bb-487f-9b46-51380631dbac",
+    "session_id": "session-c1a0a2d7-0fa2-480d-a170-6fdcd589e8f8",
+    "round_number": 4,
+    "channel_id": "ch-5eb2d88d-f2e5-4542-b973-fa73c7589a18",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Confirming order: 1 @ 49. Will deliver same round.",
+    "created_at": "2026-05-07T06:01:30Z"
+  },
+  {
+    "message_id": "msg-e004830f-40f9-42d8-a0b5-84da8caf13ad",
+    "session_id": "session-c1a0a2d7-0fa2-480d-a170-6fdcd589e8f8",
+    "round_number": 8,
+    "channel_id": "ch-c0316a73-0d6a-45ba-831f-876a53f4aed7",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 1 at 19. Accept by next round?",
+    "created_at": "2026-05-07T06:03:10Z"
+  },
+  {
+    "message_id": "msg-089480e1-bc80-4ee4-918a-790b1fc138d0",
+    "session_id": "session-c1a0a2d7-0fa2-480d-a170-6fdcd589e8f8",
+    "round_number": 3,
+    "channel_id": "ch-6ff596cd-e2f1-49f2-830c-d37503fedafe",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Pass — 20 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-07T06:01:05Z"
+  },
+  {
+    "message_id": "msg-b5539dda-5a86-45ac-99a6-757b986cf864",
+    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
+    "round_number": 1,
+    "channel_id": "ch-11312b93-bfb5-4c75-b9c4-cf74da85e01e",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Pass — 19 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-07T10:00:15Z"
+  },
+  {
+    "message_id": "msg-3006f47d-9a89-465e-9c89-4d1e77a15ffb",
+    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
+    "round_number": 1,
+    "channel_id": "ch-e98d264c-97d3-4c37-8651-cea0b73df557",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Can you do 52 per unit? Stock running low here.",
+    "created_at": "2026-05-07T10:00:15Z"
+  },
+  {
+    "message_id": "msg-5f893e8a-fddf-466b-a277-3f2144ea3189",
+    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
+    "round_number": 3,
+    "channel_id": "ch-e619ade4-05e3-44f6-a6df-5dcfd8a0d70d",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "I have 4 units of milk available. Best offer welcome.",
+    "created_at": "2026-05-07T10:01:05Z"
+  },
+  {
+    "message_id": "msg-61bc456b-5576-4206-8905-362c86444bf7",
+    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
+    "round_number": 1,
+    "channel_id": "ch-644b4656-550d-4887-a069-b38c9366a241",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Settled at 11? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-07T10:00:15Z"
+  },
+  {
+    "message_id": "msg-fcd46801-33bd-4138-b818-15896fde7799",
+    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
+    "round_number": 2,
+    "channel_id": "ch-ba68738b-81bd-4323-b934-8e43bfeb37d5",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Looking to buy flour at 16/each. Quantity needed: 3.",
+    "created_at": "2026-05-07T10:00:40Z"
+  },
+  {
+    "message_id": "msg-3bc817b3-c5b6-422e-a449-74e4503a77ff",
+    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
+    "round_number": 1,
+    "channel_id": "ch-fbc00373-d0c8-450c-9f7b-dc5a71a8ca2a",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 4 at 9. Accept by next round?",
+    "created_at": "2026-05-07T10:00:15Z"
+  },
+  {
+    "message_id": "msg-1b5bf0b3-1917-49e8-bacb-f2d7058732e6",
+    "session_id": "session-81b2b2e3-3f0e-4c9a-837f-d3c437a50d04",
+    "round_number": 4,
+    "channel_id": "ch-fc70d6b4-2bc7-48cc-88de-5cb064ac9750",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Settled at 9? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-07T14:01:30Z"
+  },
+  {
+    "message_id": "msg-cd66884b-bdcd-4201-b073-fe92a27b87f3",
+    "session_id": "session-81b2b2e3-3f0e-4c9a-837f-d3c437a50d04",
+    "round_number": 5,
+    "channel_id": "ch-63bb2880-dc6e-42a7-9b6c-e0254cdbee44",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Round 3: still need bread. Anyone else producing?",
+    "created_at": "2026-05-07T14:01:55Z"
+  },
+  {
+    "message_id": "msg-4d976d5a-c0ed-49b9-85bf-ad9b263ceefc",
+    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "round_number": 1,
+    "channel_id": "ch-2ad5847a-94c2-49ed-9a5c-36b36608c6ed",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Looking to buy milk at 11/each. Quantity needed: 5.",
+    "created_at": "2026-05-07T18:00:15Z"
+  },
+  {
+    "message_id": "msg-891b6e2b-1f10-4b15-9733-08163688ed50",
+    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "round_number": 1,
+    "channel_id": "ch-f0f307e8-ee6f-4ca6-a743-9772a7aefb70",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Counter-proposal: 2 at 13. Accept by next round?",
+    "created_at": "2026-05-07T18:00:15Z"
+  },
+  {
+    "message_id": "msg-925ec1ae-9f18-4102-83f5-63450652d27b",
+    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "round_number": 4,
+    "channel_id": "ch-1caf8016-5bb3-4df8-8823-98756674898c",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 4 more this round.",
+    "created_at": "2026-05-07T18:01:30Z"
+  },
+  {
+    "message_id": "msg-f2866574-afea-4707-8e4a-9488ebb9152b",
+    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "round_number": 5,
+    "channel_id": "ch-3c797b94-e75d-4661-a4f4-9c1c0ab37428",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Price too low for me — others offering 11. Match?",
+    "created_at": "2026-05-07T18:01:55Z"
+  },
+  {
+    "message_id": "msg-234f5c00-f94b-4205-ac00-52c84b3be38d",
+    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "round_number": 3,
+    "channel_id": "ch-9f6fe836-e2aa-417e-a8ee-43347d3b56aa",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Looking to buy bread at 48/each. Quantity needed: 3.",
+    "created_at": "2026-05-07T18:01:05Z"
+  },
+  {
+    "message_id": "msg-784322ce-a281-4fa7-b5b7-1a4159de6b4f",
+    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "round_number": 10,
+    "channel_id": "ch-73cf0e35-7228-4cfd-bf22-526605546563",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Pass — 22 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-07T18:04:00Z"
+  },
+  {
+    "message_id": "msg-097da693-d8d6-4bef-b07a-3ca233e19330",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 7,
+    "channel_id": "ch-106cf103-e7c3-43e5-a7b4-6f431e3c626e",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 1 at 17. Accept by next round?",
+    "created_at": "2026-05-07T22:02:45Z"
+  },
+  {
+    "message_id": "msg-0c7511db-a4ab-4e3d-8e38-289eda8d7001",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 7,
+    "channel_id": "ch-da0174d6-2cb1-43bd-a034-6a3548362761",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "I have 3 units of wheat available. Best offer welcome.",
+    "created_at": "2026-05-07T22:02:45Z"
+  },
+  {
+    "message_id": "msg-b1ec47e5-96b0-455a-990e-a99355adf7af",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 7,
+    "channel_id": "ch-d763430a-3421-4a97-a3c6-01c8e3af9b99",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "I have 4 units of flour available. Best offer welcome.",
+    "created_at": "2026-05-07T22:02:45Z"
+  },
+  {
+    "message_id": "msg-6c0a52df-6c2c-4f04-8533-afa2defabde5",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 8,
+    "channel_id": "ch-e4de72ee-268b-4db3-8b0e-0a1ca2e6645f",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "I have 3 units of flour available. Best offer welcome.",
+    "created_at": "2026-05-07T22:03:10Z"
+  },
+  {
+    "message_id": "msg-f6b7e410-cc4d-44cd-9216-4e4022ed944d",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 8,
+    "channel_id": "ch-1d6deda2-efd3-441c-a53f-7d921d0835c0",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Counter-proposal: 2 at 50. Accept by next round?",
+    "created_at": "2026-05-07T22:03:10Z"
+  },
+  {
+    "message_id": "msg-43f00de6-adb2-4d9c-8516-c2150c109c87",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 6,
+    "channel_id": "ch-279c20ed-2f94-4adb-80a8-06d51e483b2e",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Counter-proposal: 4 at 49. Accept by next round?",
+    "created_at": "2026-05-07T22:02:20Z"
+  },
+  {
+    "message_id": "msg-79bb9378-78fb-4dd9-8099-19d41100f98a",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 7,
+    "channel_id": "ch-d5c64ec5-0e79-479a-8869-34b43a3cc3c6",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Round 3: still need bread. Anyone else producing?",
+    "created_at": "2026-05-07T22:02:45Z"
+  },
+  {
+    "message_id": "msg-5fcb9cd0-4d5e-4862-b1af-86155a064467",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 5,
+    "channel_id": "ch-97de0fea-6e84-4ee3-92ac-a620edd37022",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Looking to buy bread at 52/each. Quantity needed: 1.",
+    "created_at": "2026-05-07T22:01:55Z"
+  },
+  {
+    "message_id": "msg-21f040e7-bc2d-4330-845f-650880926805",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 8,
+    "channel_id": "ch-91b6c422-543f-4762-adc4-24ef4674539c",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Round 6: still need flour. Anyone else producing?",
+    "created_at": "2026-05-07T22:03:10Z"
+  },
+  {
+    "message_id": "msg-9a8090ba-4a66-4609-9990-df52413a8a75",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 5,
+    "channel_id": "ch-117195b8-a006-47a6-8f7c-526923adb880",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Confirming order: 3 @ 50. Will deliver same round.",
+    "created_at": "2026-05-07T22:01:55Z"
+  },
+  {
+    "message_id": "msg-e6d2dd6f-fde6-46a9-98ef-6406f8653c01",
+    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
+    "round_number": 7,
+    "channel_id": "ch-9277f3fd-5c00-4e2e-8d68-15746bf22d51",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Confirming order: 5 @ 22. Will deliver same round.",
+    "created_at": "2026-05-07T22:02:45Z"
+  },
+  {
+    "message_id": "msg-48d7e67a-3a91-44ec-a55f-122989a490d8",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 7,
+    "channel_id": "ch-ba3690e0-8f0e-4c7f-bf73-692359d7699b",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "My production is steady — can commit 5 more this round.",
+    "created_at": "2026-05-08T02:02:45Z"
+  },
+  {
+    "message_id": "msg-054ffab1-d635-44f6-8c20-4054feff0adb",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 6,
+    "channel_id": "ch-8588f21a-11a1-412b-a339-5a507eeb2a2d",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 3 more this round.",
+    "created_at": "2026-05-08T02:02:20Z"
+  },
+  {
+    "message_id": "msg-a7eb0798-e508-494d-a64a-ced357d1b5fe",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 1,
+    "channel_id": "ch-ed944c04-a11a-4c3d-9fc5-cd50f7dc3858",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Round 10: still need flour. Anyone else producing?",
+    "created_at": "2026-05-08T02:00:15Z"
+  },
+  {
+    "message_id": "msg-076d6d51-4b79-45d1-91cb-a669ff44163c",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 2,
+    "channel_id": "ch-88cafba1-af7a-4839-a366-781324a7f89c",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Pass — 23 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-08T02:00:40Z"
+  },
+  {
+    "message_id": "msg-28a17663-4f46-4a72-a4fc-007b7d4c8452",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 8,
+    "channel_id": "ch-fd2a1637-b96b-4862-b50b-c49232266e53",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Can you do 20 per unit? Stock running low here.",
+    "created_at": "2026-05-08T02:03:10Z"
+  },
+  {
+    "message_id": "msg-da0f1bcf-2faf-4d08-aae2-a27af5aeba0e",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 3,
+    "channel_id": "ch-e0d93e51-2750-44a7-b043-a23a99a1493b",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Can you do 12 per unit? Stock running low here.",
+    "created_at": "2026-05-08T02:01:05Z"
+  },
+  {
+    "message_id": "msg-699334f9-e11d-4ea3-8e56-8856122837f4",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 4,
+    "channel_id": "ch-d676f55e-d675-47f2-80d1-42b0ced11e5d",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Confirming order: 1 @ 48. Will deliver same round.",
+    "created_at": "2026-05-08T02:01:30Z"
+  },
+  {
+    "message_id": "msg-8d996ab7-2259-4f8a-9324-9847a1f8eba7",
+    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
+    "round_number": 4,
+    "channel_id": "ch-02099494-d104-4f92-900d-3ca98664078b",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Looking to buy bread at 49/each. Quantity needed: 3.",
+    "created_at": "2026-05-08T02:01:30Z"
+  },
+  {
+    "message_id": "msg-906ad6df-0ae8-4666-b09b-af3bbec4f47e",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 6,
+    "channel_id": "ch-6b31c9e1-c05d-4267-a340-6300228a9ef2",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 2: still need milk. Anyone else producing?",
+    "created_at": "2026-05-08T06:02:20Z"
+  },
+  {
+    "message_id": "msg-512ba8b6-95bb-481e-9dca-bbb6e985e56a",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 8,
+    "channel_id": "ch-134c6217-9184-4fe0-abec-f0f621a4824a",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 52. Match?",
+    "created_at": "2026-05-08T06:03:10Z"
+  },
+  {
+    "message_id": "msg-c5d2a7d8-a4ff-4c0a-9b03-0937b13f7797",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 3,
+    "channel_id": "ch-210e80b4-c838-4351-a8f5-0961a4255dba",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 5 more this round.",
+    "created_at": "2026-05-08T06:01:05Z"
+  },
+  {
+    "message_id": "msg-76d0fc0f-b3c6-47c0-8bee-17e638013669",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 6,
+    "channel_id": "ch-ef335a94-1698-4a8b-bcb7-f7e1dac6d6a5",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Counter-proposal: 2 at 24. Accept by next round?",
+    "created_at": "2026-05-08T06:02:20Z"
+  },
+  {
+    "message_id": "msg-80a26c82-9535-4c5f-9379-591da40182e9",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 3,
+    "channel_id": "ch-71a46f3e-2b0b-4296-b513-abab508eedda",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Confirming order: 1 @ 22. Will deliver same round.",
+    "created_at": "2026-05-08T06:01:05Z"
+  },
+  {
+    "message_id": "msg-be214136-e5b3-4006-b7e4-f31fb5fdb988",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 4,
+    "channel_id": "ch-6e67d00f-d0ae-444a-887e-057dabf635b6",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Price too low for me — others offering 11. Match?",
+    "created_at": "2026-05-08T06:01:30Z"
+  },
+  {
+    "message_id": "msg-27337a44-abaf-4626-95be-4e791a881ce3",
+    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
+    "round_number": 3,
+    "channel_id": "ch-bbd4ae4c-f7e8-4681-aad1-0ba7db066897",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Can you do 20 per unit? Stock running low here.",
+    "created_at": "2026-05-08T06:01:05Z"
+  },
+  {
+    "message_id": "msg-59d6ec93-6965-407e-bcf7-8fa30799b9bb",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 2,
+    "channel_id": "ch-cab95094-2bfe-4064-bcfc-01a274d593c9",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Price too low for me — others offering 24. Match?",
+    "created_at": "2026-05-08T10:00:40Z"
+  },
+  {
+    "message_id": "msg-e287ebd7-41f5-4b34-aea8-c2a6cf92dbb9",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 10,
+    "channel_id": "ch-484ac624-50dc-44be-8d28-383b7c0de1a6",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Can you do 17 per unit? Stock running low here.",
+    "created_at": "2026-05-08T10:04:00Z"
+  },
+  {
+    "message_id": "msg-62caf0a6-ee56-4c09-830f-6afbf6029c70",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 3,
+    "channel_id": "ch-186f90c8-2176-4d2d-b7e9-cd71072424a0",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Settled at 52? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-08T10:01:05Z"
+  },
+  {
+    "message_id": "msg-d02e17b8-8084-4060-8d43-7c75c877938e",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 7,
+    "channel_id": "ch-df248714-5d2b-4b4d-9823-8755678ae0ec",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Counter-proposal: 4 at 14. Accept by next round?",
+    "created_at": "2026-05-08T10:02:45Z"
+  },
+  {
+    "message_id": "msg-e3cb3fd2-4a86-473c-a14e-633bed344c4c",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 1,
+    "channel_id": "ch-5f88c599-28c9-463f-9ab6-d8bd4e42b90a",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Confirming order: 2 @ 51. Will deliver same round.",
+    "created_at": "2026-05-08T10:00:15Z"
+  },
+  {
+    "message_id": "msg-65b31ffd-6132-474c-8931-08d1bf9a444c",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 4,
+    "channel_id": "ch-8c9f2b41-2e0e-4975-bbba-54c7dcceca50",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Looking to buy milk at 14/each. Quantity needed: 3.",
+    "created_at": "2026-05-08T10:01:30Z"
+  },
+  {
+    "message_id": "msg-3994bcdb-237f-4c5c-a743-5e6868eb209d",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 6,
+    "channel_id": "ch-c6eb6b7c-e084-4bc9-9ad0-32dd988e0368",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Looking to buy butter at 23/each. Quantity needed: 2.",
+    "created_at": "2026-05-08T10:02:20Z"
+  },
+  {
+    "message_id": "msg-980c346b-c896-41d9-b5d9-7b8f76de93df",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 4,
+    "channel_id": "ch-127d0520-a393-4579-ab17-72097575c9bd",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Pass — 49 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-08T10:01:30Z"
+  },
+  {
+    "message_id": "msg-a3db98db-d8f7-4182-aee1-676566788b7b",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 4,
+    "channel_id": "ch-5c61e130-d380-4117-9afa-bb0bb49cf996",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "I have 5 units of flour available. Best offer welcome.",
+    "created_at": "2026-05-08T10:01:30Z"
+  },
+  {
+    "message_id": "msg-30ba831b-73bc-4472-b12a-957fe79c0c79",
+    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
+    "round_number": 6,
+    "channel_id": "ch-c94ad41c-f9a8-451e-a7b7-ae2e8177c4b9",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "I have 3 units of butter available. Best offer welcome.",
+    "created_at": "2026-05-08T10:02:20Z"
+  },
+  {
+    "message_id": "msg-2c6d1321-51cb-4315-935d-9b0764207044",
+    "session_id": "session-9f1a7c76-84a1-4f88-9539-676f04957459",
+    "round_number": 3,
+    "channel_id": "ch-322408fb-82bb-4ef1-ad40-47d8cdba4a3c",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Confirming order: 2 @ 19. Will deliver same round.",
+    "created_at": "2026-05-08T14:01:05Z"
+  },
+  {
+    "message_id": "msg-cc43bdcf-0445-4ef1-aafe-9d0bb2cb7f39",
+    "session_id": "session-9f1a7c76-84a1-4f88-9539-676f04957459",
+    "round_number": 4,
+    "channel_id": "ch-5ff79c2f-94ba-4b17-a2e8-06c2def91c2b",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 1 more this round.",
+    "created_at": "2026-05-08T14:01:30Z"
+  },
+  {
+    "message_id": "msg-26299275-b3fd-4d13-923e-3556f0e6047b",
+    "session_id": "session-9f1a7c76-84a1-4f88-9539-676f04957459",
+    "round_number": 5,
+    "channel_id": "ch-a015ea04-29a1-4c65-9452-75492a1ebdf8",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Confirming order: 2 @ 16. Will deliver same round.",
+    "created_at": "2026-05-08T14:01:55Z"
+  },
+  {
+    "message_id": "msg-fa2fbf72-b9b0-4624-beee-4531b3043185",
+    "session_id": "session-9f1a7c76-84a1-4f88-9539-676f04957459",
+    "round_number": 4,
+    "channel_id": "ch-4762073b-586e-47be-afa0-72dac3a526b3",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 1 more this round.",
+    "created_at": "2026-05-08T14:01:30Z"
+  },
+  {
+    "message_id": "msg-0b39dc48-ec18-4321-8e7d-855031ef986d",
+    "session_id": "session-d873f704-8959-4d11-90a7-c8ffcf22f642",
+    "round_number": 9,
+    "channel_id": "ch-67f88cc8-9889-444a-a91c-19e5c12f6285",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "I have 1 units of bread available. Best offer welcome.",
+    "created_at": "2026-05-08T18:03:35Z"
+  },
+  {
+    "message_id": "msg-c318864f-ec96-4608-abea-446938973e26",
+    "session_id": "session-d873f704-8959-4d11-90a7-c8ffcf22f642",
+    "round_number": 10,
+    "channel_id": "ch-30a38539-ab5b-4d46-889d-8d0259c06c83",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Looking to buy bread at 50/each. Quantity needed: 5.",
+    "created_at": "2026-05-08T18:04:00Z"
+  },
+  {
+    "message_id": "msg-d154322d-9029-45cb-b335-50745670f412",
+    "session_id": "session-d873f704-8959-4d11-90a7-c8ffcf22f642",
+    "round_number": 11,
+    "channel_id": "ch-081091a3-a568-42de-991d-18a2ec93334a",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 52. Match?",
+    "created_at": "2026-05-08T18:04:25Z"
+  },
+  {
+    "message_id": "msg-05055895-e209-478f-a35e-82a6f70361ba",
+    "session_id": "session-f2bb6399-4d69-4152-ad2b-581d0a800b10",
+    "round_number": 6,
+    "channel_id": "ch-7398aa8d-4a94-4b49-86f8-7885d6382c34",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Pass — 23 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-08T22:02:20Z"
+  },
+  {
+    "message_id": "msg-44d6061d-ba72-45f4-96fc-36b5ff3575c4",
+    "session_id": "session-f2bb6399-4d69-4152-ad2b-581d0a800b10",
+    "round_number": 2,
+    "channel_id": "ch-a340bdde-4d0d-40dc-8ffe-7a6b8e93e46c",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Can you do 52 per unit? Stock running low here.",
+    "created_at": "2026-05-08T22:00:40Z"
+  },
+  {
+    "message_id": "msg-45f6f202-6c09-4fde-8fb5-39848c7e19c1",
+    "session_id": "session-f2bb6399-4d69-4152-ad2b-581d0a800b10",
+    "round_number": 6,
+    "channel_id": "ch-1f2013d5-d3cc-4a05-8e85-1a47587e6dbd",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Settled at 52? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-08T22:02:20Z"
+  },
+  {
+    "message_id": "msg-c184563b-8087-463e-aa9f-207a3b086f90",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 2,
+    "channel_id": "ch-b4fb5ea4-a272-40c4-a8ef-ce0aa3ca1aa6",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "My production is steady — can commit 5 more this round.",
+    "created_at": "2026-05-09T02:00:40Z"
+  },
+  {
+    "message_id": "msg-47028f9c-25ab-414f-a30c-e21101142c26",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 5,
+    "channel_id": "ch-2654ebe2-0d0f-4f37-950c-4117a7773773",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 5: still need milk. Anyone else producing?",
+    "created_at": "2026-05-09T02:01:55Z"
+  },
+  {
+    "message_id": "msg-d83a9e20-d1a3-484e-8967-39341485607a",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 3,
+    "channel_id": "ch-9d1eb4f0-0fd0-4ea3-a52c-63b513ac222c",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 1 at 9. Accept by next round?",
+    "created_at": "2026-05-09T02:01:05Z"
+  },
+  {
+    "message_id": "msg-37818247-a90b-4940-96bb-2d04831d066f",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 4,
+    "channel_id": "ch-0336c08b-292d-4926-a86f-32ff8212bc5e",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Pass — 10 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-09T02:01:30Z"
+  },
+  {
+    "message_id": "msg-cb5f29f7-48ae-4972-b889-5d59cf30b4a5",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 2,
+    "channel_id": "ch-bf8cab89-9686-4352-98a7-50db67604271",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 1 at 8. Accept by next round?",
+    "created_at": "2026-05-09T02:00:40Z"
+  },
+  {
+    "message_id": "msg-4cd87fe6-2c51-451c-9c71-2b1708395c57",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 3,
+    "channel_id": "ch-bc4e7b18-e14c-4bfa-b884-2ba1b5b26a78",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Round 5: still need wheat. Anyone else producing?",
+    "created_at": "2026-05-09T02:01:05Z"
+  },
+  {
+    "message_id": "msg-1b45f8bd-726a-4749-9c06-3ebad82c21ad",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 1,
+    "channel_id": "ch-afe76750-00f1-46b3-b527-8ce36733a75e",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Pass — 7 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-09T02:00:15Z"
+  },
+  {
+    "message_id": "msg-ebe0d24f-a1e2-4959-8d40-b05bcf97a100",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 4,
+    "channel_id": "ch-518a8caa-b25e-4644-b474-62c349fb7c22",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Counter-proposal: 3 at 11. Accept by next round?",
+    "created_at": "2026-05-09T02:01:30Z"
+  },
+  {
+    "message_id": "msg-5baa964f-c2f1-426b-b71d-b7f4a6230981",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 5,
+    "channel_id": "ch-700b3ebf-0aac-4856-bf47-380434c79bdf",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "I have 4 units of wheat available. Best offer welcome.",
+    "created_at": "2026-05-09T02:01:55Z"
+  },
+  {
+    "message_id": "msg-41216b24-a88c-4437-adb4-fe3c09e408b4",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 4,
+    "channel_id": "ch-ec50566f-5c58-49e0-a1d7-98e6d63c9d51",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "I have 3 units of wheat available. Best offer welcome.",
+    "created_at": "2026-05-09T02:01:30Z"
+  },
+  {
+    "message_id": "msg-6e36da56-3d78-4293-b026-7d56af5cac4e",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 4,
+    "channel_id": "ch-8276ba10-4b87-4e26-91c5-077a7fb222b5",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Can you do 24 per unit? Stock running low here.",
+    "created_at": "2026-05-09T02:01:30Z"
+  },
+  {
+    "message_id": "msg-1586f84c-4574-47e2-910d-d3fc2c61987e",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 3,
+    "channel_id": "ch-a70d1592-6c66-44ef-982d-289958e4c1e6",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Looking to buy milk at 11/each. Quantity needed: 4.",
+    "created_at": "2026-05-09T02:01:05Z"
+  },
+  {
+    "message_id": "msg-4d6ed7ff-f8fc-4c43-b909-a5b04bee2108",
+    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
+    "round_number": 3,
+    "channel_id": "ch-bb7a3530-7fa7-45b3-8160-deb66c996f9e",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 1 more this round.",
+    "created_at": "2026-05-09T02:01:05Z"
+  },
+  {
+    "message_id": "msg-461ad426-6baa-465c-b9a8-308906e5bfae",
+    "session_id": "session-d2adb501-dcb3-4bff-81af-037572d416bf",
+    "round_number": 6,
+    "channel_id": "ch-a8ab6fc1-8b2a-45f1-9cc9-5ae712ba40ee",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Settled at 8? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-09T06:02:20Z"
+  },
+  {
+    "message_id": "msg-ef783b14-c812-4976-a54b-67289becd6fa",
+    "session_id": "session-d2adb501-dcb3-4bff-81af-037572d416bf",
+    "round_number": 4,
+    "channel_id": "ch-efe69a98-b876-4a12-bc1a-704bbcd44cf9",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 2: still need milk. Anyone else producing?",
+    "created_at": "2026-05-09T06:01:30Z"
+  },
+  {
+    "message_id": "msg-a4fa41bc-70bb-4b56-9cd3-d51d93182414",
+    "session_id": "session-d2adb501-dcb3-4bff-81af-037572d416bf",
+    "round_number": 6,
+    "channel_id": "ch-f60ac2dc-afcc-4712-90e1-4e2a2c09e1b7",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Counter-proposal: 1 at 48. Accept by next round?",
+    "created_at": "2026-05-09T06:02:20Z"
+  },
+  {
+    "message_id": "msg-bf3fb767-0a03-4f77-93fc-b92831565cd9",
+    "session_id": "session-d2adb501-dcb3-4bff-81af-037572d416bf",
+    "round_number": 1,
+    "channel_id": "ch-b23152cf-82aa-41dc-a67b-4c68fdc4660e",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Pass — 7 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-09T06:00:15Z"
+  },
+  {
+    "message_id": "msg-d80a7349-91d9-44d3-afea-90221af54fc0",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 2,
+    "channel_id": "ch-e29ace9f-6774-4e0a-b3e2-d65af23867b5",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Can you do 51 per unit? Stock running low here.",
+    "created_at": "2026-05-09T10:00:40Z"
+  },
+  {
+    "message_id": "msg-d89abd51-9e87-4aee-9223-9565f9d74e31",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 4,
+    "channel_id": "ch-fd8b9702-deb3-4184-ab08-f92265233230",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Settled at 14? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-09T10:01:30Z"
+  },
+  {
+    "message_id": "msg-b4faaa21-ee77-4b8f-be73-96b7dcbe49ab",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 10,
+    "channel_id": "ch-492e44fe-5e47-4348-ae5b-2131cd178494",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 3: still need milk. Anyone else producing?",
+    "created_at": "2026-05-09T10:04:00Z"
+  },
+  {
+    "message_id": "msg-cf6e9485-8ab0-42d7-b98f-5266c05af247",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 4,
+    "channel_id": "ch-5b43e847-b62b-4a40-a080-e1de366c304d",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Counter-proposal: 1 at 10. Accept by next round?",
+    "created_at": "2026-05-09T10:01:30Z"
+  },
+  {
+    "message_id": "msg-9aa2908c-e9ea-4239-b859-8eabf22004bf",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 10,
+    "channel_id": "ch-fc400b49-dd8d-4d0a-807e-d8c9bd5aed0e",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Looking to buy flour at 17/each. Quantity needed: 5.",
+    "created_at": "2026-05-09T10:04:00Z"
+  },
+  {
+    "message_id": "msg-f47d300b-18c4-4b01-94f5-9733657a89f4",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 5,
+    "channel_id": "ch-cacd8b85-10c4-4875-a1d1-4394eb5c4cdf",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Settled at 11? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-09T10:01:55Z"
+  },
+  {
+    "message_id": "msg-4a05a17f-9b15-4b39-bf4c-383d5ef348f9",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 7,
+    "channel_id": "ch-ddd5e45e-7d37-479b-8444-ebc83176a743",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Counter-proposal: 4 at 21. Accept by next round?",
+    "created_at": "2026-05-09T10:02:45Z"
+  },
+  {
+    "message_id": "msg-99222abf-f5e4-4ef9-8892-a39da7fda3e6",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 10,
+    "channel_id": "ch-a0d1cdd8-0e60-45ef-831b-839ffeea92e2",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Settled at 11? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-09T10:04:00Z"
+  },
+  {
+    "message_id": "msg-429bee01-7c01-4899-823f-2d02b6eb937a",
+    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
+    "round_number": 1,
+    "channel_id": "ch-60688251-2df0-4254-98a8-e5233e9562de",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Can you do 52 per unit? Stock running low here.",
+    "created_at": "2026-05-09T10:00:15Z"
+  },
+  {
+    "message_id": "msg-8e613039-9af9-4305-ba12-241bf7e08657",
+    "session_id": "session-10e3253e-a08d-4ee8-8d55-2700b2e1af3a",
+    "round_number": 3,
+    "channel_id": "ch-a2b473c8-9544-47b1-a576-b4ec3675874a",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Counter-proposal: 4 at 11. Accept by next round?",
+    "created_at": "2026-05-09T14:01:05Z"
+  },
+  {
+    "message_id": "msg-bff13365-10b8-46c8-aa25-777efee02add",
+    "session_id": "session-10e3253e-a08d-4ee8-8d55-2700b2e1af3a",
+    "round_number": 4,
+    "channel_id": "ch-cb47492f-1cb3-40ef-9fac-5b9f67fc70f6",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Round 1: still need butter. Anyone else producing?",
+    "created_at": "2026-05-09T14:01:30Z"
+  },
+  {
+    "message_id": "msg-04009db0-5ad1-4c1b-ad70-4105ae56ffe2",
+    "session_id": "session-10e3253e-a08d-4ee8-8d55-2700b2e1af3a",
+    "round_number": 3,
+    "channel_id": "ch-79b0b496-eb2a-4f7d-b2e6-db2738b7c8f0",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 2 at 20. Accept by next round?",
+    "created_at": "2026-05-09T14:01:05Z"
+  },
+  {
+    "message_id": "msg-8c83f960-a181-455d-9549-73281e9f42fe",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 2,
+    "channel_id": "ch-ced25ca4-c65e-42d2-9bd3-210772c967c8",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Counter-proposal: 2 at 22. Accept by next round?",
+    "created_at": "2026-05-09T18:00:40Z"
+  },
+  {
+    "message_id": "msg-120a2e56-6daf-4107-a7c4-68a338356e12",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 2,
+    "channel_id": "ch-a43aac8a-e0fd-4d41-9be1-ce28dd954f2f",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Pass — 19 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-09T18:00:40Z"
+  },
+  {
+    "message_id": "msg-b9feba8a-c148-452e-a42a-94a58853b5fd",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 1,
+    "channel_id": "ch-0d7e9f42-928d-466a-9eed-5f84565331a9",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 53. Match?",
+    "created_at": "2026-05-09T18:00:15Z"
+  },
+  {
+    "message_id": "msg-0f5d1238-6a42-4138-96f0-ec9e47b91cd6",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 1,
+    "channel_id": "ch-e4c55edd-309c-4428-a48e-10c02704f29f",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Looking to buy milk at 12/each. Quantity needed: 4.",
+    "created_at": "2026-05-09T18:00:15Z"
+  },
+  {
+    "message_id": "msg-54b562b0-748f-4e24-bbff-7731ff8179a5",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 1,
+    "channel_id": "ch-b7a6bb2c-3014-47cf-b3fa-9156142f26b4",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Counter-proposal: 5 at 14. Accept by next round?",
+    "created_at": "2026-05-09T18:00:15Z"
+  },
+  {
+    "message_id": "msg-07d495d4-e1c5-4cda-ab2d-1f1652c9d67a",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 4,
+    "channel_id": "ch-f4fc8e32-2091-414d-8957-93847441f114",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Can you do 21 per unit? Stock running low here.",
+    "created_at": "2026-05-09T18:01:30Z"
+  },
+  {
+    "message_id": "msg-7562cadd-549e-4ff9-87eb-7382e5842432",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 2,
+    "channel_id": "ch-b7c9b92a-4bf4-4d3d-bc24-f685d26f9887",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Looking to buy wheat at 8/each. Quantity needed: 2.",
+    "created_at": "2026-05-09T18:00:40Z"
+  },
+  {
+    "message_id": "msg-ee4ef2cd-3d6e-4baf-925f-88cddb169e22",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 3,
+    "channel_id": "ch-c9b0bd98-0185-46be-b97c-a68ef08cc6c6",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 1 at 6. Accept by next round?",
+    "created_at": "2026-05-09T18:01:05Z"
+  },
+  {
+    "message_id": "msg-fe23536a-da34-43b3-adcc-1fed2fb0966d",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 4,
+    "channel_id": "ch-9564036f-d0be-4941-a922-9ae5bef7c096",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Round 1: still need butter. Anyone else producing?",
+    "created_at": "2026-05-09T18:01:30Z"
+  },
+  {
+    "message_id": "msg-2d7dfc9b-eed7-4241-bf66-35ec30acdee0",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 4,
+    "channel_id": "ch-6ec78e10-65f2-4c05-9cec-f35b35247d32",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 2 at 7. Accept by next round?",
+    "created_at": "2026-05-09T18:01:30Z"
+  },
+  {
+    "message_id": "msg-9874e234-f8a4-4264-b0b7-4df43fc51ff0",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 5,
+    "channel_id": "ch-6625f00c-699d-439f-afe1-b811caf06e7e",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "I have 3 units of milk available. Best offer welcome.",
+    "created_at": "2026-05-09T18:01:55Z"
+  },
+  {
+    "message_id": "msg-21a3edd3-fbd3-4369-9649-bdaa46a0e22e",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 3,
+    "channel_id": "ch-d4887707-6e61-4ddb-9858-e00f57e2dee6",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 53. Match?",
+    "created_at": "2026-05-09T18:01:05Z"
+  },
+  {
+    "message_id": "msg-b1b41e45-7fad-4625-bd5d-c7b020d13795",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 2,
+    "channel_id": "ch-c4eafeea-7bdf-431b-8cc6-d30e27fc3de5",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Round 1: still need flour. Anyone else producing?",
+    "created_at": "2026-05-09T18:00:40Z"
+  },
+  {
+    "message_id": "msg-a35754ad-e8cd-4efd-b024-d25d68c6b88b",
+    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
+    "round_number": 3,
+    "channel_id": "ch-c6d49628-1adf-484a-9176-ebd05e4ec9ec",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Price too low for me — others offering 16. Match?",
+    "created_at": "2026-05-09T18:01:05Z"
+  },
+  {
+    "message_id": "msg-601ebc9b-30cf-4c79-a789-fe5fa292e423",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 5,
+    "channel_id": "ch-cd435ed2-e1b5-46f8-a29f-7cf795eb5610",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Price too low for me — others offering 15. Match?",
+    "created_at": "2026-05-09T22:01:55Z"
+  },
+  {
+    "message_id": "msg-425d5fbe-490b-4cba-bf4c-6056a33c92ce",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 1,
+    "channel_id": "ch-c6b16f6a-aa59-42ba-9ce2-c1b338f89407",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 2 at 20. Accept by next round?",
+    "created_at": "2026-05-09T22:00:15Z"
+  },
+  {
+    "message_id": "msg-09c26ea0-d358-490b-abe9-54282a63ad97",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 5,
+    "channel_id": "ch-bdd99064-9e5d-46f3-a803-f8833e061142",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Round 3: still need wheat. Anyone else producing?",
+    "created_at": "2026-05-09T22:01:55Z"
+  },
+  {
+    "message_id": "msg-31ee2bde-b935-451f-98b3-2a3b5f75a504",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 2,
+    "channel_id": "ch-1b103823-15aa-43cf-be99-75163fcac349",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Price too low for me — others offering 23. Match?",
+    "created_at": "2026-05-09T22:00:40Z"
+  },
+  {
+    "message_id": "msg-20c4f272-e36a-482f-b9c1-044648a27038",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 6,
+    "channel_id": "ch-7b9f9786-6090-4910-8337-ae891d5cf534",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Can you do 51 per unit? Stock running low here.",
+    "created_at": "2026-05-09T22:02:20Z"
+  },
+  {
+    "message_id": "msg-7a6915ac-cc64-4ed1-9fd6-1eee182c7ab7",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 3,
+    "channel_id": "ch-94470e42-4c6d-4440-984b-3ae20158f409",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Counter-proposal: 3 at 7. Accept by next round?",
+    "created_at": "2026-05-09T22:01:05Z"
+  },
+  {
+    "message_id": "msg-2cc0436c-cad4-4cfd-802a-96109a87150a",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 4,
+    "channel_id": "ch-d5116e71-9c3f-497b-9c7c-24327921842d",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 2 more this round.",
+    "created_at": "2026-05-09T22:01:30Z"
+  },
+  {
+    "message_id": "msg-6c191755-470d-4b9a-bf1c-c1a7c35656f0",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 5,
+    "channel_id": "ch-b97af156-46c0-498f-ad26-5481abebd61a",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 1 at 19. Accept by next round?",
+    "created_at": "2026-05-09T22:01:55Z"
+  },
+  {
+    "message_id": "msg-451f4258-6d3a-48a2-a8af-5af58c959d28",
+    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
+    "round_number": 5,
+    "channel_id": "ch-8de569c5-f24b-4996-8290-defd72bfeab0",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "My production is steady — can commit 4 more this round.",
+    "created_at": "2026-05-09T22:01:55Z"
+  },
+  {
+    "message_id": "msg-f2857093-92d6-4be1-9b58-94c6ba552db0",
+    "session_id": "session-ae1382c6-44df-4d97-8863-87fe5fe8089c",
+    "round_number": 2,
+    "channel_id": "ch-6304997a-765e-4a32-91de-b664c679bda0",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Looking to buy wheat at 10/each. Quantity needed: 4.",
+    "created_at": "2026-05-10T02:00:40Z"
+  },
+  {
+    "message_id": "msg-3b8c029b-cd6e-4a84-82fc-78803f70026f",
+    "session_id": "session-ae1382c6-44df-4d97-8863-87fe5fe8089c",
+    "round_number": 4,
+    "channel_id": "ch-4a230b60-309f-4b1a-b547-d80756a97565",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Can you do 20 per unit? Stock running low here.",
+    "created_at": "2026-05-10T02:01:30Z"
+  },
+  {
+    "message_id": "msg-b4a85661-eedf-42de-ad92-63fb46b50dfc",
+    "session_id": "session-ae1382c6-44df-4d97-8863-87fe5fe8089c",
+    "round_number": 5,
+    "channel_id": "ch-6ec64e16-ba09-46e4-b0fb-9029d9e8d3ea",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "I have 5 units of bread available. Best offer welcome.",
+    "created_at": "2026-05-10T02:01:55Z"
+  },
+  {
+    "message_id": "msg-c7707279-ab5c-4a0d-b55f-fcf42ed26964",
+    "session_id": "session-ae1382c6-44df-4d97-8863-87fe5fe8089c",
+    "round_number": 3,
+    "channel_id": "ch-63c8447d-3bee-4de6-838d-ccf63a8277f9",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "My production is steady — can commit 3 more this round.",
+    "created_at": "2026-05-10T02:01:05Z"
+  },
+  {
+    "message_id": "msg-b90e7493-2d7b-4662-90d6-a2ecff9d3363",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 3,
+    "channel_id": "ch-20c2ac51-6ebf-4b41-9e1a-d278c9758339",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "My production is steady — can commit 1 more this round.",
+    "created_at": "2026-05-10T06:01:05Z"
+  },
+  {
+    "message_id": "msg-46429740-0158-46e2-93ff-0e865e263c02",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 2,
+    "channel_id": "ch-3d314294-4e60-481b-8915-748b40fec04c",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Confirming order: 4 @ 51. Will deliver same round.",
+    "created_at": "2026-05-10T06:00:40Z"
+  },
+  {
+    "message_id": "msg-d8d112a9-28bb-4840-be93-57503515ec14",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 1,
+    "channel_id": "ch-8c7a6f52-c664-46cb-841f-537dd3f55a78",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Can you do 17 per unit? Stock running low here.",
+    "created_at": "2026-05-10T06:00:15Z"
+  },
+  {
+    "message_id": "msg-c97179bb-cb24-434e-ac6b-545f56bd4223",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 2,
+    "channel_id": "ch-b7729989-239c-4d6d-baff-d78e33659214",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "I have 3 units of butter available. Best offer welcome.",
+    "created_at": "2026-05-10T06:00:40Z"
+  },
+  {
+    "message_id": "msg-fa25dd00-81b1-4fca-bdb2-f11938b0576e",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 5,
+    "channel_id": "ch-fbdd19c3-e648-41d2-9cff-620d4f4cff73",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Confirming order: 4 @ 6. Will deliver same round.",
+    "created_at": "2026-05-10T06:01:55Z"
+  },
+  {
+    "message_id": "msg-4ac5ffcc-a800-4076-892b-a9cc9bef313b",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 1,
+    "channel_id": "ch-55a0c2bc-529c-4cba-b400-0195e0465286",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Pass — 13 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-10T06:00:15Z"
+  },
+  {
+    "message_id": "msg-89582924-7a8f-4f88-80b7-9e4c37809739",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 4,
+    "channel_id": "ch-592fedd3-2744-4c51-bc77-e4ec7223f33e",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Can you do 10 per unit? Stock running low here.",
+    "created_at": "2026-05-10T06:01:30Z"
+  },
+  {
+    "message_id": "msg-a3a905df-619b-42ea-816a-6b12100b2b93",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 3,
+    "channel_id": "ch-10b7066b-5b94-4bf5-b0aa-e77803df7dd1",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Settled at 23? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-10T06:01:05Z"
+  },
+  {
+    "message_id": "msg-fdf0e431-03a0-4ff3-9c8a-0588f8d23937",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 3,
+    "channel_id": "ch-af2da8ac-105d-4da9-81b4-c143dca89e90",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Pass — 18 is below my cost basis. Higher offers?",
+    "created_at": "2026-05-10T06:01:05Z"
+  },
+  {
+    "message_id": "msg-481acd9e-f028-4318-89f2-5952b956aa2f",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 2,
+    "channel_id": "ch-dbdef969-f782-46bd-91a7-1b6d3fda9eb8",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 5: still need milk. Anyone else producing?",
+    "created_at": "2026-05-10T06:00:40Z"
+  },
+  {
+    "message_id": "msg-2b91fc41-87a3-47f4-8e68-0799539fcc99",
+    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
+    "round_number": 2,
+    "channel_id": "ch-c1a2d81e-90ca-41a6-8818-03f8a4f441d2",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 2: still need milk. Anyone else producing?",
+    "created_at": "2026-05-10T06:00:40Z"
+  },
+  {
+    "message_id": "msg-2e14c7c8-3bb4-4746-92d6-973ec32dd835",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 7,
+    "channel_id": "ch-640444b8-5bd4-493f-8802-7e5b5817797e",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Counter-proposal: 1 at 19. Accept by next round?",
+    "created_at": "2026-05-10T10:02:45Z"
+  },
+  {
+    "message_id": "msg-967ecf8d-f2cc-4bca-bf7a-318549f4f482",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 7,
+    "channel_id": "ch-7e3ea906-785e-4c02-b536-d833610721cc",
+    "sender_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
+    "content": "Settled at 8? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-10T10:02:45Z"
+  },
+  {
+    "message_id": "msg-ed038fd3-d0f6-4aa6-a1e4-0a6a3f71c718",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 7,
+    "channel_id": "ch-e4452b53-7127-40c0-a177-97d08124a626",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Price too low for me — others offering 23. Match?",
+    "created_at": "2026-05-10T10:02:45Z"
+  },
+  {
+    "message_id": "msg-7c7e4629-00df-4b0f-a61b-00ff8038be6b",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 6,
+    "channel_id": "ch-a43fd722-e11e-437c-a28e-501fac82ac21",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Settled at 23? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-10T10:02:20Z"
+  },
+  {
+    "message_id": "msg-29953ebe-7dab-461c-ba4f-78640e351eee",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 6,
+    "channel_id": "ch-02c16edc-aee5-43e9-9f29-83f7af7db11c",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Settled at 50? Need to allocate inventory before bake cycle.",
+    "created_at": "2026-05-10T10:02:20Z"
+  },
+  {
+    "message_id": "msg-4f8fafda-95da-4646-a7eb-f1eb22d86fae",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 3,
+    "channel_id": "ch-e24db86f-a781-478d-b373-1320526decb6",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Price too low for me — others offering 53. Match?",
+    "created_at": "2026-05-10T10:01:05Z"
+  },
+  {
+    "message_id": "msg-b7a87947-a62a-4ea4-abb9-305be80f36dc",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 1,
+    "channel_id": "ch-cb48a27f-5e60-4ade-9233-a014c7a6dcdc",
+    "sender_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
+    "content": "Can you do 16 per unit? Stock running low here.",
+    "created_at": "2026-05-10T10:00:15Z"
+  },
+  {
+    "message_id": "msg-f223329c-9157-490a-b261-bd1d2a25921d",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 4,
+    "channel_id": "ch-c7dbdcf0-24d6-4367-b30a-553ffc462b2e",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "I have 3 units of butter available. Best offer welcome.",
+    "created_at": "2026-05-10T10:01:30Z"
+  },
+  {
+    "message_id": "msg-b3a47df7-a00d-40d0-879a-fded09a8a71d",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 7,
+    "channel_id": "ch-4160eeb0-bb04-4e15-aa3b-9720835cc328",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Round 5: still need butter. Anyone else producing?",
+    "created_at": "2026-05-10T10:02:45Z"
+  },
+  {
+    "message_id": "msg-5d0994da-3b3d-4960-8ba9-cd4f231ada31",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 7,
+    "channel_id": "ch-1bcac8ee-6f13-4277-b5cb-21f4674a080f",
+    "sender_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
+    "content": "Can you do 24 per unit? Stock running low here.",
+    "created_at": "2026-05-10T10:02:45Z"
+  },
+  {
+    "message_id": "msg-a0bb4d2e-e025-4e42-90ee-da8323793b7f",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 5,
+    "channel_id": "ch-75db9a0c-5392-49c8-a3ac-40449312129b",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "Looking to buy bread at 50/each. Quantity needed: 3.",
+    "created_at": "2026-05-10T10:01:55Z"
+  },
+  {
+    "message_id": "msg-40dbe534-8218-49f5-8dab-abd2cc0adb0b",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 2,
+    "channel_id": "ch-2ed2a95f-ea88-401d-9c70-ad56915e4023",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Can you do 10 per unit? Stock running low here.",
+    "created_at": "2026-05-10T10:00:40Z"
+  },
+  {
+    "message_id": "msg-2280ab02-681e-4ac6-8e8c-9244ba13c541",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 3,
+    "channel_id": "ch-3194c68c-a907-4314-97f4-e76ac382b5f7",
+    "sender_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "content": "I have 2 units of bread available. Best offer welcome.",
+    "created_at": "2026-05-10T10:01:05Z"
+  },
+  {
+    "message_id": "msg-7997d314-d744-4798-99ad-8ecea5f76072",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 8,
+    "channel_id": "ch-8b46b0ae-ee55-4574-89b1-b56228c0bb78",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Looking to buy milk at 11/each. Quantity needed: 4.",
+    "created_at": "2026-05-10T10:03:10Z"
+  },
+  {
+    "message_id": "msg-82da73e4-9b09-46c2-9fc0-26601d462128",
+    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
+    "round_number": 3,
+    "channel_id": "ch-99d3dfb5-0dad-40fb-93e9-eede6d072351",
+    "sender_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
+    "content": "Round 6: still need milk. Anyone else producing?",
+    "created_at": "2026-05-10T10:01:05Z"
+  }
+]

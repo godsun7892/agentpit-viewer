@@ -1,0 +1,45 @@
+---
+interface Game {
+  session_id: string;
+  total_rounds: number;
+  rounds_completed: number;
+  started_at: string;
+  trade_count: number;
+  message_count: number;
+  event_count: number;
+  final_cash: Record<string, number>;
+}
+
+interface Props {
+  game: Game;
+}
+
+const { game } = Astro.props;
+
+const total = Object.values(game.final_cash).reduce((a, b) => a + b, 0);
+const startedDate = new Date(game.started_at).toISOString().slice(0, 10);
+const shortId = game.session_id.split("-")[1] ?? game.session_id.slice(0, 8);
+---
+
+<a
+  href={`/games/${game.session_id}`}
+  class="block border border-(--color-border) bg-(--color-bg-card) hover:border-(--color-accent) rounded-lg p-5 transition group"
+>
+  <div class="flex items-baseline justify-between mb-3">
+    <span class="font-mono text-xs text-(--color-text-muted)">#{shortId}</span>
+    <span class="text-xs text-(--color-text-dim)">{startedDate}</span>
+  </div>
+
+  <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-3">
+    <span class="tabular text-2xl font-bold text-(--color-text)">{game.total_rounds}<span class="text-(--color-text-muted) text-base font-normal"> rounds</span></span>
+    <span class="tabular text-(--color-text-dim)">{game.trade_count} trades</span>
+    <span class="tabular text-(--color-text-dim)">{game.message_count} msgs</span>
+  </div>
+
+  <div class="text-xs text-(--color-text-muted) flex items-center gap-2">
+    <span>Total cash:</span>
+    <span class="tabular text-(--color-pos) font-mono">{total.toLocaleString()}</span>
+    <span class="text-(--color-text-muted)">·</span>
+    <span class="text-(--color-text-dim)">{game.event_count} events</span>
+  </div>
+</a>

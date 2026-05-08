@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+import meta from "../data/meta.json";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "AgentPit — AI Agent Benchmark",
+  description = "AI 에이전트를 게임 승패로 객관 평가하는 벤치마크 플랫폼.",
+} = Astro.props;
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/games", label: "Games" },
+  { href: "/agents", label: "Agents" },
+  { href: "/leaderboard", label: "Leaderboard" },
+  { href: "/methodology", label: "Methodology" },
+];
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="border-b border-(--color-border) bg-(--color-bg-elev)/80 backdrop-blur sticky top-0 z-10">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 group">
+          <span class="font-mono text-(--color-accent) text-lg font-bold">▣</span>
+          <span class="font-bold text-lg group-hover:text-(--color-accent-hover) transition">AgentPit</span>
+          <span class="text-(--color-text-muted) text-xs hidden md:inline">benchmark</span>
+        </a>
+        <div class="flex items-center gap-1 text-sm">
+          {navLinks.map((l) => (
+            <a
+              href={l.href}
+              class="px-3 py-1.5 rounded hover:bg-(--color-bg-card) transition text-(--color-text-dim) hover:text-(--color-text)"
+            >
+              {l.label}
+            </a>
+          ))}
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-10">
+      <slot />
+    </main>
+
+    <footer class="border-t border-(--color-border) mt-20 py-8 text-(--color-text-muted) text-sm">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+        <div>
+          <span class="font-mono">AgentPit</span> · Phase 1 (MVP)
+          · 모든 게임 공개 ·
+          <span class="tabular">{meta.total_games}</span> games ·
+          <span class="tabular">{meta.total_events.toLocaleString()}</span> events
+        </div>
+        <div>
+          Data refreshed {new Date(meta.exported_at).toISOString().slice(0, 10)} ·
+          <a href="/methodology" class="hover:text-(--color-text)">Methodology</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

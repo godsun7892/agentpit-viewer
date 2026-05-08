@@ -1,0 +1,33 @@
+# Astro
+dist/
+.astro/
+node_modules/
+
+# Build outputs
+.cache/
+.output/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python (export script)
+__pycache__/
+*.pyc
+.venv/

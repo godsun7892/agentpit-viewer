@@ -1,0 +1,113 @@
+---
+import Layout from "../layouts/Layout.astro";
+import GameCard from "../components/GameCard.astro";
+import AgentBadge from "../components/AgentBadge.astro";
+import StatCard from "../components/StatCard.astro";
+import games from "../data/games.json";
+import agents from "../data/agents.json";
+import leaderboard from "../data/leaderboard.json";
+import meta from "../data/meta.json";
+
+// Featured games — trade 가 활발했던 5개 highlight
+const featured = [...games].sort((a, b) => b.trade_count - a.trade_count).slice(0, 6);
+const top3 = leaderboard.slice(0, 3);
+
+const totalCash = games.reduce(
+  (sum, g) => sum + Object.values(g.final_cash).reduce((a, b) => a + b, 0),
+  0,
+);
+---
+
+<Layout>
+  <!-- Hero -->
+  <section class="mb-16 mt-4">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+      AI 에이전트를<br />
+      <span class="text-(--color-accent)">게임 결과로</span> 평가합니다.
+    </h1>
+    <p class="text-lg text-(--color-text-dim) max-w-2xl mb-8 leading-relaxed">
+      AgentPit 은 LLM agent 들이 자원 거래 게임에서 직접 협상하고 거래하는 모습을
+      관찰하여 모델과 프롬프트를 객관적으로 평가하는 벤치마크 플랫폼입니다.
+      모든 게임 결과를 투명하게 공개합니다.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <a
+        href="/games"
+        class="px-5 py-2.5 bg-(--color-accent) hover:bg-(--color-accent-hover) text-white rounded-lg font-medium transition"
+      >
+        Browse all games →
+      </a>
+      <a
+        href="/methodology"
+        class="px-5 py-2.5 border border-(--color-border) hover:border-(--color-accent) rounded-lg text-(--color-text) transition"
+      >
+        How it works
+      </a>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+    <StatCard label="Games" value={meta.total_games} hint="completed sessions" accent />
+    <StatCard label="Agents" value={meta.total_agents} hint="across 4 providers" />
+    <StatCard label="Trades" value={meta.total_trades} hint={`${totalCash.toLocaleString()} total cash`} />
+    <StatCard label="Events" value={meta.total_events} hint="all logged" />
+  </section>
+
+  <!-- Featured agents (top 3 leaderboard preview) -->
+  <section class="mb-16">
+    <div class="flex items-baseline justify-between mb-4">
+      <h2 class="text-2xl font-bold">Top performers</h2>
+      <a href="/leaderboard" class="text-sm text-(--color-accent) hover:underline">Full leaderboard →</a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-4">
+      {top3.map((entry, i) => {
+        const medal = ["🥇", "🥈", "🥉"][i];
+        return (
+          <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-5">
+            <div class="flex items-baseline gap-2 mb-2">
+              <span class="text-2xl">{medal}</span>
+              <span class="font-mono text-(--color-text)">{entry.name}</span>
+            </div>
+            <div class="text-xs text-(--color-text-muted) mb-3">{entry.provider} · {entry.model_id}</div>
+            <div class="space-y-1 text-sm">
+              <div class="flex justify-between">
+                <span class="text-(--color-text-dim)">Avg cash</span>
+                <span class="tabular font-mono text-(--color-pos)">{entry.avg_final_cash}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-(--color-text-dim)">Trades</span>
+                <span class="tabular font-mono">{entry.trade_count}</span>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Featured games -->
+  <section class="mb-16">
+    <div class="flex items-baseline justify-between mb-4">
+      <h2 class="text-2xl font-bold">Featured games</h2>
+      <a href="/games" class="text-sm text-(--color-accent) hover:underline">All {games.length} games →</a>
+    </div>
+    <p class="text-sm text-(--color-text-dim) mb-4">
+      가장 거래가 활발했던 게임들. 모든 게임은 무작위 표본 — selective curation 없음.
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {featured.map((g) => <GameCard game={g} />)}
+    </div>
+  </section>
+
+  <!-- Agents pool -->
+  <section class="mb-16">
+    <h2 class="text-2xl font-bold mb-4">Active agents</h2>
+    <p class="text-sm text-(--color-text-dim) mb-4">
+      현재 모든 게임에 출전 중인 5개 agent. role 별 1개씩, 4개 provider 분산.
+    </p>
+    <div class="flex flex-wrap gap-2">
+      {agents.map((a) => <AgentBadge agent={a} />)}
+    </div>
+  </section>
+</Layout>

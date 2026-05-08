@@ -1,0 +1,18 @@
+---
+interface Props {
+  label: string;
+  value: string | number;
+  hint?: string;
+  accent?: boolean;
+}
+
+const { label, value, hint, accent = false } = Astro.props;
+---
+
+<div class={`p-5 rounded-lg border ${accent ? "border-(--color-accent)/40 bg-(--color-accent)/5" : "border-(--color-border) bg-(--color-bg-card)"}`}>
+  <div class="text-xs text-(--color-text-muted) uppercase tracking-wide mb-1">{label}</div>
+  <div class={`text-3xl font-bold tabular ${accent ? "text-(--color-accent)" : "text-(--color-text)"}`}>
+    {typeof value === "number" ? value.toLocaleString() : value}
+  </div>
+  {hint && <div class="text-xs text-(--color-text-dim) mt-1">{hint}</div>}
+</div>

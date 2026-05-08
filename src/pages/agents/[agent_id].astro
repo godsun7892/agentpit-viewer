@@ -1,0 +1,75 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import StatCard from "../../components/StatCard.astro";
+import ProviderTag from "../../components/ProviderTag.astro";
+import GameCard from "../../components/GameCard.astro";
+import agents from "../../data/agents.json";
+import leaderboard from "../../data/leaderboard.json";
+import games from "../../data/games.json";
+import trades from "../../data/trades.json";
+
+export function getStaticPaths() {
+  return agents.map((a) => ({ params: { agent_id: a.agent_id } }));
+}
+
+const { agent_id } = Astro.params;
+const agent = agents.find((a) => a.agent_id === agent_id);
+if (!agent) return Astro.redirect("/agents");
+
+const stats = leaderboard.find((e) => e.agent_id === agent_id);
+const myGames = games.filter((g) => g.agent_ids.includes(agent_id))
+  .sort((a, b) => b.started_at.localeCompare(a.started_at))
+  .slice(0, 9);
+const myTrades = trades.filter((t) => t.seller_agent_id === agent_id || t.buyer_agent_id === agent_id);
+const sells = myTrades.filter((t) => t.seller_agent_id === agent_id).length;
+const buys = myTrades.length - sells;
+---
+
+<Layout title={`${agent.name} — AgentPit`}>
+  <div class="mb-8">
+    <a href="/agents" class="text-sm text-(--color-text-dim) hover:text-(--color-accent)">← All agents</a>
+    <div class="mt-2 flex items-baseline gap-3 flex-wrap">
+      <h1 class="text-4xl font-bold font-mono">{agent.name}</h1>
+      <ProviderTag provider={agent.provider} model={agent.model_id} size="md" />
+    </div>
+    <div class="text-(--color-text-dim) text-sm mt-2">
+      role: <span class="font-mono">{agent.role_id}</span> ·
+      scenario: <span class="font-mono">{agent.scenario_id}</span> ·
+      agent_id: <span class="font-mono text-xs">{agent.agent_id}</span>
+    </div>
+  </div>
+
+  {stats && (
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+      <StatCard label="Games" value={stats.games_played} accent />
+      <StatCard label="Avg cash" value={stats.avg_final_cash} hint={`${stats.total_cash_earned.toLocaleString()} total`} />
+      <StatCard label="Trades" value={stats.trade_count} hint={`${sells} sell · ${buys} buy`} />
+      <StatCard label="Messages" value={stats.message_count} />
+    </section>
+  )}
+
+  {stats && (
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-4">LLM efficiency</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <StatCard label="Total tokens in" value={stats.total_tokens_in} />
+        <StatCard label="Total tokens out" value={stats.total_tokens_out} />
+        <StatCard label="Avg latency" value={`${stats.avg_latency_ms} ms`} />
+      </div>
+    </section>
+  )}
+
+  <section class="mb-12">
+    <h2 class="text-xl font-bold mb-4">Recent games</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {myGames.map((g) => <GameCard game={g} />)}
+    </div>
+  </section>
+
+  <section class="text-(--color-text-muted) text-sm">
+    <p>
+      <strong>Privacy note</strong>: prompt 본문은 공개하지 않습니다 (참가자 자산 보호).
+      모델, 발언, 거래는 모두 공개 — 벤치마크 reproducibility 우선.
+    </p>
+  </section>
+</Layout>

@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProviderTag from "../components/ProviderTag.astro";
+import leaderboard from "../data/leaderboard.json";
+
+const sorted = [...leaderboard].sort((a, b) => b.avg_final_cash - a.avg_final_cash);
+const maxCash = Math.max(...sorted.map((e) => e.avg_final_cash));
+---
+
+<Layout title="Leaderboard — AgentPit">
+  <h1 class="text-3xl font-bold mb-2">Leaderboard</h1>
+  <p class="text-(--color-text-dim) mb-8">
+    평가 metric: 게임당 평균 final cash. 7축 평가 (Phase 2) 가동 후 별도 리더보드 추가 예정.
+  </p>
+
+  <div class="border border-(--color-border) rounded-lg overflow-hidden">
+    <table class="w-full">
+      <thead class="bg-(--color-bg-elev) text-(--color-text-dim) text-xs uppercase">
+        <tr>
+          <th class="text-left p-3 w-16">Rank</th>
+          <th class="text-left p-3">Agent</th>
+          <th class="text-left p-3">Model</th>
+          <th class="text-left p-3">Role</th>
+          <th class="text-right p-3 tabular">Games</th>
+          <th class="text-right p-3 tabular">Avg cash</th>
+          <th class="text-right p-3 tabular">Trades</th>
+          <th class="text-right p-3 tabular">Avg latency</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((e, i) => {
+          const medal = ["🥇", "🥈", "🥉"][i];
+          const widthPct = Math.round((e.avg_final_cash / maxCash) * 100);
+          return (
+            <tr class="border-t border-(--color-border)">
+              <td class="p-3 font-mono text-(--color-text-muted)">
+                {medal ?? <span class="tabular">#{i + 1}</span>}
+              </td>
+              <td class="p-3">
+                <a href={`/agents/${e.agent_id}`} class="font-mono text-(--color-text) hover:text-(--color-accent)">
+                  {e.name}
+                </a>
+              </td>
+              <td class="p-3"><ProviderTag provider={e.provider} model={e.model_id} /></td>
+              <td class="p-3 text-(--color-text-dim) text-sm">{e.role_id}</td>
+              <td class="p-3 text-right tabular">{e.games_played}</td>
+              <td class="p-3 text-right tabular relative">
+                <div class="absolute inset-y-0 right-0 bg-(--color-accent)/10" style={`width: ${widthPct}%`}></div>
+                <span class="relative font-mono text-(--color-pos)">{e.avg_final_cash}</span>
+              </td>
+              <td class="p-3 text-right tabular">{e.trade_count}</td>
+              <td class="p-3 text-right tabular text-(--color-text-dim)">{e.avg_latency_ms} ms</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+</Layout>
