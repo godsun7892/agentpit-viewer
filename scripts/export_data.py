@@ -24,7 +24,7 @@ import asyncio
 import json
 import os
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -59,7 +59,7 @@ MESSAGE_PUBLIC_COLS = ("message_id", "session_id", "round_number", "channel_id",
 
 def _iso(t: Any) -> str:
     if isinstance(t, datetime):
-        return t.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+        return t.astimezone(UTC).isoformat().replace("+00:00", "Z")
     return str(t)
 
 
@@ -86,19 +86,17 @@ async def fetch_agents(conn: asyncpg.Connection) -> list[dict]:
     rows = await conn.fetch("""
         SELECT
             a.agent_id::text                      AS agent_id,
-            apv.name                              AS name,
+            a.name                                AS name,
             COALESCE(e.role_id, '?')              AS role_id,
             COALESCE(e.scenario_id, '?')          AS scenario_id,
-            apv.model_provider                    AS provider,
-            apv.model_id                          AS model_id,
-            apv.version_id::text                  AS prompt_version_id
+            a.provider                            AS provider,
+            a.model                               AS model_id,
+            a.current_prompt_version_id::text     AS prompt_version_id
         FROM identity.agent a
-        JOIN identity.agent_prompt_version apv
-          ON apv.agent_id = a.agent_id
         LEFT JOIN economy.erp e
           ON e.agent_id = a.agent_id
         WHERE a.mode = 'llm'
-        ORDER BY apv.created_at
+        ORDER BY a.created_at
     """)
     # 중복 제거 (한 agent 가 여러 ERP 갖는 경우)
     seen: dict[str, dict] = {}
@@ -139,18 +137,30 @@ async def fetch_games(conn: asyncpg.Connection) -> list[dict]:
         )
         agent_ids = [a["agent_id"] for a in agent_ids_rows]
 
-        # final cash per agent
+        # final cash per agent — economy.erp 는 append-only, agent 별 최신 row
         cash_rows = await conn.fetch(
-            "SELECT agent_id::text AS agent_id, cash FROM economy.erp WHERE session_id = $1::uuid", sid,
+            """
+            SELECT DISTINCT ON (agent_id) agent_id::text AS agent_id, cash
+            FROM economy.erp
+            WHERE session_id = $1::uuid
+            ORDER BY agent_id, created_at DESC
+            """,
+            sid,
         )
         final_cash = {c["agent_id"]: c["cash"] for c in cash_rows}
 
         trade_count = await conn.fetchval(
             "SELECT count(*) FROM economy.trade WHERE session_id = $1::uuid", sid,
         )
+        # message 는 channel 통해 session 매핑
         msg_count = await conn.fetchval(
-            "SELECT count(*) FROM messaging.message WHERE round_number IS NOT NULL "
-            "AND EXISTS (SELECT 1 FROM economy.erp WHERE economy.erp.session_id = $1::uuid)", sid,
+            """
+            SELECT count(*)
+            FROM messaging.message m
+            JOIN messaging.channel ch ON ch.channel_id = m.channel_id
+            WHERE ch.session_id = $1::uuid
+            """,
+            sid,
         ) or 0
         event_count = await conn.fetchval(
             "SELECT count(*) FROM eval.game_event WHERE session_id = $1::uuid", sid,
@@ -208,19 +218,19 @@ async def fetch_offers(conn: asyncpg.Connection) -> list[dict]:
 async def fetch_messages(conn: asyncpg.Connection) -> list[dict]:
     rows = await conn.fetch("""
         SELECT
-            message_id::text   AS message_id,
-            channel_id::text   AS channel_id,
-            sender_id::text    AS sender_id,
-            content, round_number, created_at
-        FROM messaging.message
-        ORDER BY created_at
+            m.message_id::text   AS message_id,
+            ch.session_id::text  AS session_id,
+            m.channel_id::text   AS channel_id,
+            m.sender_id::text    AS sender_id,
+            m.content, m.round_number, m.created_at
+        FROM messaging.message m
+        JOIN messaging.channel ch ON ch.channel_id = m.channel_id
+        ORDER BY m.created_at
     """)
-    # session_id 는 channel 통해 추론 — 단순화: session_id 컬럼이 있으면 직접 사용,
-    # 없으면 빈 문자열 (현 schema 가 message 에 session_id 없음 — channel 통해)
     return [
         {
             "message_id": r["message_id"],
-            "session_id": "",  # message 자체에 없음 — viewer 에서 channel join 으로 보강 가능
+            "session_id": r["session_id"],
             "round_number": r["round_number"],
             "channel_id": r["channel_id"],
             "sender_id": r["sender_id"],
@@ -385,7 +395,7 @@ async def main() -> None:
     leaderboard = build_leaderboard(agents, games, trades, messages, event_stats)
 
     meta = {
-        "exported_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "exported_at": datetime.now(UTC).isoformat().replace("+00:00", "Z"),
         "total_games": len(games),
         "total_agents": len(agents),
         "total_trades": len(trades),
