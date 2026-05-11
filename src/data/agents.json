@@ -1,47 +1,65 @@
 [
   {
-    "agent_id": "agent-2acdb7be-0435-4673-a4a8-109f0cf7ee5c",
-    "name": "patient_farmer",
-    "role_id": "wheat_farm",
-    "scenario_id": "bread",
-    "provider": "openai",
-    "model_id": "gpt-4o-mini",
-    "prompt_version_id": "pv-949ffe70-cf0b-4786-8faf-59a643cb8e06"
-  },
-  {
-    "agent_id": "agent-c9ca2a5d-87aa-497b-bf85-2c001bf7148a",
-    "name": "calm_rancher",
-    "role_id": "dairy_ranch",
-    "scenario_id": "bread",
-    "provider": "google",
-    "model_id": "gemini-2.5-flash",
-    "prompt_version_id": "pv-dfe18c69-c33c-46ea-9708-8e147719abc7"
-  },
-  {
-    "agent_id": "agent-2576b4a6-9959-47e5-b2bf-7d4c8ab7d544",
-    "name": "quiet_miller",
-    "role_id": "mill",
-    "scenario_id": "bread",
-    "provider": "xai",
-    "model_id": "grok-3-mini",
-    "prompt_version_id": "pv-e3370ca0-6122-448d-ae1e-17a993ad513e"
-  },
-  {
-    "agent_id": "agent-c308a442-8b49-45fe-b6e0-9f0c1a62dbd6",
-    "name": "basic_churner",
-    "role_id": "dairy_processor",
-    "scenario_id": "bread",
-    "provider": "deepseek",
-    "model_id": "deepseek-chat",
-    "prompt_version_id": "pv-59d60af6-3409-45cb-adaa-d3e8db0ec729"
-  },
-  {
-    "agent_id": "agent-a1573456-c57c-453f-bd7f-5934ce4cddde",
+    "agent_id": "11fcc59c-9321-48d4-aebe-bf7a40427134",
     "name": "routine_baker",
     "role_id": "bakery",
     "scenario_id": "bread",
     "provider": "openai",
     "model_id": "gpt-4o-mini",
-    "prompt_version_id": "pv-6ccd0e5c-d8ed-48c3-b922-264b3799d535"
+    "prompt_version_id": "019e159b-6c6a-7d13-bada-a4512cc8b422"
+  },
+  {
+    "agent_id": "41509ce9-fe0d-45fa-9491-194852bfe458",
+    "name": "calm_rancher",
+    "role_id": "dairy_ranch",
+    "scenario_id": "bread",
+    "provider": "google",
+    "model_id": "gemini-2.5-flash",
+    "prompt_version_id": "019e159b-6f0c-79f2-b25c-ab9213ec7e88"
+  },
+  {
+    "agent_id": "e2213285-beda-4657-9533-2cb511dd9550",
+    "name": "basic_churner",
+    "role_id": "dairy_processor",
+    "scenario_id": "bread",
+    "provider": "deepseek",
+    "model_id": "deepseek-chat",
+    "prompt_version_id": "019e159b-7162-7a21-acf5-1ede869a47ad"
+  },
+  {
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "scenario_id": "bread",
+    "provider": "openai",
+    "model_id": "gpt-4o-mini",
+    "prompt_version_id": "019e159b-6e31-76a0-91f4-0e4f4a3c60af"
+  },
+  {
+    "agent_id": "b16d6983-98f7-4f31-9fb2-93d5bc131724",
+    "name": "quiet_miller",
+    "role_id": "mill",
+    "scenario_id": "bread",
+    "provider": "xai",
+    "model_id": "grok-3-mini",
+    "prompt_version_id": "019e159b-6fe6-7141-b66d-9caa28de5828"
+  },
+  {
+    "agent_id": "c74390e5-a8a2-4b0c-b20c-36307e706031",
+    "name": "openai_miller",
+    "role_id": "mill",
+    "scenario_id": "bread",
+    "provider": "openai",
+    "model_id": "gpt-4o-mini",
+    "prompt_version_id": "019e1780-c96e-7351-9e73-d620e5a4425b"
+  },
+  {
+    "agent_id": "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+    "name": "xai_baker",
+    "role_id": "bakery",
+    "scenario_id": "bread",
+    "provider": "xai",
+    "model_id": "grok-3-mini",
+    "prompt_version_id": "019e1780-cb79-7841-9f2a-8ca47b6c5947"
   }
 ]

@@ -1,1291 +1,288 @@
 [
   {
-    "session_id": "session-2ef4c547-2765-4ee6-85e3-0c27aa3e3890",
+    "session_id": "5791394d-7aa0-4c9d-99bb-4fd4dbc44de5",
     "by_type": {
-      "tool.called": 111,
-      "tool.succeeded": 107,
-      "tool.failed": 4,
-      "llm.call": 52,
-      "trade.executed": 0,
-      "offer.sent": 0,
-      "message.sent": 5,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 52,
-      "by_provider": {
-        "openai": 27,
-        "google": 11,
-        "xai": 2,
-        "deepseek": 12
-      },
-      "total_tokens_in": 300924,
-      "total_tokens_out": 3276,
-      "avg_latency_ms": 5443
-    },
-    "tool_calls": {
-      "total": 111,
-      "successes": 107,
-      "failures": 4,
-      "by_tool": {
-        "list_my_offers_tool": 6,
-        "send_offer_tool": 15,
-        "accept_offer_tool": 5,
-        "list_historical_trades_tool": 3,
-        "read_channel_tool": 15,
-        "send_message_tool": 9,
-        "produce_tool": 6,
-        "sell_to_npc_final_tool": 4
-      }
-    }
-  },
-  {
-    "session_id": "session-987f4cc5-860f-4621-b523-345e33284c75",
-    "by_type": {
-      "tool.called": 96,
-      "tool.succeeded": 95,
-      "tool.failed": 1,
-      "llm.call": 44,
-      "trade.executed": 0,
-      "offer.sent": 0,
-      "message.sent": 6,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 44,
-      "by_provider": {
-        "openai": 23,
-        "google": 8,
-        "xai": 6,
-        "deepseek": 7
-      },
-      "total_tokens_in": 189200,
-      "total_tokens_out": 28336,
-      "avg_latency_ms": 5569
-    },
-    "tool_calls": {
-      "total": 96,
-      "successes": 95,
-      "failures": 1,
-      "by_tool": {
-        "list_my_offers_tool": 18,
-        "send_offer_tool": 11,
-        "accept_offer_tool": 2,
-        "list_historical_trades_tool": 4,
-        "read_channel_tool": 13,
-        "send_message_tool": 7,
-        "produce_tool": 1,
-        "sell_to_npc_final_tool": 0
-      }
-    }
-  },
-  {
-    "session_id": "session-156bf26a-ee81-4b80-8238-55afcfea3ecf",
-    "by_type": {
-      "tool.called": 112,
-      "tool.succeeded": 112,
-      "tool.failed": 0,
-      "llm.call": 43,
-      "trade.executed": 0,
-      "offer.sent": 0,
-      "message.sent": 1,
-      "round.started": 5,
+      "session.bootstrapped": 1,
+      "tool.called": 115,
       "round.ended": 5,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 43,
-      "by_provider": {
-        "openai": 19,
-        "google": 4,
-        "xai": 9,
-        "deepseek": 11
-      },
-      "total_tokens_in": 166539,
-      "total_tokens_out": 25499,
-      "avg_latency_ms": 3845
-    },
-    "tool_calls": {
-      "total": 112,
-      "successes": 112,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 20,
-        "send_offer_tool": 5,
-        "accept_offer_tool": 0,
-        "list_historical_trades_tool": 3,
-        "read_channel_tool": 9,
-        "send_message_tool": 3,
-        "produce_tool": 3,
-        "sell_to_npc_final_tool": 1
-      }
-    }
-  },
-  {
-    "session_id": "session-1c5f2a50-4488-4443-b85b-46c010c29add",
-    "by_type": {
-      "tool.called": 107,
-      "tool.succeeded": 105,
-      "tool.failed": 2,
-      "llm.call": 22,
-      "trade.executed": 3,
-      "offer.sent": 5,
-      "message.sent": 3,
-      "round.started": 6,
-      "round.ended": 6,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 22,
-      "by_provider": {
-        "openai": 0,
-        "google": 10,
-        "xai": 5,
-        "deepseek": 9
-      },
-      "total_tokens_in": 117128,
-      "total_tokens_out": 11462,
-      "avg_latency_ms": 5908
-    },
-    "tool_calls": {
-      "total": 107,
-      "successes": 105,
-      "failures": 2,
-      "by_tool": {
-        "list_my_offers_tool": 6,
-        "send_offer_tool": 15,
-        "accept_offer_tool": 4,
-        "list_historical_trades_tool": 6,
-        "read_channel_tool": 3,
-        "send_message_tool": 8,
-        "produce_tool": 5,
-        "sell_to_npc_final_tool": 2
-      }
-    }
-  },
-  {
-    "session_id": "session-7859e8f5-3757-4558-b184-49c29a7e2237",
-    "by_type": {
-      "tool.called": 88,
-      "tool.succeeded": 86,
-      "tool.failed": 2,
-      "llm.call": 29,
-      "trade.executed": 4,
-      "offer.sent": 8,
-      "message.sent": 4,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 29,
-      "by_provider": {
-        "openai": 5,
-        "google": 5,
-        "xai": 12,
-        "deepseek": 7
-      },
-      "total_tokens_in": 178785,
-      "total_tokens_out": 18676,
-      "avg_latency_ms": 4599
-    },
-    "tool_calls": {
-      "total": 88,
-      "successes": 86,
-      "failures": 2,
-      "by_tool": {
-        "list_my_offers_tool": 5,
-        "send_offer_tool": 14,
-        "accept_offer_tool": 6,
-        "list_historical_trades_tool": 5,
-        "read_channel_tool": 15,
-        "send_message_tool": 1,
-        "produce_tool": 7,
-        "sell_to_npc_final_tool": 5
-      }
-    }
-  },
-  {
-    "session_id": "session-aa053e4d-f375-40e9-b313-5168ab0fefe0",
-    "by_type": {
-      "tool.called": 93,
-      "tool.succeeded": 93,
-      "tool.failed": 0,
-      "llm.call": 49,
-      "trade.executed": 4,
-      "offer.sent": 9,
-      "message.sent": 4,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 49,
-      "by_provider": {
-        "openai": 35,
-        "google": 8,
-        "xai": 3,
-        "deepseek": 3
-      },
-      "total_tokens_in": 198695,
-      "total_tokens_out": 38661,
-      "avg_latency_ms": 5072
-    },
-    "tool_calls": {
-      "total": 93,
-      "successes": 93,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 15,
-        "send_offer_tool": 13,
-        "accept_offer_tool": 2,
-        "list_historical_trades_tool": 7,
-        "read_channel_tool": 11,
-        "send_message_tool": 10,
-        "produce_tool": 5,
-        "sell_to_npc_final_tool": 3
-      }
-    }
-  },
-  {
-    "session_id": "session-acadf526-6080-475e-9777-28bc62f2bfef",
-    "by_type": {
-      "tool.called": 56,
-      "tool.succeeded": 56,
-      "tool.failed": 0,
-      "llm.call": 27,
-      "trade.executed": 5,
-      "offer.sent": 13,
-      "message.sent": 3,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 27,
-      "by_provider": {
-        "openai": 0,
-        "google": 10,
-        "xai": 9,
-        "deepseek": 12
-      },
-      "total_tokens_in": 152955,
-      "total_tokens_out": 20358,
-      "avg_latency_ms": 3105
-    },
-    "tool_calls": {
-      "total": 56,
-      "successes": 56,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 7,
-        "send_offer_tool": 13,
-        "accept_offer_tool": 3,
-        "list_historical_trades_tool": 12,
-        "read_channel_tool": 7,
-        "send_message_tool": 9,
-        "produce_tool": 8,
-        "sell_to_npc_final_tool": 5
-      }
-    }
-  },
-  {
-    "session_id": "session-922146a1-2171-4c42-90ba-32d32a16f38e",
-    "by_type": {
-      "tool.called": 102,
-      "tool.succeeded": 98,
-      "tool.failed": 4,
-      "llm.call": 27,
-      "trade.executed": 2,
       "offer.sent": 4,
-      "message.sent": 2,
-      "round.started": 12,
-      "round.ended": 12,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 27,
-      "by_provider": {
-        "openai": 2,
-        "google": 7,
-        "xai": 12,
-        "deepseek": 6
-      },
-      "total_tokens_in": 132786,
-      "total_tokens_out": 6480,
-      "avg_latency_ms": 4407
-    },
-    "tool_calls": {
-      "total": 102,
-      "successes": 98,
-      "failures": 4,
-      "by_tool": {
-        "list_my_offers_tool": 10,
-        "send_offer_tool": 6,
-        "accept_offer_tool": 8,
-        "list_historical_trades_tool": 12,
-        "read_channel_tool": 2,
-        "send_message_tool": 10,
-        "produce_tool": 8,
-        "sell_to_npc_final_tool": 2
-      }
-    }
-  },
-  {
-    "session_id": "session-4692fda9-cd96-4122-a8ec-8a0fa857b15d",
-    "by_type": {
-      "tool.called": 109,
-      "tool.succeeded": 108,
-      "tool.failed": 1,
-      "llm.call": 37,
-      "trade.executed": 4,
-      "offer.sent": 6,
-      "message.sent": 3,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 37,
-      "by_provider": {
-        "openai": 10,
-        "google": 11,
-        "xai": 9,
-        "deepseek": 7
-      },
-      "total_tokens_in": 215192,
-      "total_tokens_out": 24753,
-      "avg_latency_ms": 4407
-    },
-    "tool_calls": {
-      "total": 109,
-      "successes": 108,
-      "failures": 1,
-      "by_tool": {
-        "list_my_offers_tool": 17,
-        "send_offer_tool": 12,
-        "accept_offer_tool": 0,
-        "list_historical_trades_tool": 12,
-        "read_channel_tool": 12,
-        "send_message_tool": 6,
-        "produce_tool": 7,
-        "sell_to_npc_final_tool": 3
-      }
-    }
-  },
-  {
-    "session_id": "session-08cf08ba-e4e8-48d2-b885-11816da6abb3",
-    "by_type": {
-      "tool.called": 81,
-      "tool.succeeded": 81,
-      "tool.failed": 0,
-      "llm.call": 47,
-      "trade.executed": 2,
-      "offer.sent": 5,
-      "message.sent": 6,
-      "round.started": 12,
-      "round.ended": 12,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 47,
-      "by_provider": {
-        "openai": 30,
-        "google": 6,
-        "xai": 4,
-        "deepseek": 7
-      },
-      "total_tokens_in": 280026,
-      "total_tokens_out": 7990,
-      "avg_latency_ms": 1647
-    },
-    "tool_calls": {
-      "total": 81,
-      "successes": 81,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 15,
-        "send_offer_tool": 2,
-        "accept_offer_tool": 7,
-        "list_historical_trades_tool": 8,
-        "read_channel_tool": 11,
-        "send_message_tool": 2,
-        "produce_tool": 0,
-        "sell_to_npc_final_tool": 1
-      }
-    }
-  },
-  {
-    "session_id": "session-c1a0a2d7-0fa2-480d-a170-6fdcd589e8f8",
-    "by_type": {
-      "tool.called": 76,
-      "tool.succeeded": 76,
-      "tool.failed": 0,
-      "llm.call": 28,
-      "trade.executed": 3,
-      "offer.sent": 5,
-      "message.sent": 4,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 28,
-      "by_provider": {
-        "openai": 8,
-        "google": 2,
-        "xai": 8,
-        "deepseek": 10
-      },
-      "total_tokens_in": 194852,
-      "total_tokens_out": 11396,
-      "avg_latency_ms": 4488
-    },
-    "tool_calls": {
-      "total": 76,
-      "successes": 76,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 11,
-        "send_offer_tool": 9,
-        "accept_offer_tool": 6,
-        "list_historical_trades_tool": 12,
-        "read_channel_tool": 15,
-        "send_message_tool": 9,
-        "produce_tool": 3,
-        "sell_to_npc_final_tool": 1
-      }
-    }
-  },
-  {
-    "session_id": "session-6c6fbb5c-4c47-4237-bc65-7fec6079be2e",
-    "by_type": {
-      "tool.called": 95,
-      "tool.succeeded": 95,
-      "tool.failed": 0,
-      "llm.call": 21,
-      "trade.executed": 5,
-      "offer.sent": 9,
-      "message.sent": 6,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 21,
-      "by_provider": {
-        "openai": 1,
-        "google": 10,
-        "xai": 7,
-        "deepseek": 3
-      },
-      "total_tokens_in": 123165,
-      "total_tokens_out": 15960,
-      "avg_latency_ms": 2922
-    },
-    "tool_calls": {
-      "total": 95,
-      "successes": 95,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 12,
-        "send_offer_tool": 4,
-        "accept_offer_tool": 8,
-        "list_historical_trades_tool": 6,
-        "read_channel_tool": 5,
-        "send_message_tool": 6,
-        "produce_tool": 7,
-        "sell_to_npc_final_tool": 5
-      }
-    }
-  },
-  {
-    "session_id": "session-81b2b2e3-3f0e-4c9a-837f-d3c437a50d04",
-    "by_type": {
-      "tool.called": 50,
-      "tool.succeeded": 48,
-      "tool.failed": 2,
-      "llm.call": 52,
-      "trade.executed": 4,
-      "offer.sent": 8,
-      "message.sent": 2,
+      "llm.call": 80,
+      "tool.succeeded": 115,
+      "agent.wake": 10,
       "round.started": 5,
-      "round.ended": 5,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
+      "offer.countered": 1,
+      "production.auto_completed": 4,
+      "message.sent": 8
     },
     "llm_calls": {
-      "total": 52,
+      "total": 80,
       "by_provider": {
-        "openai": 35,
-        "google": 10,
-        "xai": 4,
-        "deepseek": 3
+        "deepseek": 31,
+        "openai": 11,
+        "google": 16,
+        "xai": 22
       },
-      "total_tokens_in": 360516,
-      "total_tokens_out": 25428,
-      "avg_latency_ms": 1090
+      "total_tokens_in": 552252,
+      "total_tokens_out": 13684,
+      "avg_latency_ms": 5813
     },
     "tool_calls": {
-      "total": 50,
-      "successes": 48,
-      "failures": 2,
+      "total": 115,
+      "successes": 115,
+      "failures": 0,
       "by_tool": {
-        "list_my_offers_tool": 15,
-        "send_offer_tool": 5,
-        "accept_offer_tool": 5,
-        "list_historical_trades_tool": 10,
+        "send_message_tool": 8,
+        "send_offer_tool": 4,
+        "discover_agents_by_role_tool": 10,
+        "list_scenario_resources_tool": 5,
+        "list_historical_trades_tool": 9,
+        "accept_offer_tool": 2,
         "read_channel_tool": 7,
-        "send_message_tool": 4,
-        "produce_tool": 3,
-        "sell_to_npc_final_tool": 2
+        "create_channel_tool": 8,
+        "list_incoming_offers_tool": 16,
+        "read_my_erp_tool": 14,
+        "list_scenario_roles_tool": 5,
+        "counter_offer_tool": 2,
+        "list_incoming_messages_tool": 12,
+        "list_my_offers_tool": 13
       }
     }
   },
   {
-    "session_id": "session-c8c4a58d-b35a-41ef-87c6-9e92049a747b",
+    "session_id": "bf421c6a-678a-4d2d-97db-62b9d1ce781d",
     "by_type": {
-      "tool.called": 109,
-      "tool.succeeded": 106,
-      "tool.failed": 3,
-      "llm.call": 23,
-      "trade.executed": 1,
-      "offer.sent": 2,
-      "message.sent": 6,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
+      "npc.sale.intermediate": 6,
+      "session.bootstrapped": 1,
+      "tool.called": 905,
+      "round.ended": 25,
+      "offer.rejected": 11,
+      "production.completed": 10,
+      "offer.sent": 29,
+      "offer.accepted": 9,
+      "llm.call": 609,
+      "resource.spoiled": 20,
+      "production.started": 12,
+      "tool.succeeded": 905,
+      "agent.wake": 51,
+      "round.started": 25,
+      "trade.executed": 9,
+      "offer.countered": 4,
+      "production.auto_completed": 19,
+      "message.sent": 69
     },
     "llm_calls": {
-      "total": 23,
+      "total": 609,
       "by_provider": {
-        "openai": 0,
-        "google": 9,
-        "xai": 8,
-        "deepseek": 6
+        "openai": 116,
+        "deepseek": 239,
+        "google": 88,
+        "xai": 166
       },
-      "total_tokens_in": 72312,
-      "total_tokens_out": 12420,
-      "avg_latency_ms": 4714
+      "total_tokens_in": 4847559,
+      "total_tokens_out": 118648,
+      "avg_latency_ms": 9895
     },
     "tool_calls": {
-      "total": 109,
-      "successes": 106,
-      "failures": 3,
-      "by_tool": {
-        "list_my_offers_tool": 14,
-        "send_offer_tool": 11,
-        "accept_offer_tool": 7,
-        "list_historical_trades_tool": 10,
-        "read_channel_tool": 13,
-        "send_message_tool": 1,
-        "produce_tool": 0,
-        "sell_to_npc_final_tool": 2
-      }
-    }
-  },
-  {
-    "session_id": "session-bfa5a41c-7ece-4c35-8a28-bff90c2292a5",
-    "by_type": {
-      "tool.called": 60,
-      "tool.succeeded": 57,
-      "tool.failed": 3,
-      "llm.call": 41,
-      "trade.executed": 1,
-      "offer.sent": 2,
-      "message.sent": 11,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 41,
-      "by_provider": {
-        "openai": 24,
-        "google": 2,
-        "xai": 8,
-        "deepseek": 7
-      },
-      "total_tokens_in": 135792,
-      "total_tokens_out": 20500,
-      "avg_latency_ms": 3535
-    },
-    "tool_calls": {
-      "total": 60,
-      "successes": 57,
-      "failures": 3,
-      "by_tool": {
-        "list_my_offers_tool": 13,
-        "send_offer_tool": 4,
-        "accept_offer_tool": 1,
-        "list_historical_trades_tool": 5,
-        "read_channel_tool": 10,
-        "send_message_tool": 1,
-        "produce_tool": 8,
-        "sell_to_npc_final_tool": 6
-      }
-    }
-  },
-  {
-    "session_id": "session-54129143-c525-4421-be7a-27bfda6836ce",
-    "by_type": {
-      "tool.called": 120,
-      "tool.succeeded": 118,
-      "tool.failed": 2,
-      "llm.call": 31,
-      "trade.executed": 3,
-      "offer.sent": 5,
-      "message.sent": 8,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 31,
-      "by_provider": {
-        "openai": 6,
-        "google": 10,
-        "xai": 9,
-        "deepseek": 6
-      },
-      "total_tokens_in": 163897,
-      "total_tokens_out": 16988,
-      "avg_latency_ms": 4299
-    },
-    "tool_calls": {
-      "total": 120,
-      "successes": 118,
-      "failures": 2,
-      "by_tool": {
-        "list_my_offers_tool": 5,
-        "send_offer_tool": 5,
-        "accept_offer_tool": 3,
-        "list_historical_trades_tool": 5,
-        "read_channel_tool": 12,
-        "send_message_tool": 8,
-        "produce_tool": 8,
-        "sell_to_npc_final_tool": 4
-      }
-    }
-  },
-  {
-    "session_id": "session-82e9d737-df8a-45f9-a157-5c9a699a45b1",
-    "by_type": {
-      "tool.called": 102,
-      "tool.succeeded": 97,
-      "tool.failed": 5,
-      "llm.call": 20,
-      "trade.executed": 4,
-      "offer.sent": 10,
-      "message.sent": 7,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 20,
-      "by_provider": {
-        "openai": 0,
-        "google": 2,
-        "xai": 12,
-        "deepseek": 9
-      },
-      "total_tokens_in": 66220,
-      "total_tokens_out": 13300,
-      "avg_latency_ms": 3668
-    },
-    "tool_calls": {
-      "total": 102,
-      "successes": 97,
-      "failures": 5,
-      "by_tool": {
-        "list_my_offers_tool": 18,
-        "send_offer_tool": 9,
-        "accept_offer_tool": 8,
-        "list_historical_trades_tool": 12,
-        "read_channel_tool": 9,
-        "send_message_tool": 5,
-        "produce_tool": 7,
-        "sell_to_npc_final_tool": 4
-      }
-    }
-  },
-  {
-    "session_id": "session-f0dc670a-a411-4877-875c-108724e9c4bb",
-    "by_type": {
-      "tool.called": 58,
-      "tool.succeeded": 58,
-      "tool.failed": 0,
-      "llm.call": 40,
-      "trade.executed": 5,
-      "offer.sent": 10,
-      "message.sent": 10,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 40,
-      "by_provider": {
-        "openai": 28,
-        "google": 5,
-        "xai": 5,
-        "deepseek": 2
-      },
-      "total_tokens_in": 127680,
-      "total_tokens_out": 29480,
-      "avg_latency_ms": 4691
-    },
-    "tool_calls": {
-      "total": 58,
-      "successes": 58,
+      "total": 905,
+      "successes": 905,
       "failures": 0,
       "by_tool": {
-        "list_my_offers_tool": 7,
-        "send_offer_tool": 15,
-        "accept_offer_tool": 3,
-        "list_historical_trades_tool": 5,
-        "read_channel_tool": 11,
-        "send_message_tool": 7,
-        "produce_tool": 4,
-        "sell_to_npc_final_tool": 2
+        "create_channel_tool": 58,
+        "list_incoming_offers_tool": 100,
+        "discover_agents_by_role_tool": 95,
+        "list_scenario_resources_tool": 41,
+        "list_scenario_roles_tool": 25,
+        "list_incoming_messages_tool": 75,
+        "sell_to_npc_intermediate_tool": 9,
+        "reject_offer_tool": 20,
+        "read_channel_tool": 47,
+        "list_historical_trades_tool": 46,
+        "produce_tool": 18,
+        "list_my_offers_tool": 69,
+        "send_offer_tool": 37,
+        "read_my_erp_tool": 114,
+        "send_message_tool": 76,
+        "accept_offer_tool": 68,
+        "counter_offer_tool": 7
       }
     }
   },
   {
-    "session_id": "session-9f1a7c76-84a1-4f88-9539-676f04957459",
+    "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
     "by_type": {
-      "tool.called": 47,
-      "tool.succeeded": 45,
-      "tool.failed": 2,
-      "llm.call": 35,
+      "npc.sale.intermediate": 7,
+      "session.bootstrapped": 1,
+      "tool.called": 1035,
+      "round.ended": 25,
+      "production.completed": 19,
+      "offer.rejected": 14,
+      "offer.sent": 40,
+      "offer.accepted": 18,
+      "llm.call": 721,
+      "resource.spoiled": 22,
+      "production.started": 20,
+      "tool.succeeded": 1035,
+      "agent.wake": 57,
+      "round.started": 25,
+      "trade.executed": 18,
+      "offer.countered": 2,
+      "production.auto_completed": 18,
+      "message.sent": 67
+    },
+    "llm_calls": {
+      "total": 721,
+      "by_provider": {
+        "xai": 213,
+        "google": 111,
+        "deepseek": 324,
+        "openai": 73
+      },
+      "total_tokens_in": 5890748,
+      "total_tokens_out": 147109,
+      "avg_latency_ms": 7478
+    },
+    "tool_calls": {
+      "total": 1035,
+      "successes": 1035,
+      "failures": 0,
+      "by_tool": {
+        "list_scenario_resources_tool": 52,
+        "list_incoming_messages_tool": 88,
+        "sell_to_npc_intermediate_tool": 8,
+        "reject_offer_tool": 22,
+        "read_channel_tool": 47,
+        "list_historical_trades_tool": 57,
+        "produce_tool": 28,
+        "send_message_tool": 67,
+        "counter_offer_tool": 2,
+        "create_channel_tool": 61,
+        "list_incoming_offers_tool": 119,
+        "discover_agents_by_role_tool": 122,
+        "list_scenario_roles_tool": 30,
+        "list_my_offers_tool": 81,
+        "send_offer_tool": 45,
+        "read_my_erp_tool": 137,
+        "accept_offer_tool": 69
+      }
+    }
+  },
+  {
+    "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
+    "by_type": {
+      "npc.sale.intermediate": 2,
+      "session.bootstrapped": 1,
+      "tool.called": 966,
+      "tool.failed": 100,
+      "round.ended": 25,
+      "production.completed": 17,
+      "offer.rejected": 10,
+      "offer.sent": 41,
+      "offer.accepted": 25,
+      "llm.call": 709,
+      "resource.spoiled": 33,
+      "production.started": 18,
+      "tool.succeeded": 862,
+      "agent.wake": 72,
+      "round.started": 25,
+      "offer.countered": 1,
+      "trade.executed": 25,
+      "production.auto_completed": 30,
+      "message.sent": 74
+    },
+    "llm_calls": {
+      "total": 709,
+      "by_provider": {
+        "deepseek": 281,
+        "xai": 146,
+        "google": 175,
+        "openai": 107
+      },
+      "total_tokens_in": 5765680,
+      "total_tokens_out": 145430,
+      "avg_latency_ms": 6265
+    },
+    "tool_calls": {
+      "total": 966,
+      "successes": 862,
+      "failures": 100,
+      "by_tool": {
+        "create_channel_tool": 49,
+        "list_incoming_offers_tool": 116,
+        "discover_agents_by_role_tool": 94,
+        "list_scenario_resources_tool": 48,
+        "list_scenario_roles_tool": 15,
+        "list_incoming_messages_tool": 91,
+        "sell_to_npc_intermediate_tool": 3,
+        "reject_offer_tool": 10,
+        "read_channel_tool": 49,
+        "list_historical_trades_tool": 45,
+        "produce_tool": 22,
+        "list_my_offers_tool": 85,
+        "send_offer_tool": 47,
+        "read_my_erp_tool": 135,
+        "send_message_tool": 76,
+        "accept_offer_tool": 77,
+        "counter_offer_tool": 4
+      }
+    }
+  },
+  {
+    "session_id": "4d94d2bf-0768-433a-9672-651f2a1262eb",
+    "by_type": {
+      "npc.sale.intermediate": 2,
+      "session.bootstrapped": 1,
+      "tool.called": 602,
+      "round.ended": 20,
+      "offer.rejected": 2,
+      "production.completed": 5,
+      "offer.sent": 15,
+      "offer.accepted": 6,
+      "llm.call": 400,
+      "resource.spoiled": 13,
+      "production.started": 6,
+      "tool.succeeded": 602,
+      "agent.wake": 39,
+      "round.started": 20,
       "trade.executed": 6,
-      "offer.sent": 9,
-      "message.sent": 4,
-      "round.started": 5,
-      "round.ended": 5,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
+      "offer.countered": 5,
+      "production.auto_completed": 14,
+      "message.sent": 73
     },
     "llm_calls": {
-      "total": 35,
+      "total": 400,
       "by_provider": {
-        "openai": 14,
-        "google": 11,
-        "xai": 3,
-        "deepseek": 7
+        "xai": 118,
+        "deepseek": 152,
+        "google": 45,
+        "openai": 85
       },
-      "total_tokens_in": 136605,
-      "total_tokens_out": 10990,
-      "avg_latency_ms": 4186
+      "total_tokens_in": 3074873,
+      "total_tokens_out": 70478,
+      "avg_latency_ms": 6666
     },
     "tool_calls": {
-      "total": 47,
-      "successes": 45,
-      "failures": 2,
-      "by_tool": {
-        "list_my_offers_tool": 19,
-        "send_offer_tool": 4,
-        "accept_offer_tool": 4,
-        "list_historical_trades_tool": 8,
-        "read_channel_tool": 11,
-        "send_message_tool": 7,
-        "produce_tool": 7,
-        "sell_to_npc_final_tool": 3
-      }
-    }
-  },
-  {
-    "session_id": "session-d873f704-8959-4d11-90a7-c8ffcf22f642",
-    "by_type": {
-      "tool.called": 63,
-      "tool.succeeded": 60,
-      "tool.failed": 3,
-      "llm.call": 43,
-      "trade.executed": 4,
-      "offer.sent": 6,
-      "message.sent": 3,
-      "round.started": 12,
-      "round.ended": 12,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 43,
-      "by_provider": {
-        "openai": 19,
-        "google": 6,
-        "xai": 8,
-        "deepseek": 10
-      },
-      "total_tokens_in": 180385,
-      "total_tokens_out": 4773,
-      "avg_latency_ms": 1355
-    },
-    "tool_calls": {
-      "total": 63,
-      "successes": 60,
-      "failures": 3,
-      "by_tool": {
-        "list_my_offers_tool": 15,
-        "send_offer_tool": 8,
-        "accept_offer_tool": 1,
-        "list_historical_trades_tool": 12,
-        "read_channel_tool": 10,
-        "send_message_tool": 2,
-        "produce_tool": 2,
-        "sell_to_npc_final_tool": 0
-      }
-    }
-  },
-  {
-    "session_id": "session-f2bb6399-4d69-4152-ad2b-581d0a800b10",
-    "by_type": {
-      "tool.called": 61,
-      "tool.succeeded": 60,
-      "tool.failed": 1,
-      "llm.call": 52,
-      "trade.executed": 6,
-      "offer.sent": 13,
-      "message.sent": 3,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 52,
-      "by_provider": {
-        "openai": 28,
-        "google": 5,
-        "xai": 11,
-        "deepseek": 8
-      },
-      "total_tokens_in": 197808,
-      "total_tokens_out": 3120,
-      "avg_latency_ms": 3519
-    },
-    "tool_calls": {
-      "total": 61,
-      "successes": 60,
-      "failures": 1,
-      "by_tool": {
-        "list_my_offers_tool": 19,
-        "send_offer_tool": 15,
-        "accept_offer_tool": 0,
-        "list_historical_trades_tool": 11,
-        "read_channel_tool": 11,
-        "send_message_tool": 4,
-        "produce_tool": 4,
-        "sell_to_npc_final_tool": 6
-      }
-    }
-  },
-  {
-    "session_id": "session-be55868d-62e6-4a0a-bb09-1314b695d93c",
-    "by_type": {
-      "tool.called": 89,
-      "tool.succeeded": 85,
-      "tool.failed": 4,
-      "llm.call": 46,
-      "trade.executed": 6,
-      "offer.sent": 9,
-      "message.sent": 13,
-      "round.started": 5,
-      "round.ended": 5,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 46,
-      "by_provider": {
-        "openai": 29,
-        "google": 3,
-        "xai": 3,
-        "deepseek": 11
-      },
-      "total_tokens_in": 167808,
-      "total_tokens_out": 29854,
-      "avg_latency_ms": 1041
-    },
-    "tool_calls": {
-      "total": 89,
-      "successes": 85,
-      "failures": 4,
-      "by_tool": {
-        "list_my_offers_tool": 8,
-        "send_offer_tool": 13,
-        "accept_offer_tool": 8,
-        "list_historical_trades_tool": 7,
-        "read_channel_tool": 3,
-        "send_message_tool": 8,
-        "produce_tool": 7,
-        "sell_to_npc_final_tool": 1
-      }
-    }
-  },
-  {
-    "session_id": "session-d2adb501-dcb3-4bff-81af-037572d416bf",
-    "by_type": {
-      "tool.called": 87,
-      "tool.succeeded": 84,
-      "tool.failed": 3,
-      "llm.call": 57,
-      "trade.executed": 2,
-      "offer.sent": 5,
-      "message.sent": 4,
-      "round.started": 6,
-      "round.ended": 6,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 57,
-      "by_provider": {
-        "openai": 39,
-        "google": 11,
-        "xai": 5,
-        "deepseek": 2
-      },
-      "total_tokens_in": 317661,
-      "total_tokens_out": 4332,
-      "avg_latency_ms": 2063
-    },
-    "tool_calls": {
-      "total": 87,
-      "successes": 84,
-      "failures": 3,
-      "by_tool": {
-        "list_my_offers_tool": 5,
-        "send_offer_tool": 5,
-        "accept_offer_tool": 0,
-        "list_historical_trades_tool": 9,
-        "read_channel_tool": 6,
-        "send_message_tool": 8,
-        "produce_tool": 6,
-        "sell_to_npc_final_tool": 2
-      }
-    }
-  },
-  {
-    "session_id": "session-e64046a8-fbb7-473d-98c5-bc1c16f34858",
-    "by_type": {
-      "tool.called": 95,
-      "tool.succeeded": 95,
-      "tool.failed": 0,
-      "llm.call": 31,
-      "trade.executed": 5,
-      "offer.sent": 9,
-      "message.sent": 9,
-      "round.started": 10,
-      "round.ended": 10,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 31,
-      "by_provider": {
-        "openai": 15,
-        "google": 6,
-        "xai": 4,
-        "deepseek": 6
-      },
-      "total_tokens_in": 162936,
-      "total_tokens_out": 7347,
-      "avg_latency_ms": 3272
-    },
-    "tool_calls": {
-      "total": 95,
-      "successes": 95,
+      "total": 602,
+      "successes": 602,
       "failures": 0,
       "by_tool": {
-        "list_my_offers_tool": 6,
-        "send_offer_tool": 4,
-        "accept_offer_tool": 8,
-        "list_historical_trades_tool": 8,
-        "read_channel_tool": 6,
-        "send_message_tool": 4,
-        "produce_tool": 2,
-        "sell_to_npc_final_tool": 0
-      }
-    }
-  },
-  {
-    "session_id": "session-10e3253e-a08d-4ee8-8d55-2700b2e1af3a",
-    "by_type": {
-      "tool.called": 42,
-      "tool.succeeded": 42,
-      "tool.failed": 0,
-      "llm.call": 60,
-      "trade.executed": 2,
-      "offer.sent": 5,
-      "message.sent": 3,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 60,
-      "by_provider": {
-        "openai": 32,
-        "google": 10,
-        "xai": 7,
-        "deepseek": 11
-      },
-      "total_tokens_in": 412200,
-      "total_tokens_out": 28680,
-      "avg_latency_ms": 4913
-    },
-    "tool_calls": {
-      "total": 42,
-      "successes": 42,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 11,
-        "send_offer_tool": 4,
-        "accept_offer_tool": 3,
-        "list_historical_trades_tool": 6,
-        "read_channel_tool": 15,
-        "send_message_tool": 5,
-        "produce_tool": 6,
-        "sell_to_npc_final_tool": 1
-      }
-    }
-  },
-  {
-    "session_id": "session-3eda88b3-cb42-4536-b972-3c78c2242565",
-    "by_type": {
-      "tool.called": 49,
-      "tool.succeeded": 49,
-      "tool.failed": 0,
-      "llm.call": 48,
-      "trade.executed": 5,
-      "offer.sent": 11,
-      "message.sent": 14,
-      "round.started": 5,
-      "round.ended": 5,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 48,
-      "by_provider": {
-        "openai": 20,
-        "google": 12,
-        "xai": 9,
-        "deepseek": 7
-      },
-      "total_tokens_in": 296928,
-      "total_tokens_out": 6528,
-      "avg_latency_ms": 2073
-    },
-    "tool_calls": {
-      "total": 49,
-      "successes": 49,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 13,
-        "send_offer_tool": 10,
-        "accept_offer_tool": 8,
-        "list_historical_trades_tool": 4,
-        "read_channel_tool": 10,
-        "send_message_tool": 3,
-        "produce_tool": 0,
-        "sell_to_npc_final_tool": 5
-      }
-    }
-  },
-  {
-    "session_id": "session-2a153e57-9eb4-4499-8e40-f9339ae0538a",
-    "by_type": {
-      "tool.called": 50,
-      "tool.succeeded": 49,
-      "tool.failed": 1,
-      "llm.call": 38,
-      "trade.executed": 3,
-      "offer.sent": 5,
-      "message.sent": 9,
-      "round.started": 6,
-      "round.ended": 6,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 38,
-      "by_provider": {
-        "openai": 10,
-        "google": 11,
-        "xai": 9,
-        "deepseek": 8
-      },
-      "total_tokens_in": 249394,
-      "total_tokens_out": 13414,
-      "avg_latency_ms": 4177
-    },
-    "tool_calls": {
-      "total": 50,
-      "successes": 49,
-      "failures": 1,
-      "by_tool": {
-        "list_my_offers_tool": 15,
-        "send_offer_tool": 10,
-        "accept_offer_tool": 4,
-        "list_historical_trades_tool": 4,
-        "read_channel_tool": 11,
-        "send_message_tool": 6,
-        "produce_tool": 6,
-        "sell_to_npc_final_tool": 6
-      }
-    }
-  },
-  {
-    "session_id": "session-ae1382c6-44df-4d97-8863-87fe5fe8089c",
-    "by_type": {
-      "tool.called": 70,
-      "tool.succeeded": 70,
-      "tool.failed": 0,
-      "llm.call": 48,
-      "trade.executed": 6,
-      "offer.sent": 12,
-      "message.sent": 4,
-      "round.started": 6,
-      "round.ended": 6,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 48,
-      "by_provider": {
-        "openai": 29,
-        "google": 7,
-        "xai": 4,
-        "deepseek": 8
-      },
-      "total_tokens_in": 155376,
-      "total_tokens_out": 23616,
-      "avg_latency_ms": 5952
-    },
-    "tool_calls": {
-      "total": 70,
-      "successes": 70,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 16,
-        "send_offer_tool": 3,
-        "accept_offer_tool": 7,
-        "list_historical_trades_tool": 11,
-        "read_channel_tool": 13,
-        "send_message_tool": 10,
-        "produce_tool": 5,
-        "sell_to_npc_final_tool": 4
-      }
-    }
-  },
-  {
-    "session_id": "session-5974ef18-65b2-4d41-bd2a-8ec85aff667a",
-    "by_type": {
-      "tool.called": 109,
-      "tool.succeeded": 109,
-      "tool.failed": 0,
-      "llm.call": 35,
-      "trade.executed": 4,
-      "offer.sent": 10,
-      "message.sent": 11,
-      "round.started": 5,
-      "round.ended": 5,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 35,
-      "by_provider": {
-        "openai": 14,
-        "google": 10,
-        "xai": 3,
-        "deepseek": 8
-      },
-      "total_tokens_in": 214620,
-      "total_tokens_out": 2905,
-      "avg_latency_ms": 5230
-    },
-    "tool_calls": {
-      "total": 109,
-      "successes": 109,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 6,
-        "send_offer_tool": 8,
-        "accept_offer_tool": 6,
-        "list_historical_trades_tool": 9,
-        "read_channel_tool": 11,
-        "send_message_tool": 9,
-        "produce_tool": 4,
-        "sell_to_npc_final_tool": 3
-      }
-    }
-  },
-  {
-    "session_id": "session-7b2546ac-03bf-4f02-b9c6-47fafb4010ed",
-    "by_type": {
-      "tool.called": 107,
-      "tool.succeeded": 107,
-      "tool.failed": 0,
-      "llm.call": 47,
-      "trade.executed": 5,
-      "offer.sent": 13,
-      "message.sent": 15,
-      "round.started": 8,
-      "round.ended": 8,
-      "agent.wake": 5,
-      "session.bootstrapped": 1
-    },
-    "llm_calls": {
-      "total": 47,
-      "by_provider": {
-        "openai": 25,
-        "google": 8,
-        "xai": 3,
-        "deepseek": 11
-      },
-      "total_tokens_in": 240311,
-      "total_tokens_out": 6439,
-      "avg_latency_ms": 2908
-    },
-    "tool_calls": {
-      "total": 107,
-      "successes": 107,
-      "failures": 0,
-      "by_tool": {
-        "list_my_offers_tool": 16,
-        "send_offer_tool": 8,
-        "accept_offer_tool": 1,
-        "list_historical_trades_tool": 4,
-        "read_channel_tool": 11,
-        "send_message_tool": 5,
-        "produce_tool": 8,
-        "sell_to_npc_final_tool": 5
+        "create_channel_tool": 50,
+        "list_incoming_offers_tool": 63,
+        "discover_agents_by_role_tool": 68,
+        "list_scenario_resources_tool": 29,
+        "list_scenario_roles_tool": 16,
+        "list_incoming_messages_tool": 49,
+        "sell_to_npc_intermediate_tool": 2,
+        "reject_offer_tool": 5,
+        "read_channel_tool": 30,
+        "list_historical_trades_tool": 40,
+        "produce_tool": 9,
+        "list_my_offers_tool": 50,
+        "send_offer_tool": 16,
+        "sell_to_npc_final_tool": 1,
+        "read_my_erp_tool": 67,
+        "send_message_tool": 75,
+        "accept_offer_tool": 26,
+        "counter_offer_tool": 6
       }
     }
   }

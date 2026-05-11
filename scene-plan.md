@@ -267,19 +267,45 @@ set -a && source .env && set +a && \
 
 ---
 
+### Game 4 (role swap experiment, 25 round, session `59cb4bec-e5d6-4547-b4e2-e0a8615b1122`)
+
+**Iteration 변경점**:
+- **bakery ↔ mill 모델 swap** (다른 변수 통제, role 자체 영향 측정 — §9.7 가설 검증)
+  - mill: xai grok-3-mini → **openai gpt-4o-mini** (new agent_id `c74390e5-a8a2-4b0c-b20c-36307e706031`, name `openai_miller`)
+  - bakery: openai gpt-4o-mini → **xai grok-3-mini** (new agent_id `b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057`, name `xai_baker`)
+- 기존 mill/bakery agent 는 display_name 을 `_archived_g4swap_*` 로 rename (G1~G3 데이터 보존)
+- wheat_farm / dairy_ranch / dairy_processor 는 G1~G3 agent 그대로 재사용
+- prompt 변경 없음 (default expert prompt)
+- 25 round, GM_TICK_SPEED=40
+
+| 씬 | Pointer |
+|----|--------|
+| S1 cast intro | 5 agent (3 reused, 2 swapped). 영상에선 "AI 선수 교체" 컷으로 사용 |
+| S2 (round 1-3) | R1=9 msg (4 senders), R2=7 msg (3 senders) — 강함 |
+| S3a (가격 변동) | R14 milk 6.5 → 10.0 (+53.8%) 1건 |
+| S3b (긴 대화) | 3 채널 17~30 msg, 모두 거래로 이어짐 (channel `019e1783-e641`=30msg, `019e1783-c489`=24msg, `019e1783-cd2f`=18msg) |
+| S3c | 영상 미사용 (schema 한계) — **§9.10 swap 결과 narrative 로 대체** |
+| S4 (final) | dairy_ranch 498 > wheat_farm 380 > dairy_processor 250 > **mill 20 > bakery 2** — **249x gap, 역대 최대 격차** |
+| S6 (다양한 우승자) | google 3 / openai 1 — provider 다양성 여전히 부족 |
+| **빵 NPC 판매** | **0건** (flour 0, bread 0) — 모델 swap 후에도 동일 |
+
 ## 7. 진행 로그
 
 | Date | Session | Round | Models | Result | 다음 액션 |
 |------|---------|-------|--------|--------|-----------|
 | 2026-05-11 | `4d94d2bf` | 20 | mid-low mix | flour/butter/bread 0건. mill stuck. S3b 4 채널 wins | prompt에 time pressure rule 추가, 25 round 재시도 |
-| 2026-05-11 | (Game 2 진행 중) | 25 | mid-low mix + time pressure | TBD | TBD |
+| 2026-05-11 | `bf421c6a` | 25 | mid-low mix + time pressure | flour/bread 0. mill stuck. butter 0. | token 매핑 + bakery accept_offer 가설 |
+| 2026-05-11 | `89103477` | 25 | mid-low mix + token mapping | butter 4건 (bakery 의 buy 경로), flour/bread 0. mill grok-3-mini reject 패턴 불변 | role swap 실험 (§9.7 가설 검증) |
+| 2026-05-12 | `59cb4bec` | 25 | **mill ↔ bakery model swap** (openai miller / xai baker) | flour 0건, bread 0건. mill (gpt-4o-mini) 더 passive 함 (5 reject → 1 reject + 2 sent expire). bakery (grok) read tool 25× 만큼 active 했지만 input 0 으로 무력. cash 격차 249x | **§9.10 결론**: 모델 능력 변수 아니다. 시나리오 economy 파라미터 (margin / NPC floor / spoilage) 재밸런싱 또는 tool 설계 보강이 필요 |
 
 ## 8. 다음 단계
 
 1. ✅ Game 1 calibration → time pressure rule 식별
 2. ✅ Game 2 굴림 (25 round, time-pressure prompts, session `bf421c6a`)
 3. ✅ 빵 NPC 판매 여전히 0 — 진짜 원인 = mill 가격 anchor 거부 + bakery accept_offer 잘못된 ID
-4. **다음 후보**: Game 3 — 옵션 선택 미정 (가격 강제 X, 모델 변경 X 룰 적용 — 시나리오 가격대 조정 또는 tool 설계 보강이 path)
+4. ✅ Game 3 — Token 매핑 → dairy_processor inbound 76% 정상화, butter 4건. mill flour reject 패턴 token 무관 확인
+5. ✅ Game 4 — role swap 실험 → **§9.7 imbalance 가설 확인** (모델 swap 해도 flour=0, bread=0)
+6. **다음 후보**: 시나리오 economy 파라미터 조정 (flour unit_price 마진 확대 / mill 강제 sell trigger / NPC floor 인상) — 또는 영상은 G1~G4 데이터로 컷팅 시작 (현재 데이터로 §9.10 narrative 가능)
 
 ---
 
@@ -386,3 +412,27 @@ mill 의 flour reject 패턴은 token 무관 — 별도 가설 필요.
 - Game 4+ 부터 bakery 의 잘못된 토큰 / OFFER_NOT_FOUND 등 LLM self-correction 추적 가능
 - 7축 평가의 자율성 / 적응력 / 무결성 산출 raw 데이터 확보
 - 이전 게임 (G1-G3) 데이터는 이 정보 손실 — 재현 불가
+
+### 9.10 Game 4 — Role swap 실험 결과: 모델 능력 ≠ 결과 결정 변수 (2026-05-12)
+
+**실험 설계**: G1~G3 의 격차 (dairy_ranch 425 vs mill 133 = 3.2x, §9.7) 가 model 능력 차이인지 role 의 경제구조 자체인지 분리하기 위해 두 role 의 model 만 swap.
+
+| Role | G1~G3 (Avg) | G4 (Swap 후) | Δ |
+|------|-------------|-------------|---|
+| mill | grok-3-mini 133 | **gpt-4o-mini 20** | **−85%** |
+| bakery | gpt-4o-mini 164 | **grok-3-mini 2** | **−99%** |
+| dairy_ranch | gemini-2.5-flash 425 | gemini-2.5-flash 498 | +17% (variance 내) |
+| wheat_farm | gpt-4o-mini 311 | gpt-4o-mini 380 | +22% (variance 내) |
+| dairy_processor | deepseek-chat 138 | deepseek-chat 250 | +81% (butter inflow 증가) |
+
+**관찰**:
+- mill 을 더 강한 model (gpt-4o-mini > grok-3-mini in instruction-following) 로 바꿨는데 **더 passive** — flour reject 5건이 1 reject + 2 expire (sent) 로 줄었지만 결과는 동일 (flour 거래 0)
+- bakery 를 더 약한 model 로 바꿨더니 cash 200→2 로 사실상 zero — 하지만 read tool 콜 25× / send_message 24× 로 매우 active (grok 이 게으르지 않음)
+- 즉, **mill 의 flour 비-거래 = model 의 의지/능력 문제가 아님**. 가격 anchor 거부의 경제 구조적 결정.
+
+**결론 (영상 narrative 핵심)**:
+> "AI 선수를 교체했습니다. 같은 결과. 더 나아가 빈약한 모델로 약한 자리에 두면 cash 2 원. 이것이 AgentPit 이 측정하는 본질입니다 — model leaderboard 가 아니라 **에이전트가 처한 경제 환경 × 의사결정** 의 상호작용. 점수만으로는 못 잡습니다."
+
+**영상 S3c 자리 대체 컷 후보 1순위** — §9.1 "말/행동 불일치" 보다 narrative 임팩트 강함 (4 회 실험으로 가설 → 검증 → 결론까지 완결).
+
+**Evaluator todo**: 7축 중 "전략" / "적응력" 산출 시 cash 절대값 X. role baseline 대비 (z-score) 로 정규화해야 cross-role 비교 의미 있음.

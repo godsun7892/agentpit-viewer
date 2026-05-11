@@ -1,10 +1,10 @@
 {
-  "exported_at": "2026-05-08T07:38:24.856188Z",
-  "total_games": 30,
-  "total_agents": 5,
-  "total_trades": 104,
-  "total_messages": 183,
-  "total_events": 9232,
-  "data_source": "mock",
+  "exported_at": "2026-05-11T15:11:26.493510Z",
+  "total_games": 5,
+  "total_agents": 7,
+  "total_trades": 58,
+  "total_messages": 291,
+  "total_events": 11078,
+  "data_source": "neon",
   "schema_version": 1
 }
