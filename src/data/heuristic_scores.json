@@ -1,0 +1,2008 @@
+[
+  {
+    "session_id": "4d94d2bf-0768-433a-9672-651f2a1262eb",
+    "agent_id": "11fcc59c-9321-48d4-aebe-bf7a40427134",
+    "agent_name": "routine_baker",
+    "role_id": "bakery",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.35,
+      "autonomy": 0.407,
+      "responsiveness": 0.0,
+      "inbox_awareness": 0.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 1,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 1,
+        "rank_at_final": 3,
+        "swing_normalized": 0.5,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 11,
+        "n_available_tools": 19,
+        "diversity": 0.5789473684210527,
+        "n_tool_calls": 89,
+        "n_proactive_calls": 21,
+        "proactive_ratio": 0.23595505617977527
+      },
+      "responsiveness": {
+        "received": 5,
+        "open": 5,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 31,
+        "unread": 31,
+        "n_channels": 2,
+        "fully_unread_channels": 2
+      },
+      "market_awareness": {
+        "note": "no offers sent",
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "4d94d2bf-0768-433a-9672-651f2a1262eb",
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "agent_name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.175,
+      "autonomy": 0.387,
+      "responsiveness": 0.5,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.524
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 2,
+        "rank_at_final": 1,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 11,
+        "n_available_tools": 19,
+        "diversity": 0.5789473684210527,
+        "n_tool_calls": 36,
+        "n_proactive_calls": 7,
+        "proactive_ratio": 0.19444444444444445
+      },
+      "responsiveness": {
+        "received": 2,
+        "open": 1,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 6,
+        "unread": 6,
+        "n_channels": 1,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "n_offers_total": 4,
+        "n_offers_evaluated": 3,
+        "avg_deviation_pct": 47.6,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "4d94d2bf-0768-433a-9672-651f2a1262eb",
+    "agent_id": "41509ce9-fe0d-45fa-9491-194852bfe458",
+    "agent_name": "calm_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.175,
+      "autonomy": 0.421,
+      "responsiveness": 0.75,
+      "inbox_awareness": 0.733,
+      "market_awareness": 0.893
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 3,
+        "rank_at_final": 2,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 12,
+        "n_available_tools": 19,
+        "diversity": 0.631578947368421,
+        "n_tool_calls": 38,
+        "n_proactive_calls": 8,
+        "proactive_ratio": 0.21052631578947367
+      },
+      "responsiveness": {
+        "received": 4,
+        "open": 1,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 3
+      },
+      "inbox_awareness": {
+        "total_incoming": 15,
+        "unread": 4,
+        "n_channels": 1,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 5,
+        "n_offers_evaluated": 4,
+        "avg_deviation_pct": 10.7,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "4d94d2bf-0768-433a-9672-651f2a1262eb",
+    "agent_id": "b16d6983-98f7-4f31-9fb2-93d5bc131724",
+    "agent_name": "quiet_miller",
+    "role_id": "mill",
+    "provider": "xai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.175,
+      "autonomy": 0.447,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 10,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 4,
+        "rank_at_final": 5,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 15,
+        "n_available_tools": 19,
+        "diversity": 0.7894736842105263,
+        "n_tool_calls": 134,
+        "n_proactive_calls": 14,
+        "proactive_ratio": 0.1044776119402985
+      },
+      "responsiveness": {
+        "received": 4,
+        "open": 0,
+        "accepted": 3,
+        "rejected": 0,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 8,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 4,
+        "n_offers_evaluated": 1,
+        "avg_deviation_pct": 0.0,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "4d94d2bf-0768-433a-9672-651f2a1262eb",
+    "agent_id": "e2213285-beda-4657-9533-2cb511dd9550",
+    "agent_name": "basic_churner",
+    "role_id": "dairy_processor",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.175,
+      "autonomy": 0.59,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.917
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 5,
+        "rank_at_final": 4,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 16,
+        "n_available_tools": 19,
+        "diversity": 0.8421052631578947,
+        "n_tool_calls": 305,
+        "n_proactive_calls": 103,
+        "proactive_ratio": 0.3377049180327869
+      },
+      "responsiveness": {
+        "received": 5,
+        "open": 0,
+        "accepted": 3,
+        "rejected": 2,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 13,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 7,
+        "n_offers_evaluated": 2,
+        "avg_deviation_pct": 8.3,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "bf421c6a-678a-4d2d-97db-62b9d1ce781d",
+    "agent_id": "11fcc59c-9321-48d4-aebe-bf7a40427134",
+    "agent_name": "routine_baker",
+    "role_id": "bakery",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.214,
+      "autonomy": 0.386,
+      "responsiveness": 0.0,
+      "inbox_awareness": 0.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 2,
+        "rank_at_final": 3,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.1287696884094282
+      },
+      "autonomy": {
+        "n_distinct_tools": 12,
+        "n_available_tools": 19,
+        "diversity": 0.631578947368421,
+        "n_tool_calls": 93,
+        "n_proactive_calls": 13,
+        "proactive_ratio": 0.13978494623655913
+      },
+      "responsiveness": {
+        "received": 2,
+        "open": 2,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 27,
+        "unread": 27,
+        "n_channels": 2,
+        "fully_unread_channels": 2
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 7,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "bf421c6a-678a-4d2d-97db-62b9d1ce781d",
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "agent_name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.214,
+      "autonomy": 0.419,
+      "responsiveness": 0.4,
+      "inbox_awareness": 0.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 3,
+        "rank_at_final": 2,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.1287696884094282
+      },
+      "autonomy": {
+        "n_distinct_tools": 13,
+        "n_available_tools": 19,
+        "diversity": 0.6842105263157895,
+        "n_tool_calls": 65,
+        "n_proactive_calls": 10,
+        "proactive_ratio": 0.15384615384615385
+      },
+      "responsiveness": {
+        "received": 5,
+        "open": 3,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 2
+      },
+      "inbox_awareness": {
+        "total_incoming": 11,
+        "unread": 11,
+        "n_channels": 1,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 3,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "bf421c6a-678a-4d2d-97db-62b9d1ce781d",
+    "agent_id": "41509ce9-fe0d-45fa-9491-194852bfe458",
+    "agent_name": "calm_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.0,
+      "autonomy": 0.428,
+      "responsiveness": 0.571,
+      "inbox_awareness": 0.867,
+      "market_awareness": 0.854
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 1,
+        "rank_at_final": 1,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 13,
+        "n_available_tools": 19,
+        "diversity": 0.6842105263157895,
+        "n_tool_calls": 87,
+        "n_proactive_calls": 15,
+        "proactive_ratio": 0.1724137931034483
+      },
+      "responsiveness": {
+        "received": 7,
+        "open": 3,
+        "accepted": 1,
+        "rejected": 3,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 15,
+        "unread": 2,
+        "n_channels": 1,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 9,
+        "n_offers_evaluated": 6,
+        "avg_deviation_pct": 14.6,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "bf421c6a-678a-4d2d-97db-62b9d1ce781d",
+    "agent_id": "b16d6983-98f7-4f31-9fb2-93d5bc131724",
+    "agent_name": "quiet_miller",
+    "role_id": "mill",
+    "provider": "xai",
+    "scores": {
+      "integrity": 0.0,
+      "adaptation": 0.0,
+      "autonomy": 0.474,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.909
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 3,
+        "violations": 6,
+        "violation_detail": [
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 4,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 4,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 7,
+            "offer_unit_price": 12.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 10,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 22,
+            "offer_unit_price": 12.0,
+            "resource": "flour"
+          }
+        ]
+      },
+      "adaptation": {
+        "rank_at_R5": 4,
+        "rank_at_final": 4,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 16,
+        "n_available_tools": 19,
+        "diversity": 0.8421052631578947,
+        "n_tool_calls": 218,
+        "n_proactive_calls": 23,
+        "proactive_ratio": 0.10550458715596331
+      },
+      "responsiveness": {
+        "received": 8,
+        "open": 0,
+        "accepted": 3,
+        "rejected": 5,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 5,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 5,
+        "n_offers_evaluated": 1,
+        "avg_deviation_pct": 9.1,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "bf421c6a-678a-4d2d-97db-62b9d1ce781d",
+    "agent_id": "e2213285-beda-4657-9533-2cb511dd9550",
+    "agent_name": "basic_churner",
+    "role_id": "dairy_processor",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.0,
+      "autonomy": 0.613,
+      "responsiveness": 0.909,
+      "inbox_awareness": 0.909,
+      "market_awareness": 0.938
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 5,
+        "rank_at_final": 5,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 17,
+        "n_available_tools": 19,
+        "diversity": 0.8947368421052632,
+        "n_tool_calls": 442,
+        "n_proactive_calls": 146,
+        "proactive_ratio": 0.33031674208144796
+      },
+      "responsiveness": {
+        "received": 11,
+        "open": 1,
+        "accepted": 5,
+        "rejected": 3,
+        "countered": 2
+      },
+      "inbox_awareness": {
+        "total_incoming": 11,
+        "unread": 1,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 9,
+        "n_offers_evaluated": 4,
+        "avg_deviation_pct": 6.2,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
+    "agent_id": "11fcc59c-9321-48d4-aebe-bf7a40427134",
+    "agent_name": "routine_baker",
+    "role_id": "bakery",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.564,
+      "autonomy": 0.378,
+      "responsiveness": 0.0,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.986
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 2,
+        "rank_at_final": 5,
+        "swing_normalized": 0.75,
+        "second_half_rank_volatility": 0.1287696884094282
+      },
+      "autonomy": {
+        "n_distinct_tools": 11,
+        "n_available_tools": 19,
+        "diversity": 0.5789473684210527,
+        "n_tool_calls": 62,
+        "n_proactive_calls": 11,
+        "proactive_ratio": 0.1774193548387097
+      },
+      "responsiveness": {
+        "received": 3,
+        "open": 3,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 28,
+        "unread": 28,
+        "n_channels": 2,
+        "fully_unread_channels": 2
+      },
+      "market_awareness": {
+        "n_offers_total": 10,
+        "n_offers_evaluated": 2,
+        "avg_deviation_pct": 1.4,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "agent_name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.175,
+      "autonomy": 0.277,
+      "responsiveness": 0.6,
+      "inbox_awareness": 0.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 3,
+        "rank_at_final": 2,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 9,
+        "n_available_tools": 19,
+        "diversity": 0.47368421052631576,
+        "n_tool_calls": 50,
+        "n_proactive_calls": 4,
+        "proactive_ratio": 0.08
+      },
+      "responsiveness": {
+        "received": 5,
+        "open": 2,
+        "accepted": 0,
+        "rejected": 2,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 12,
+        "unread": 12,
+        "n_channels": 1,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 1,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
+    "agent_id": "41509ce9-fe0d-45fa-9491-194852bfe458",
+    "agent_name": "calm_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.0,
+      "autonomy": 0.417,
+      "responsiveness": 0.727,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.988
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 1,
+        "rank_at_final": 1,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 13,
+        "n_available_tools": 19,
+        "diversity": 0.6842105263157895,
+        "n_tool_calls": 114,
+        "n_proactive_calls": 17,
+        "proactive_ratio": 0.14912280701754385
+      },
+      "responsiveness": {
+        "received": 11,
+        "open": 3,
+        "accepted": 4,
+        "rejected": 4,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 18,
+        "unread": 0,
+        "n_channels": 1,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 12,
+        "n_offers_evaluated": 12,
+        "avg_deviation_pct": 1.2,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
+    "agent_id": "b16d6983-98f7-4f31-9fb2-93d5bc131724",
+    "agent_name": "quiet_miller",
+    "role_id": "mill",
+    "provider": "xai",
+    "scores": {
+      "integrity": 0.0,
+      "adaptation": 0.175,
+      "autonomy": 0.484,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 6,
+        "violations": 29,
+        "violation_detail": [
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 4,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 7,
+            "offer_unit_price": 14.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 10,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 13,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          },
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 1,
+            "commit_price": 11.0,
+            "offer_round": 16,
+            "offer_unit_price": 14.0,
+            "resource": "flour"
+          }
+        ]
+      },
+      "adaptation": {
+        "rank_at_R5": 4,
+        "rank_at_final": 3,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 15,
+        "n_available_tools": 19,
+        "diversity": 0.7894736842105263,
+        "n_tool_calls": 212,
+        "n_proactive_calls": 38,
+        "proactive_ratio": 0.1792452830188679
+      },
+      "responsiveness": {
+        "received": 6,
+        "open": 0,
+        "accepted": 1,
+        "rejected": 5,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 1,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 5,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
+    "agent_id": "e2213285-beda-4657-9533-2cb511dd9550",
+    "agent_name": "basic_churner",
+    "role_id": "dairy_processor",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.214,
+      "autonomy": 0.607,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.891
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 1,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 5,
+        "rank_at_final": 4,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.1287696884094282
+      },
+      "autonomy": {
+        "n_distinct_tools": 17,
+        "n_available_tools": 19,
+        "diversity": 0.8947368421052632,
+        "n_tool_calls": 597,
+        "n_proactive_calls": 191,
+        "proactive_ratio": 0.31993299832495814
+      },
+      "responsiveness": {
+        "received": 17,
+        "open": 0,
+        "accepted": 13,
+        "rejected": 3,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 8,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 14,
+        "n_offers_evaluated": 10,
+        "avg_deviation_pct": 10.9,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "agent_name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.052,
+      "autonomy": 0.348,
+      "responsiveness": 1.0,
+      "inbox_awareness": 0.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 2,
+        "rank_at_final": 2,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.1749635530559413
+      },
+      "autonomy": {
+        "n_distinct_tools": 11,
+        "n_available_tools": 19,
+        "diversity": 0.5789473684210527,
+        "n_tool_calls": 51,
+        "n_proactive_calls": 6,
+        "proactive_ratio": 0.11764705882352941
+      },
+      "responsiveness": {
+        "received": 4,
+        "open": 0,
+        "accepted": 4,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 1,
+        "unread": 1,
+        "n_channels": 1,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "n_offers_total": 4,
+        "n_offers_evaluated": 2,
+        "avg_deviation_pct": 0.0,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
+    "agent_id": "41509ce9-fe0d-45fa-9491-194852bfe458",
+    "agent_name": "calm_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.052,
+      "autonomy": 0.419,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.882
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 1,
+        "rank_at_final": 1,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.1749635530559413
+      },
+      "autonomy": {
+        "n_distinct_tools": 13,
+        "n_available_tools": 19,
+        "diversity": 0.6842105263157895,
+        "n_tool_calls": 208,
+        "n_proactive_calls": 32,
+        "proactive_ratio": 0.15384615384615385
+      },
+      "responsiveness": {
+        "received": 10,
+        "open": 0,
+        "accepted": 8,
+        "rejected": 2,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 15,
+        "unread": 0,
+        "n_channels": 1,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 15,
+        "n_offers_evaluated": 11,
+        "avg_deviation_pct": 11.8,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
+    "agent_id": "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+    "agent_name": "xai_baker",
+    "role_id": "bakery",
+    "provider": "xai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.418,
+      "autonomy": 0.334,
+      "responsiveness": 0.6,
+      "inbox_awareness": 0.958,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 2,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 3,
+        "rank_at_final": 5,
+        "swing_normalized": 0.5,
+        "second_half_rank_volatility": 0.22587697572631282
+      },
+      "autonomy": {
+        "n_distinct_tools": 12,
+        "n_available_tools": 19,
+        "diversity": 0.631578947368421,
+        "n_tool_calls": 161,
+        "n_proactive_calls": 6,
+        "proactive_ratio": 0.037267080745341616
+      },
+      "responsiveness": {
+        "received": 5,
+        "open": 2,
+        "accepted": 3,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 24,
+        "unread": 1,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 7,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
+    "agent_id": "c74390e5-a8a2-4b0c-b20c-36307e706031",
+    "agent_name": "openai_miller",
+    "role_id": "mill",
+    "provider": "openai",
+    "scores": {
+      "integrity": 0.5,
+      "adaptation": 0.068,
+      "autonomy": 0.376,
+      "responsiveness": 0.429,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.875
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 2,
+        "violations": 1,
+        "violation_detail": [
+          {
+            "type": "sell_commitment_rejected",
+            "commit_round": 7,
+            "commit_price": 11.0,
+            "offer_round": 8,
+            "offer_unit_price": 11.0,
+            "resource": "flour"
+          }
+        ]
+      },
+      "adaptation": {
+        "rank_at_R5": 4,
+        "rank_at_final": 4,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.22587697572631282
+      },
+      "autonomy": {
+        "n_distinct_tools": 13,
+        "n_available_tools": 19,
+        "diversity": 0.6842105263157895,
+        "n_tool_calls": 74,
+        "n_proactive_calls": 5,
+        "proactive_ratio": 0.06756756756756757
+      },
+      "responsiveness": {
+        "received": 7,
+        "open": 4,
+        "accepted": 1,
+        "rejected": 1,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 14,
+        "unread": 14,
+        "n_channels": 2,
+        "fully_unread_channels": 2
+      },
+      "market_awareness": {
+        "n_offers_total": 4,
+        "n_offers_evaluated": 2,
+        "avg_deviation_pct": 12.5,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
+    "agent_id": "e2213285-beda-4657-9533-2cb511dd9550",
+    "agent_name": "basic_churner",
+    "role_id": "dairy_processor",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.35,
+      "autonomy": 0.58,
+      "responsiveness": 0.842,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.951
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 1,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 5,
+        "rank_at_final": 3,
+        "swing_normalized": 0.5,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 16,
+        "n_available_tools": 19,
+        "diversity": 0.8421052631578947,
+        "n_tool_calls": 492,
+        "n_proactive_calls": 156,
+        "proactive_ratio": 0.3170731707317073
+      },
+      "responsiveness": {
+        "received": 19,
+        "open": 3,
+        "accepted": 9,
+        "rejected": 7,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 20,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 15,
+        "n_offers_evaluated": 10,
+        "avg_deviation_pct": 4.9,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "agent_id": "11204a41-7452-4401-9f58-7dc6c736337e",
+    "agent_name": "deepseek_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.0,
+      "autonomy": 0.563,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.878
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 2,
+        "rank_at_final": 2,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 15,
+        "n_available_tools": 19,
+        "diversity": 0.7894736842105263,
+        "n_tool_calls": 396,
+        "n_proactive_calls": 133,
+        "proactive_ratio": 0.33585858585858586
+      },
+      "responsiveness": {
+        "received": 4,
+        "open": 0,
+        "accepted": 3,
+        "rejected": 1,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 4,
+        "unread": 0,
+        "n_channels": 1,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 14,
+        "n_offers_evaluated": 10,
+        "avg_deviation_pct": 12.2,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "agent_id": "1cca0586-bcd8-4714-a1f9-ced3b0f86d07",
+    "agent_name": "openai_churner",
+    "role_id": "dairy_processor",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.232,
+      "autonomy": 0.338,
+      "responsiveness": 0.294,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.667
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 3,
+        "rank_at_final": 4,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.1889822365046136
+      },
+      "autonomy": {
+        "n_distinct_tools": 12,
+        "n_available_tools": 19,
+        "diversity": 0.631578947368421,
+        "n_tool_calls": 115,
+        "n_proactive_calls": 5,
+        "proactive_ratio": 0.043478260869565216
+      },
+      "responsiveness": {
+        "received": 17,
+        "open": 12,
+        "accepted": 4,
+        "rejected": 1,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 35,
+        "unread": 35,
+        "n_channels": 2,
+        "fully_unread_channels": 2
+      },
+      "market_awareness": {
+        "n_offers_total": 5,
+        "n_offers_evaluated": 3,
+        "avg_deviation_pct": 33.3,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "agent_name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.0,
+      "autonomy": 0.39,
+      "responsiveness": 0.333,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.884
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 1,
+        "rank_at_final": 1,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 12,
+        "n_available_tools": 19,
+        "diversity": 0.631578947368421,
+        "n_tool_calls": 54,
+        "n_proactive_calls": 8,
+        "proactive_ratio": 0.14814814814814814
+      },
+      "responsiveness": {
+        "received": 3,
+        "open": 2,
+        "accepted": 1,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 1,
+        "unread": 1,
+        "n_channels": 1,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "n_offers_total": 6,
+        "n_offers_evaluated": 2,
+        "avg_deviation_pct": 11.6,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "agent_id": "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+    "agent_name": "xai_baker",
+    "role_id": "bakery",
+    "provider": "xai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.259,
+      "autonomy": 0.386,
+      "responsiveness": 0.5,
+      "inbox_awareness": 1.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 3,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 4,
+        "rank_at_final": 3,
+        "swing_normalized": 0.25,
+        "second_half_rank_volatility": 0.2789374884252377
+      },
+      "autonomy": {
+        "n_distinct_tools": 13,
+        "n_available_tools": 19,
+        "diversity": 0.6842105263157895,
+        "n_tool_calls": 126,
+        "n_proactive_calls": 11,
+        "proactive_ratio": 0.0873015873015873
+      },
+      "responsiveness": {
+        "received": 4,
+        "open": 2,
+        "accepted": 1,
+        "rejected": 1,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 5,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 6,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "agent_id": "fd9044e1-ced5-4dec-ae04-8dd8929f01bb",
+    "agent_name": "google_miller",
+    "role_id": "mill",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.084,
+      "autonomy": 0.534,
+      "responsiveness": 0.556,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.688
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 2,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 5,
+        "rank_at_final": 5,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.2789374884252377
+      },
+      "autonomy": {
+        "n_distinct_tools": 16,
+        "n_available_tools": 19,
+        "diversity": 0.8421052631578947,
+        "n_tool_calls": 150,
+        "n_proactive_calls": 34,
+        "proactive_ratio": 0.22666666666666666
+      },
+      "responsiveness": {
+        "received": 9,
+        "open": 4,
+        "accepted": 5,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 11,
+        "unread": 0,
+        "n_channels": 2,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 6,
+        "n_offers_evaluated": 4,
+        "avg_deviation_pct": 31.2,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "00290d02-2db9-497c-a8b3-edc14a261009",
+    "agent_name": "openai_miller_2",
+    "role_id": "mill",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.197,
+      "autonomy": 0.343,
+      "responsiveness": 0.0,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.667
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 1,
+        "violations": 0,
+        "violation_detail": []
+      },
+      "adaptation": {
+        "rank_at_R5": 3,
+        "rank_at_final": 5,
+        "swing_normalized": 0.2222222222222222,
+        "second_half_rank_volatility": 0.13928514900622416
+      },
+      "autonomy": {
+        "n_distinct_tools": 11,
+        "n_available_tools": 19,
+        "diversity": 0.5789473684210527,
+        "n_tool_calls": 56,
+        "n_proactive_calls": 6,
+        "proactive_ratio": 0.10714285714285714
+      },
+      "responsiveness": {
+        "received": 14,
+        "open": 14,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 7,
+        "unread": 7,
+        "n_channels": 3,
+        "fully_unread_channels": 2
+      },
+      "market_awareness": {
+        "n_offers_total": 2,
+        "n_offers_evaluated": 1,
+        "avg_deviation_pct": 33.3,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "11204a41-7452-4401-9f58-7dc6c736337e",
+    "agent_name": "deepseek_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.205,
+      "autonomy": 0.486,
+      "responsiveness": 0.8,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.921
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 4,
+        "rank_at_final": 2,
+        "swing_normalized": 0.2222222222222222,
+        "second_half_rank_volatility": 0.1649572197684645
+      },
+      "autonomy": {
+        "n_distinct_tools": 14,
+        "n_available_tools": 19,
+        "diversity": 0.7368421052631579,
+        "n_tool_calls": 349,
+        "n_proactive_calls": 82,
+        "proactive_ratio": 0.2349570200573066
+      },
+      "responsiveness": {
+        "received": 5,
+        "open": 1,
+        "accepted": 4,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 24,
+        "unread": 0,
+        "n_channels": 3,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 27,
+        "n_offers_evaluated": 20,
+        "avg_deviation_pct": 7.9,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "1cca0586-bcd8-4714-a1f9-ced3b0f86d07",
+    "agent_name": "openai_churner",
+    "role_id": "dairy_processor",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.211,
+      "autonomy": 0.347,
+      "responsiveness": 0.042,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.877
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 5,
+        "rank_at_final": 7,
+        "swing_normalized": 0.2222222222222222,
+        "second_half_rank_volatility": 0.18510958396334287
+      },
+      "autonomy": {
+        "n_distinct_tools": 12,
+        "n_available_tools": 19,
+        "diversity": 0.631578947368421,
+        "n_tool_calls": 81,
+        "n_proactive_calls": 5,
+        "proactive_ratio": 0.06172839506172839
+      },
+      "responsiveness": {
+        "received": 24,
+        "open": 23,
+        "accepted": 1,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 46,
+        "unread": 46,
+        "n_channels": 5,
+        "fully_unread_channels": 4
+      },
+      "market_awareness": {
+        "n_offers_total": 4,
+        "n_offers_evaluated": 4,
+        "avg_deviation_pct": 12.3,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+    "agent_name": "patient_farmer",
+    "role_id": "wheat_farm",
+    "provider": "openai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.216,
+      "autonomy": 0.249,
+      "responsiveness": 0.0,
+      "inbox_awareness": 0.0,
+      "market_awareness": 0.6
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 2,
+        "rank_at_final": 4,
+        "swing_normalized": 0.2222222222222222,
+        "second_half_rank_volatility": 0.20077953397894474
+      },
+      "autonomy": {
+        "n_distinct_tools": 8,
+        "n_available_tools": 19,
+        "diversity": 0.42105263157894735,
+        "n_tool_calls": 39,
+        "n_proactive_calls": 3,
+        "proactive_ratio": 0.07692307692307693
+      },
+      "responsiveness": {
+        "received": 4,
+        "open": 4,
+        "accepted": 0,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 9,
+        "unread": 9,
+        "n_channels": 1,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "n_offers_total": 7,
+        "n_offers_evaluated": 3,
+        "avg_deviation_pct": 40.0,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "50dc6031-4568-49ea-b9fd-03e323eaf8c2",
+    "agent_name": "deepseek_churner",
+    "role_id": "dairy_processor",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.049,
+      "autonomy": 0.564,
+      "responsiveness": 0.789,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.926
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 10,
+        "rank_at_final": 10,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.1618736353521519
+      },
+      "autonomy": {
+        "n_distinct_tools": 17,
+        "n_available_tools": 19,
+        "diversity": 0.8947368421052632,
+        "n_tool_calls": 677,
+        "n_proactive_calls": 158,
+        "proactive_ratio": 0.23338257016248154
+      },
+      "responsiveness": {
+        "received": 38,
+        "open": 8,
+        "accepted": 29,
+        "rejected": 0,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 45,
+        "unread": 0,
+        "n_channels": 5,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 23,
+        "n_offers_evaluated": 14,
+        "avg_deviation_pct": 7.4,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "552b02e4-71f1-4e88-b1f7-b2335c8cd4dc",
+    "agent_name": "deepseek_farmer",
+    "role_id": "wheat_farm",
+    "provider": "deepseek",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.273,
+      "autonomy": 0.533,
+      "responsiveness": 1.0,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.883
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 6,
+        "rank_at_final": 3,
+        "swing_normalized": 0.3333333333333333,
+        "second_half_rank_volatility": 0.13089224208310035
+      },
+      "autonomy": {
+        "n_distinct_tools": 14,
+        "n_available_tools": 19,
+        "diversity": 0.7368421052631579,
+        "n_tool_calls": 246,
+        "n_proactive_calls": 81,
+        "proactive_ratio": 0.32926829268292684
+      },
+      "responsiveness": {
+        "received": 2,
+        "open": 0,
+        "accepted": 2,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 2,
+        "unread": 0,
+        "n_channels": 3,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 24,
+        "n_offers_evaluated": 9,
+        "avg_deviation_pct": 11.7,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "8bde0c0a-37a4-4f8c-a9a8-447049ca67fe",
+    "agent_name": "google_baker",
+    "role_id": "bakery",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.221,
+      "autonomy": 0.532,
+      "responsiveness": 0.3,
+      "inbox_awareness": 1.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 7,
+        "rank_at_final": 9,
+        "swing_normalized": 0.2222222222222222,
+        "second_half_rank_volatility": 0.2182178902359924
+      },
+      "autonomy": {
+        "n_distinct_tools": 16,
+        "n_available_tools": 19,
+        "diversity": 0.8421052631578947,
+        "n_tool_calls": 99,
+        "n_proactive_calls": 22,
+        "proactive_ratio": 0.2222222222222222
+      },
+      "responsiveness": {
+        "received": 10,
+        "open": 7,
+        "accepted": 2,
+        "rejected": 1,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 13,
+        "unread": 0,
+        "n_channels": 4,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 5,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+    "agent_name": "xai_baker",
+    "role_id": "bakery",
+    "provider": "xai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.023,
+      "autonomy": 0.42,
+      "responsiveness": 0.562,
+      "inbox_awareness": 1.0,
+      "market_awareness": 1.0
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 8,
+        "rank_at_final": 8,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.07776157913597391
+      },
+      "autonomy": {
+        "n_distinct_tools": 15,
+        "n_available_tools": 19,
+        "diversity": 0.7894736842105263,
+        "n_tool_calls": 160,
+        "n_proactive_calls": 8,
+        "proactive_ratio": 0.05
+      },
+      "responsiveness": {
+        "received": 16,
+        "open": 7,
+        "accepted": 4,
+        "rejected": 4,
+        "countered": 1
+      },
+      "inbox_awareness": {
+        "total_incoming": 14,
+        "unread": 0,
+        "n_channels": 4,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "note": "no market data within lookback for any offer",
+        "n_offers_total": 9,
+        "n_offers_evaluated": 0
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "c7ce027e-07fb-449b-8f6c-77109638177c",
+    "agent_name": "xai_rancher",
+    "role_id": "dairy_ranch",
+    "provider": "xai",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.0,
+      "autonomy": 0.423,
+      "responsiveness": 0.833,
+      "inbox_awareness": 1.0,
+      "market_awareness": 0.907
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 1,
+        "rank_at_final": 1,
+        "swing_normalized": 0.0,
+        "second_half_rank_volatility": 0.0
+      },
+      "autonomy": {
+        "n_distinct_tools": 14,
+        "n_available_tools": 19,
+        "diversity": 0.7368421052631579,
+        "n_tool_calls": 248,
+        "n_proactive_calls": 27,
+        "proactive_ratio": 0.10887096774193548
+      },
+      "responsiveness": {
+        "received": 6,
+        "open": 1,
+        "accepted": 5,
+        "rejected": 0,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 23,
+        "unread": 0,
+        "n_channels": 3,
+        "fully_unread_channels": 0
+      },
+      "market_awareness": {
+        "n_offers_total": 28,
+        "n_offers_evaluated": 21,
+        "avg_deviation_pct": 9.3,
+        "lookback_rounds": 3
+      }
+    }
+  },
+  {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "agent_id": "fd9044e1-ced5-4dec-ae04-8dd8929f01bb",
+    "agent_name": "google_miller",
+    "role_id": "mill",
+    "provider": "google",
+    "scores": {
+      "integrity": 1.0,
+      "adaptation": 0.336,
+      "autonomy": 0.531,
+      "responsiveness": 0.292,
+      "inbox_awareness": 0.833,
+      "market_awareness": 0.794
+    },
+    "detail": {
+      "integrity": {
+        "opportunities": 0,
+        "violations": 0,
+        "note": "no commitments extracted"
+      },
+      "adaptation": {
+        "rank_at_R5": 9,
+        "rank_at_final": 6,
+        "swing_normalized": 0.3333333333333333,
+        "second_half_rank_volatility": 0.34338583575847514
+      },
+      "autonomy": {
+        "n_distinct_tools": 16,
+        "n_available_tools": 19,
+        "diversity": 0.8421052631578947,
+        "n_tool_calls": 132,
+        "n_proactive_calls": 29,
+        "proactive_ratio": 0.2196969696969697
+      },
+      "responsiveness": {
+        "received": 24,
+        "open": 17,
+        "accepted": 5,
+        "rejected": 2,
+        "countered": 0
+      },
+      "inbox_awareness": {
+        "total_incoming": 6,
+        "unread": 1,
+        "n_channels": 3,
+        "fully_unread_channels": 1
+      },
+      "market_awareness": {
+        "n_offers_total": 14,
+        "n_offers_evaluated": 6,
+        "avg_deviation_pct": 20.6,
+        "lookback_rounds": 3
+      }
+    }
+  }
+]

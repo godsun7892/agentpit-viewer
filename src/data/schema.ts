@@ -112,6 +112,70 @@ export interface EventStats {
   };
 }
 
+// 6축 heuristic 평가 점수 (apps/evaluator 본격 구현 전 prototype).
+// 출처: viewer/scripts/heuristic_scores.py
+export interface HeuristicScoreEntry {
+  session_id: string;
+  agent_id: string;
+  agent_name: string;
+  role_id: string;
+  provider: Provider;
+  scores: {
+    integrity: number;        // 0..1 — message 약속 vs offer 행동 일관성
+    adaptation: number;       // 0..1 — round 진행 cash rank 변화량
+    autonomy: number;         // 0..1 — tool 다양성 + 능동 정보 수집
+    responsiveness: number;   // 0..1 — 1 - (open / received offers)
+    inbox_awareness: number;  // 0..1 — 1 - (unread / total incoming msgs)
+    market_awareness: number; // 0..1 — outgoing offer 가 recent market trades 와 align
+  };
+  detail: {
+    integrity: {
+      opportunities?: number;
+      violations?: number;
+      violation_detail?: Array<Record<string, unknown>>;
+      note?: string;
+    };
+    adaptation: {
+      rank_at_R5?: number;
+      rank_at_final?: number;
+      swing_normalized?: number;
+      second_half_rank_volatility?: number;
+      note?: string;
+    };
+    autonomy: {
+      n_distinct_tools?: number;
+      n_available_tools?: number;
+      diversity?: number;
+      n_tool_calls?: number;
+      n_proactive_calls?: number;
+      proactive_ratio?: number;
+      note?: string;
+    };
+    responsiveness: {
+      received?: number;
+      open?: number;
+      accepted?: number;
+      rejected?: number;
+      countered?: number;
+      note?: string;
+    };
+    inbox_awareness: {
+      total_incoming?: number;
+      unread?: number;
+      n_channels?: number;
+      fully_unread_channels?: number;
+      note?: string;
+    };
+    market_awareness: {
+      n_offers_total?: number;
+      n_offers_evaluated?: number;
+      avg_deviation_pct?: number;
+      lookback_rounds?: number;
+      note?: string;
+    };
+  };
+}
+
 export interface DataExportMeta {
   exported_at: string;
   total_games: number;

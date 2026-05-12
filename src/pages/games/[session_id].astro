@@ -7,6 +7,7 @@ import agents from "../../data/agents.json";
 import trades from "../../data/trades.json";
 import messages from "../../data/messages.json";
 import event_stats from "../../data/event_stats.json";
+import heuristic_scores from "../../data/heuristic_scores.json";
 
 export function getStaticPaths() {
   return games.map((g) => ({ params: { session_id: g.session_id } }));
@@ -32,6 +33,11 @@ const finalRanked = [...gameAgents]
   .sort((x, y) => y.cash - x.cash);
 
 const startedDate = new Date(game.started_at).toISOString().slice(0, 16).replace("T", " ");
+
+// 3축 heuristic 점수 (apps/evaluator prototype 산출)
+const sessionScores = heuristic_scores.filter((s) => s.session_id === session_id);
+const scoreByAgent: Record<string, typeof heuristic_scores[number]> =
+  Object.fromEntries(sessionScores.map((s) => [s.agent_id, s]));
 ---
 
 <Layout title={`Game ${game.session_id.slice(0, 8)} — AgentPit`}>
@@ -77,6 +83,62 @@ const startedDate = new Date(game.started_at).toISOString().slice(0, 16).replace
       </table>
     </div>
   </section>
+
+  <!-- Heuristic scores (apps/evaluator prototype) -->
+  {sessionScores.length > 0 && (
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-2">평가 점수 <span class="text-sm text-(--color-text-dim) font-normal">(6축 prototype)</span></h2>
+      <p class="text-sm text-(--color-text-dim) mb-4">
+        무결성 (말↔행동 일관성), 적응력 (round 별 cash rank 변화), 자율성 (tool 다양성+능동 정보), 응답성 (incoming offer 처리율), 인지율 (메시지 읽음율), 시장인식 (outgoing offer 가 recent market 와 align). 0.0–1.0. 7축 본격 산출은 evaluator 후속 phase.
+      </p>
+      <div class="border border-(--color-border) rounded-lg overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead class="bg-(--color-bg-elev) text-(--color-text-dim) text-xs uppercase">
+            <tr>
+              <th class="text-left p-3">Agent</th>
+              <th class="text-left p-3">무결성</th>
+              <th class="text-left p-3">적응력</th>
+              <th class="text-left p-3">자율성</th>
+              <th class="text-left p-3">응답성</th>
+              <th class="text-left p-3">인지율</th>
+              <th class="text-left p-3">시장인식</th>
+            </tr>
+          </thead>
+          <tbody>
+            {finalRanked.map((entry) => {
+              const sb = scoreByAgent[entry.agent.agent_id];
+              if (!sb) return null;
+              const bar = (v: number) => {
+                const pct = Math.round(v * 100);
+                // 0.4 이하 = 빨강 (약점), 0.7 이상 = 녹색 (강점), 중간 = accent
+                const color = v < 0.4 ? "bg-(--color-neg)"
+                  : v >= 0.7 ? "bg-(--color-pos)" : "bg-(--color-accent)";
+                return (
+                  <div class="flex items-center gap-2">
+                    <div class="flex-1 h-2 bg-(--color-bg-elev) rounded-full overflow-hidden max-w-24">
+                      <div class={`h-full ${color}`} style={`width: ${pct}%`}></div>
+                    </div>
+                    <span class="tabular font-mono text-xs w-10 text-right">{v.toFixed(2)}</span>
+                  </div>
+                );
+              };
+              return (
+                <tr class="border-t border-(--color-border)">
+                  <td class="p-3"><AgentBadge agent={entry.agent} /></td>
+                  <td class="p-3">{bar(sb.scores.integrity)}</td>
+                  <td class="p-3">{bar(sb.scores.adaptation)}</td>
+                  <td class="p-3">{bar(sb.scores.autonomy)}</td>
+                  <td class="p-3">{bar(sb.scores.responsiveness)}</td>
+                  <td class="p-3">{bar(sb.scores.inbox_awareness)}</td>
+                  <td class="p-3">{bar(sb.scores.market_awareness)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
 
   <!-- Event stats -->
   {stats && (
