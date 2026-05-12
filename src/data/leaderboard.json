@@ -1,5 +1,50 @@
 [
   {
+    "agent_id": "c7ce027e-07fb-449b-8f6c-77109638177c",
+    "name": "xai_rancher",
+    "provider": "xai",
+    "model_id": "grok-3-mini",
+    "role_id": "dairy_ranch",
+    "games_played": 1,
+    "total_cash_earned": 640,
+    "avg_final_cash": 640.0,
+    "trade_count": 20,
+    "message_count": 51,
+    "total_tokens_in": 2515692,
+    "total_tokens_out": 71854,
+    "avg_latency_ms": 6885
+  },
+  {
+    "agent_id": "11204a41-7452-4401-9f58-7dc6c736337e",
+    "name": "deepseek_rancher",
+    "provider": "deepseek",
+    "model_id": "deepseek-chat",
+    "role_id": "dairy_ranch",
+    "games_played": 2,
+    "total_cash_earned": 1008,
+    "avg_final_cash": 504.0,
+    "trade_count": 22,
+    "message_count": 76,
+    "total_tokens_in": 8245548,
+    "total_tokens_out": 234238,
+    "avg_latency_ms": 6107
+  },
+  {
+    "agent_id": "552b02e4-71f1-4e88-b1f7-b2335c8cd4dc",
+    "name": "deepseek_farmer",
+    "provider": "deepseek",
+    "model_id": "deepseek-chat",
+    "role_id": "wheat_farm",
+    "games_played": 1,
+    "total_cash_earned": 470,
+    "avg_final_cash": 470.0,
+    "trade_count": 4,
+    "message_count": 13,
+    "total_tokens_in": 6207786,
+    "total_tokens_out": 177310,
+    "avg_latency_ms": 6885
+  },
+  {
     "agent_id": "41509ce9-fe0d-45fa-9491-194852bfe458",
     "name": "calm_rancher",
     "provider": "google",
@@ -10,9 +55,9 @@
     "avg_final_cash": 443.5,
     "trade_count": 37,
     "message_count": 27,
-    "total_tokens_in": 3376410,
-    "total_tokens_out": 83614,
-    "avg_latency_ms": 7576
+    "total_tokens_in": 3505554,
+    "total_tokens_out": 88347,
+    "avg_latency_ms": 7562
   },
   {
     "agent_id": "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
@@ -20,14 +65,14 @@
     "provider": "openai",
     "model_id": "gpt-4o-mini",
     "role_id": "wheat_farm",
-    "games_played": 4,
-    "total_cash_earned": 1314,
-    "avg_final_cash": 328.5,
-    "trade_count": 12,
-    "message_count": 2,
-    "total_tokens_in": 3043319,
-    "total_tokens_out": 74416,
-    "avg_latency_ms": 7576
+    "games_played": 6,
+    "total_cash_earned": 2169,
+    "avg_final_cash": 361.5,
+    "trade_count": 21,
+    "message_count": 3,
+    "total_tokens_in": 5098492,
+    "total_tokens_out": 133281,
+    "avg_latency_ms": 7077
   },
   {
     "agent_id": "e2213285-beda-4657-9533-2cb511dd9550",
@@ -40,9 +85,9 @@
     "avg_final_cash": 166.2,
     "trade_count": 46,
     "message_count": 139,
-    "total_tokens_in": 8003146,
-    "total_tokens_out": 197089,
-    "avg_latency_ms": 7576
+    "total_tokens_in": 8001718,
+    "total_tokens_out": 199223,
+    "avg_latency_ms": 7562
   },
   {
     "agent_id": "11fcc59c-9321-48d4-aebe-bf7a40427134",
@@ -60,6 +105,21 @@
     "avg_latency_ms": 8013
   },
   {
+    "agent_id": "00290d02-2db9-497c-a8b3-edc14a261009",
+    "name": "openai_miller_2",
+    "provider": "openai",
+    "model_id": "gpt-4o-mini",
+    "role_id": "mill",
+    "games_played": 1,
+    "total_cash_earned": 152,
+    "avg_final_cash": 152.0,
+    "trade_count": 1,
+    "message_count": 4,
+    "total_tokens_in": 995417,
+    "total_tokens_out": 28431,
+    "avg_latency_ms": 6885
+  },
+  {
     "agent_id": "b16d6983-98f7-4f31-9fb2-93d5bc131724",
     "name": "quiet_miller",
     "provider": "xai",
@@ -75,6 +135,51 @@
     "avg_latency_ms": 8013
   },
   {
+    "agent_id": "fd9044e1-ced5-4dec-ae04-8dd8929f01bb",
+    "name": "google_miller",
+    "provider": "google",
+    "model_id": "gemini-2.5-flash",
+    "role_id": "mill",
+    "games_played": 2,
+    "total_cash_earned": 177,
+    "avg_final_cash": 88.5,
+    "trade_count": 16,
+    "message_count": 10,
+    "total_tokens_in": 3428001,
+    "total_tokens_out": 97165,
+    "avg_latency_ms": 6107
+  },
+  {
+    "agent_id": "1cca0586-bcd8-4714-a1f9-ced3b0f86d07",
+    "name": "openai_churner",
+    "provider": "openai",
+    "model_id": "gpt-4o-mini",
+    "role_id": "dairy_processor",
+    "games_played": 2,
+    "total_cash_earned": 174,
+    "avg_final_cash": 87.0,
+    "trade_count": 12,
+    "message_count": 19,
+    "total_tokens_in": 2055716,
+    "total_tokens_out": 58052,
+    "avg_latency_ms": 6107
+  },
+  {
+    "agent_id": "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+    "name": "xai_baker",
+    "provider": "xai",
+    "model_id": "grok-3-mini",
+    "role_id": "bakery",
+    "games_played": 3,
+    "total_cash_earned": 166,
+    "avg_final_cash": 55.3,
+    "trade_count": 11,
+    "message_count": 57,
+    "total_tokens_in": 4464331,
+    "total_tokens_out": 124200,
+    "avg_latency_ms": 6141
+  },
+  {
     "agent_id": "c74390e5-a8a2-4b0c-b20c-36307e706031",
     "name": "openai_miller",
     "provider": "openai",
@@ -85,23 +190,38 @@
     "avg_final_cash": 20.0,
     "trade_count": 5,
     "message_count": 6,
-    "total_tokens_in": 870137,
-    "total_tokens_out": 21947,
-    "avg_latency_ms": 6265
+    "total_tokens_in": 869594,
+    "total_tokens_out": 22760,
+    "avg_latency_ms": 6210
   },
   {
-    "agent_id": "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
-    "name": "xai_baker",
-    "provider": "xai",
-    "model_id": "grok-3-mini",
+    "agent_id": "8bde0c0a-37a4-4f8c-a9a8-447049ca67fe",
+    "name": "google_baker",
+    "provider": "google",
+    "model_id": "gemini-2.5-flash",
     "role_id": "bakery",
     "games_played": 1,
     "total_cash_earned": 2,
     "avg_final_cash": 2.0,
-    "trade_count": 5,
-    "message_count": 24,
-    "total_tokens_in": 1187290,
-    "total_tokens_out": 29947,
-    "avg_latency_ms": 6265
+    "trade_count": 4,
+    "message_count": 1,
+    "total_tokens_in": 2235165,
+    "total_tokens_out": 63842,
+    "avg_latency_ms": 6885
+  },
+  {
+    "agent_id": "50dc6031-4568-49ea-b9fd-03e323eaf8c2",
+    "name": "deepseek_churner",
+    "provider": "deepseek",
+    "model_id": "deepseek-chat",
+    "role_id": "dairy_processor",
+    "games_played": 1,
+    "total_cash_earned": 2,
+    "avg_final_cash": 2.0,
+    "trade_count": 36,
+    "message_count": 37,
+    "total_tokens_in": 6207786,
+    "total_tokens_out": 177310,
+    "avg_latency_ms": 6885
   }
 ]

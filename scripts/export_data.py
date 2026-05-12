@@ -179,7 +179,8 @@ async def fetch_games(conn: asyncpg.Connection) -> list[dict]:
             "message_count": msg_count,
             "event_count": event_count,
         })
-    return games
+    # agent assignment 없는 빈 session (bootstrap 만 된 테스트 잔재) 제외
+    return [g for g in games if g["agent_ids"]]
 
 
 async def fetch_trades(conn: asyncpg.Connection) -> list[dict]:

@@ -1,7 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import GameCard from "../../components/GameCard.astro";
-import games from "../../data/games.json";
+import gamesRaw from "../../data/games.json";
+import type { Game } from "../../data/schema";
+
+const games = gamesRaw as unknown as Game[];
 
 // 시간순 정렬 (최신 → 오래된)
 const sorted = [...games].sort((a, b) => b.started_at.localeCompare(a.started_at));

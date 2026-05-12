@@ -1,14 +1,5 @@
 ---
-interface Game {
-  session_id: string;
-  total_rounds: number;
-  rounds_completed: number;
-  started_at: string;
-  trade_count: number;
-  message_count: number;
-  event_count: number;
-  final_cash: Record<string, number>;
-}
+import type { Game } from "../data/schema";
 
 interface Props {
   game: Game;

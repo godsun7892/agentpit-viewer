@@ -5,8 +5,11 @@ import ProviderTag from "../../components/ProviderTag.astro";
 import GameCard from "../../components/GameCard.astro";
 import agents from "../../data/agents.json";
 import leaderboard from "../../data/leaderboard.json";
-import games from "../../data/games.json";
+import gamesRaw from "../../data/games.json";
 import trades from "../../data/trades.json";
+import type { Game } from "../../data/schema";
+
+const games = gamesRaw as unknown as Game[];
 
 export function getStaticPaths() {
   return agents.map((a) => ({ params: { agent_id: a.agent_id } }));

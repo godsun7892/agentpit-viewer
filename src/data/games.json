@@ -1,5 +1,65 @@
 [
   {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "scenario_id": "bread",
+    "total_rounds": 25,
+    "rounds_completed": 25,
+    "started_at": "2026-05-12T06:31:04.658237Z",
+    "ended_at": "2026-05-12T06:42:16.924078Z",
+    "agent_ids": [
+      "1cca0586-bcd8-4714-a1f9-ced3b0f86d07",
+      "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+      "c7ce027e-07fb-449b-8f6c-77109638177c",
+      "fd9044e1-ced5-4dec-ae04-8dd8929f01bb",
+      "1e3b7ba5-d558-4d77-abbd-3a78deac92dc",
+      "552b02e4-71f1-4e88-b1f7-b2335c8cd4dc",
+      "50dc6031-4568-49ea-b9fd-03e323eaf8c2",
+      "8bde0c0a-37a4-4f8c-a9a8-447049ca67fe",
+      "00290d02-2db9-497c-a8b3-edc14a261009",
+      "11204a41-7452-4401-9f58-7dc6c736337e"
+    ],
+    "final_cash": {
+      "00290d02-2db9-497c-a8b3-edc14a261009": 152,
+      "11204a41-7452-4401-9f58-7dc6c736337e": 516,
+      "1cca0586-bcd8-4714-a1f9-ced3b0f86d07": 122,
+      "1e3b7ba5-d558-4d77-abbd-3a78deac92dc": 347,
+      "50dc6031-4568-49ea-b9fd-03e323eaf8c2": 2,
+      "552b02e4-71f1-4e88-b1f7-b2335c8cd4dc": 470,
+      "8bde0c0a-37a4-4f8c-a9a8-447049ca67fe": 2,
+      "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057": 30,
+      "c7ce027e-07fb-449b-8f6c-77109638177c": 640,
+      "fd9044e1-ced5-4dec-ae04-8dd8929f01bb": 147
+    },
+    "trade_count": 51,
+    "message_count": 189,
+    "event_count": 6276
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "scenario_id": "bread",
+    "total_rounds": 25,
+    "rounds_completed": 25,
+    "started_at": "2026-05-12T05:14:12.163656Z",
+    "ended_at": "2026-05-12T05:25:24.165211Z",
+    "agent_ids": [
+      "1cca0586-bcd8-4714-a1f9-ced3b0f86d07",
+      "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057",
+      "11204a41-7452-4401-9f58-7dc6c736337e",
+      "fd9044e1-ced5-4dec-ae04-8dd8929f01bb",
+      "1e3b7ba5-d558-4d77-abbd-3a78deac92dc"
+    ],
+    "final_cash": {
+      "11204a41-7452-4401-9f58-7dc6c736337e": 492,
+      "1cca0586-bcd8-4714-a1f9-ced3b0f86d07": 52,
+      "1e3b7ba5-d558-4d77-abbd-3a78deac92dc": 508,
+      "b83ff7e8-1941-4aa6-8c3e-e6a8bcf8f057": 134,
+      "fd9044e1-ced5-4dec-ae04-8dd8929f01bb": 30
+    },
+    "trade_count": 14,
+    "message_count": 56,
+    "event_count": 2605
+  },
+  {
     "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
     "scenario_id": "bread",
     "total_rounds": 25,
@@ -22,7 +82,7 @@
     },
     "trade_count": 25,
     "message_count": 74,
-    "event_count": 3036
+    "event_count": 3095
   },
   {
     "session_id": "89103477-f010-4330-bf5a-e5ca215cf020",
@@ -98,18 +158,5 @@
     "trade_count": 6,
     "message_count": 73,
     "event_count": 1831
-  },
-  {
-    "session_id": "5791394d-7aa0-4c9d-99bb-4fd4dbc44de5",
-    "scenario_id": "bread",
-    "total_rounds": 5,
-    "rounds_completed": 5,
-    "started_at": "2026-05-08T05:45:02.573586Z",
-    "ended_at": "2026-05-08T05:46:51.502776Z",
-    "agent_ids": [],
-    "final_cash": {},
-    "trade_count": 0,
-    "message_count": 8,
-    "event_count": 348
   }
 ]

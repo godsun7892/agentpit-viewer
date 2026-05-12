@@ -3,10 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import GameCard from "../components/GameCard.astro";
 import AgentBadge from "../components/AgentBadge.astro";
 import StatCard from "../components/StatCard.astro";
-import games from "../data/games.json";
+import gamesRaw from "../data/games.json";
 import agents from "../data/agents.json";
 import leaderboard from "../data/leaderboard.json";
 import meta from "../data/meta.json";
+import type { Game } from "../data/schema";
+
+const games = gamesRaw as unknown as Game[];
 
 // Featured games — trade 가 활발했던 5개 highlight
 const featured = [...games].sort((a, b) => b.trade_count - a.trade_count).slice(0, 6);

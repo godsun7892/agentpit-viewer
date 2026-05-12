@@ -2,15 +2,18 @@
 import Layout from "../../layouts/Layout.astro";
 import AgentBadge from "../../components/AgentBadge.astro";
 import StatCard from "../../components/StatCard.astro";
-import games from "../../data/games.json";
+import gamesRaw from "../../data/games.json";
 import agents from "../../data/agents.json";
 import trades from "../../data/trades.json";
 import messages from "../../data/messages.json";
 import event_stats from "../../data/event_stats.json";
 import heuristic_scores from "../../data/heuristic_scores.json";
+import type { Game } from "../../data/schema";
+
+const games = gamesRaw as unknown as Game[];
 
 export function getStaticPaths() {
-  return games.map((g) => ({ params: { session_id: g.session_id } }));
+  return (gamesRaw as unknown as Game[]).map((g) => ({ params: { session_id: g.session_id } }));
 }
 
 const { session_id } = Astro.params;
@@ -27,7 +30,7 @@ const gameAgents = agents.filter((a) => game.agent_ids.includes(a.agent_id));
 const agentById: Record<string, typeof agents[number]> =
   Object.fromEntries(agents.map((a) => [a.agent_id, a]));
 
-const finalCash = game.final_cash as Record<string, number>;
+const finalCash = game.final_cash;
 const finalRanked = [...gameAgents]
   .map((a) => ({ agent: a, cash: finalCash[a.agent_id] ?? 0 }))
   .sort((x, y) => y.cash - x.cash);

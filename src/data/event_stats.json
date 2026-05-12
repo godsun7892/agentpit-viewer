@@ -31,20 +31,79 @@
       "successes": 115,
       "failures": 0,
       "by_tool": {
-        "send_message_tool": 8,
         "send_offer_tool": 4,
+        "read_channel_tool": 7,
+        "create_channel_tool": 8,
+        "list_incoming_offers_tool": 16,
+        "send_message_tool": 8,
         "discover_agents_by_role_tool": 10,
         "list_scenario_resources_tool": 5,
         "list_historical_trades_tool": 9,
         "accept_offer_tool": 2,
-        "read_channel_tool": 7,
-        "create_channel_tool": 8,
-        "list_incoming_offers_tool": 16,
         "read_my_erp_tool": 14,
         "list_scenario_roles_tool": 5,
         "counter_offer_tool": 2,
         "list_incoming_messages_tool": 12,
         "list_my_offers_tool": 13
+      }
+    }
+  },
+  {
+    "session_id": "2ad8a79b-e598-4beb-bf99-a89a56411fb7",
+    "by_type": {
+      "npc.sale.intermediate": 9,
+      "session.bootstrapped": 1,
+      "tool.called": 841,
+      "tool.failed": 74,
+      "round.ended": 25,
+      "production.completed": 12,
+      "offer.rejected": 3,
+      "offer.sent": 37,
+      "offer.accepted": 14,
+      "llm.call": 610,
+      "resource.spoiled": 24,
+      "production.started": 12,
+      "tool.succeeded": 767,
+      "agent.wake": 57,
+      "round.started": 25,
+      "trade.executed": 14,
+      "production.auto_completed": 24,
+      "message.sent": 56
+    },
+    "llm_calls": {
+      "total": 610,
+      "by_provider": {
+        "openai": 128,
+        "deepseek": 246,
+        "google": 144,
+        "xai": 92
+      },
+      "total_tokens_in": 5052989,
+      "total_tokens_out": 141163,
+      "avg_latency_ms": 5330
+    },
+    "tool_calls": {
+      "total": 841,
+      "successes": 767,
+      "failures": 74,
+      "by_tool": {
+        "create_channel_tool": 43,
+        "list_incoming_offers_tool": 110,
+        "discover_agents_by_role_tool": 90,
+        "list_scenario_resources_tool": 40,
+        "list_scenario_roles_tool": 29,
+        "list_incoming_messages_tool": 86,
+        "sell_to_npc_intermediate_tool": 9,
+        "reject_offer_tool": 22,
+        "read_channel_tool": 35,
+        "list_historical_trades_tool": 32,
+        "produce_tool": 20,
+        "list_my_offers_tool": 87,
+        "send_offer_tool": 41,
+        "read_my_erp_tool": 111,
+        "send_message_tool": 61,
+        "accept_offer_tool": 24,
+        "counter_offer_tool": 1
       }
     }
   },
@@ -87,23 +146,23 @@
       "successes": 905,
       "failures": 0,
       "by_tool": {
-        "create_channel_tool": 58,
-        "list_incoming_offers_tool": 100,
-        "discover_agents_by_role_tool": 95,
         "list_scenario_resources_tool": 41,
-        "list_scenario_roles_tool": 25,
         "list_incoming_messages_tool": 75,
         "sell_to_npc_intermediate_tool": 9,
         "reject_offer_tool": 20,
         "read_channel_tool": 47,
         "list_historical_trades_tool": 46,
         "produce_tool": 18,
+        "send_message_tool": 76,
+        "counter_offer_tool": 7,
+        "create_channel_tool": 58,
+        "list_incoming_offers_tool": 100,
+        "discover_agents_by_role_tool": 95,
+        "list_scenario_roles_tool": 25,
         "list_my_offers_tool": 69,
         "send_offer_tool": 37,
         "read_my_erp_tool": 114,
-        "send_message_tool": 76,
-        "accept_offer_tool": 68,
-        "counter_offer_tool": 7
+        "accept_offer_tool": 68
       }
     }
   },
@@ -167,21 +226,82 @@
     }
   },
   {
+    "session_id": "a4786d54-3639-4477-ab19-8702932efdb6",
+    "by_type": {
+      "npc.sale.intermediate": 17,
+      "session.bootstrapped": 1,
+      "tool.called": 2087,
+      "tool.failed": 191,
+      "round.ended": 25,
+      "offer.rejected": 7,
+      "production.completed": 38,
+      "offer.sent": 138,
+      "offer.accepted": 51,
+      "llm.call": 1321,
+      "resource.spoiled": 45,
+      "production.started": 51,
+      "tool.succeeded": 1896,
+      "agent.wake": 102,
+      "round.started": 25,
+      "offer.countered": 2,
+      "trade.executed": 51,
+      "production.auto_completed": 39,
+      "message.sent": 189
+    },
+    "llm_calls": {
+      "total": 1321,
+      "by_provider": {
+        "google": 247,
+        "openai": 110,
+        "xai": 278,
+        "deepseek": 686
+      },
+      "total_tokens_in": 11954062,
+      "total_tokens_out": 341439,
+      "avg_latency_ms": 6885
+    },
+    "tool_calls": {
+      "total": 2087,
+      "successes": 1896,
+      "failures": 191,
+      "by_tool": {
+        "list_scenario_resources_tool": 93,
+        "list_incoming_messages_tool": 175,
+        "sell_to_npc_intermediate_tool": 28,
+        "reject_offer_tool": 11,
+        "read_channel_tool": 152,
+        "list_historical_trades_tool": 96,
+        "produce_tool": 54,
+        "sell_to_npc_final_tool": 1,
+        "send_message_tool": 203,
+        "counter_offer_tool": 7,
+        "create_channel_tool": 164,
+        "list_incoming_offers_tool": 214,
+        "discover_agents_by_role_tool": 175,
+        "list_scenario_roles_tool": 57,
+        "list_my_offers_tool": 164,
+        "send_offer_tool": 151,
+        "read_my_erp_tool": 253,
+        "accept_offer_tool": 89
+      }
+    }
+  },
+  {
     "session_id": "59cb4bec-e5d6-4547-b4e2-e0a8615b1122",
     "by_type": {
       "npc.sale.intermediate": 2,
       "session.bootstrapped": 1,
-      "tool.called": 966,
+      "tool.called": 986,
       "tool.failed": 100,
       "round.ended": 25,
       "production.completed": 17,
       "offer.rejected": 10,
-      "offer.sent": 41,
+      "offer.sent": 44,
       "offer.accepted": 25,
-      "llm.call": 709,
+      "llm.call": 725,
       "resource.spoiled": 33,
       "production.started": 18,
-      "tool.succeeded": 862,
+      "tool.succeeded": 882,
       "agent.wake": 72,
       "round.started": 25,
       "offer.countered": 1,
@@ -190,39 +310,39 @@
       "message.sent": 74
     },
     "llm_calls": {
-      "total": 709,
+      "total": 725,
       "by_provider": {
         "deepseek": 281,
         "xai": 146,
-        "google": 175,
+        "google": 191,
         "openai": 107
       },
-      "total_tokens_in": 5765680,
-      "total_tokens_out": 145430,
-      "avg_latency_ms": 6265
+      "total_tokens_in": 5892110,
+      "total_tokens_out": 154218,
+      "avg_latency_ms": 6210
     },
     "tool_calls": {
-      "total": 966,
-      "successes": 862,
+      "total": 986,
+      "successes": 882,
       "failures": 100,
       "by_tool": {
-        "create_channel_tool": 49,
-        "list_incoming_offers_tool": 116,
-        "discover_agents_by_role_tool": 94,
-        "list_scenario_resources_tool": 48,
-        "list_scenario_roles_tool": 15,
-        "list_incoming_messages_tool": 91,
+        "list_scenario_resources_tool": 50,
+        "list_incoming_messages_tool": 94,
         "sell_to_npc_intermediate_tool": 3,
         "reject_offer_tool": 10,
-        "read_channel_tool": 49,
+        "read_channel_tool": 51,
         "list_historical_trades_tool": 45,
         "produce_tool": 22,
-        "list_my_offers_tool": 85,
-        "send_offer_tool": 47,
-        "read_my_erp_tool": 135,
         "send_message_tool": 76,
-        "accept_offer_tool": 77,
-        "counter_offer_tool": 4
+        "counter_offer_tool": 4,
+        "create_channel_tool": 49,
+        "list_incoming_offers_tool": 119,
+        "discover_agents_by_role_tool": 95,
+        "list_scenario_roles_tool": 15,
+        "list_my_offers_tool": 88,
+        "send_offer_tool": 50,
+        "read_my_erp_tool": 138,
+        "accept_offer_tool": 77
       }
     }
   },
