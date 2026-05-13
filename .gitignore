@@ -31,3 +31,8 @@ Thumbs.db
 __pycache__/
 *.pyc
 .venv/
+
+# 영상 패키지 산출물 (소스는 video-script.md)
+assets/
+video-script.pdf
+agentpit-shoot.zip

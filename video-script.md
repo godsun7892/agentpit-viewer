@@ -7,6 +7,19 @@
 | 자막 | 한국어 카피 + 영문 메시지 원문 (C7-C9) |
 | 공개 사이트 | https://agentpit-viewer.pages.dev |
 
+### 프로젝트 개요 (영상 제작자 사전 참고용)
+
+**AgentPit** — 사용자가 자신의 모델·프롬프트로 만든 AI 에이전트들을 자원 거래 게임에 출전시키고, 그 결과로 AI 의 협상·거래 능력을 평가하는 벤치마크 플랫폼.
+
+**영상의 결정타 (C6 ~ C9)** — AI 에이전트들이 인간처럼 사회적 행동 (가격 카르텔 / 시장 분담 / 자기 약속 위반) 을 자발적으로 만들어냈다는 사실. 기존 LLM 벤치마크 (객관식 정답률) 가 잡을 수 없는 차원이고, AgentPit 은 이를 데이터로 잡습니다. 영상의 모든 viewer 캡처는 실제 게임의 PostgreSQL 데이터 (합성·모의 X).
+
+**컷씬 용어**
+- 에이전트: 사용자가 만든 AI 인스턴스 한 개 (한 게임에 10 개 출전)
+- 역할: 공급망 상의 위치 (밀 농장 / 낙농가 / 제분소 / 유가공 / 빵집)
+- 라운드: 게임의 한 턴 (한 게임 30 라운드 이상)
+- 채널: 에이전트끼리 자연어로 협상하는 대화방
+- offer / trade: 거래 제안 → 체결된 거래
+
 ---
 
 ## 컷씬 (11 컷)
@@ -19,18 +32,16 @@
 1. AI 협상 거래 시장 성장 — "71% 자동화" 수치를 그래프 / 헤드라인 / 통계 카드 형식으로
 2. 빈 점수표 또는 빈 차트 — "측정 표준 없음" 상징
 3. AgentPit 의 5 역할 공급망 흐름 — 밀·우유 → 밀가루·버터 → 빵 의 3 단계 흐름도
-4. 사용자가 AI 에이전트를 양육해 게임에 출전시키는 컨셉 — 양육 아이콘 + 출전하는 에이전트 카드
+4. 사용자가 자신의 모델과 프롬프트를 다듬어 AI 에이전트를 게임에 출전시키는 컨셉 — 모델 / 프롬프트 설정 아이콘 + 출전하는 에이전트 카드
 5. 게임에서 만들어진 행동 데이터 키워드 — "협상 · 약속 · 배신 · 카르텔"
 6. 포켓몬고 사용자 캐주얼 게임 화면 → 누적된 300억 장 공간 데이터 시각화 → 그 데이터가 자산이 된 결과로서의 배달 로봇 · 자율주행 차량 아이콘
 
 **화면 텍스트**:
 - "AI 가 협상하고 거래하는 시장이 빠르게 성장하고 있습니다. 한 조달 플랫폼에서는 거래의 71% 가 이미 AI 에 의해 처리됩니다."
 - "그러나 AI 가 협상하고 거래하는 능력을 측정하는 표준은 아직 없습니다."
-- "AgentPit 은 그 자리를 채웁니다. 사용자는 AI 에이전트를 양육해 게임에 출전시킵니다."
+- "AgentPit 은 그 자리를 채웁니다. 사용자는 자신의 모델과 프롬프트를 다듬어 AI 에이전트를 게임에 출전시킵니다."
 - "게임에서 만들어진 행동 데이터 — 협상, 약속, 배신, 카르텔 — 이 AI 평가 산업의 자산이 됩니다."
 - "포켓몬고 사용자들이 만들어낸 300억 장의 공간 데이터는 배달 로봇과 자율주행 산업의 핵심 자산이 되었습니다."
-
-**에셋**: `assets/01-dual-intro.{mp4,png}` (모션 그래픽)
 
 ---
 
@@ -50,8 +61,6 @@
 - "참가자는 LLM API key 와 전략 프롬프트만 제출하면 자동으로 출전합니다. 진입 장벽은 없습니다."
 - "이 영상은 OpenAI, Google, xAI, DeepSeek 네 제공사의 모델로 진행된 게임 결과입니다."
 
-**에셋**: `assets/02-cast-system.{mp4,png}` (모션 그래픽)
-
 ---
 
 ### C3 — 메커닉: 자유 협상
@@ -59,7 +68,7 @@
 **의도**: 룰은 단순, 행동은 자유. 에이전트가 스스로 만든 행동 — C7-C9 결정타의 토대.
 
 **보여줄 것**:
-1. viewer G6 detail 페이지의 Messages 섹션 라운드 1-3 캡처
+1. viewer G6 detail 페이지의 Messages 섹션 라운드 1 (총 26 메시지) 의 위쪽 첫 5-7 개 캡처 — mill 이 baker 에게 flour 가격을 제안하거나 dairy_processor 가 milk 가격을 묻는 자연어 협상의 시작 장면
 2. 페이지 URL 노출 (검증 가능성 시그널)
 3. 총 메시지 수량 표시 ("189 개 메시지")
 - 게임 URL: `https://agentpit-viewer.pages.dev/games/a4786d54-3639-4477-ab19-8702932efdb6/`
@@ -69,7 +78,7 @@
 - "행동은 자유입니다. 에이전트들은 채널을 열고, 자연어로 가격을 협상하고, 조건을 합의합니다."
 - "가격 합의, 시장 분담, 정보 공유 — 모두 에이전트가 스스로 만들어낸 행동입니다."
 
-**에셋**: `assets/03-messages-r1-r3.png` (viewer 캡처)
+**스크린샷**: `03-messages-r1.png`
 
 ---
 
@@ -87,7 +96,7 @@
 - "상대가 수락하면 거래가 체결되고, 자원과 자본이 이동합니다."
 - "모든 메시지, 모든 offer, 모든 거래는 영구 기록됩니다. 이 기록이 평가 데이터의 원천입니다."
 
-**에셋**: `assets/04-trades-table.png` (viewer 캡처)
+**스크린샷**: `04-trades-table.png`
 
 ---
 
@@ -105,7 +114,7 @@
 - "무결성, 적응력, 자율성, 응답성, 인지율, 시장인식."
 - "평가는 게임 로그에서 자동으로 산출됩니다. 단일 점수가 아닌, 행동의 다축 프로필입니다."
 
-**에셋**: `assets/05-six-axis-chart.png` (viewer 캡처)
+**스크린샷**: `05-six-axis-chart.png`
 
 ---
 
@@ -114,39 +123,40 @@
 **의도**: 측정이 재현 가능. 같은 모델이 다른 역할에서도 같은 약점 — 우연이 아닌 model property.
 
 **보여줄 것**:
-1. 6축 표에서 openai 3 행 (openai_miller_2 / openai_churner / patient_farmer) 의 "인지율" 컬럼 — 셋 다 0.00, 표시 강조 (빨간 박스 등)
+1. 3 개 게임의 6축 표를 가로 나열 — 각 표에서 OpenAI 행의 "인지율" 컬럼 모두 0.000. 3 게임 합쳐 OpenAI 4 역할 (mill · dairy_processor · wheat_farm · bakery) 커버
 2. 모델 라벨 (OpenAI gpt-4o-mini)
-3. 여섯 게임 동일 패턴 시각화 (게임 6 개 카드 가로 나열, 각 카드에 동일 약점 마커)
+3. 각 게임 표 위에 게임 식별자 (session 앞 8자리 또는 G1 / G2 / G3 식)
 
 **화면 텍스트**:
 - "같은 모델은 다른 역할에서도 동일한 약점을 보였습니다."
 - "OpenAI 의 gpt-4o-mini — 들어온 메시지를 읽지 않는 비율 영점."
 - "여러 게임에 걸쳐, 다양한 역할에서 동일한 패턴이 재현되었습니다."
 
-**에셋**: `assets/06-openai-weakness.png` (viewer 캡처 + 강조 표시)
+**스크린샷**: `06a-openai-weakness.png` + `06b-openai-weakness.png` + `06c-openai-weakness.png`
 
 ---
 
 ### C7 — 증거 2: 가격 카르텔
 
-**의도**: 같은 역할의 두 AI 가 직접 가격 floor 를 합의. 인간이 만든 합의가 아닌 AI 가 스스로 만든 사회적 행동.
+**의도**: 같은 역할의 두 AI 가 라운드를 건너뛰며 가격 floor 를 제안하고 합의. 인간이 만든 합의가 아닌 AI 가 스스로 만든 사회적 행동.
 
 **보여줄 것**:
-1. viewer G6 detail 의 Messages 섹션 R4 두 dairy_processor 채널 캡처
-2. 두 에이전트 식별 라벨 (deepseek_churner · openai_churner)
-3. 두 영문 원문 메시지 강조 (말풍선 또는 카드 형식)
+1. viewer G6 detail 의 Messages 섹션 R4 dairy_processor 채널의 deepseek_churner 제안 메시지 캡처
+2. 같은 채널 R7 의 openai_churner 합의 메시지 캡처
+3. Trades 표에서 R7 의 butter 거래 묶음 ($18 연속 3건) — 합의가 실제 거래로 떨어졌다는 시각 증거
+4. 두 에이전트 식별 라벨 (deepseek_churner · openai_churner) 과 라운드 간격 표시 (R4 → R7)
 
 **영문 원문 (화면 그대로 노출)**:
-- R4 deepseek_churner: *"If we both agree to floor butter at $16+ and cap milk buys at $8, we both maintain margins. Defecting..."*
-- R4 openai_churner: *"I'm in for the pricing coordination. I agree to set the butter price floor at $16+ and cap milk buys at $8."*
+- R4 deepseek_churner: *"Hey fellow churner! ... If we both agree to floor butter at $16+ and cap milk buys at $8, we both maintain margins. Defecting hurts us both. What do you think?"*
+- R7 openai_churner: *"Hello deepseek_churner! I'm in for the pricing coordination. I agree to set the butter price floor at $16+ and cap milk buys at $8. Let's stick together to maintain our margins."*
 
 **화면 텍스트**:
-- "라운드 4 — 유가공 역할의 두 에이전트가 채널을 엽니다."
-- "한 에이전트가 가격 floor 합의를 제안하고, 다른 에이전트가 동의합니다."
-- "이후 라운드 내내 버터 평균 단가는 17.5 로 유지됩니다."
+- "라운드 4 — 유가공 한 에이전트가 가격 floor 합의를 제안합니다."
+- "라운드 7 — 다른 유가공 에이전트가 합의에 응합니다."
+- "이후 버터 거래는 합의 범위 안에서 떨어집니다."
 - "인간이 만든 합의가 아닙니다. AI 가 스스로 만든 가격 카르텔입니다."
 
-**에셋**: `assets/07-cartel-R4.png` (viewer 캡처)
+**스크린샷**: `07a-cartel-R4-proposal.png` + `07b-cartel-R7-agreement.png` + `07c-butter-trades-R7.png`
 
 ---
 
@@ -155,14 +165,14 @@
 **의도**: 협력 패턴이 하나가 아님. 다른 역할에서는 영토 분할이라는 또 다른 패턴이 자발적으로 발생.
 
 **보여줄 것**:
-1. viewer G6 detail 의 dairy_ranch 두 에이전트 (deepseek_rancher · xai_rancher) 채널 캡처
-2. R4 / R7 / R22 세 시점 메시지를 시간 흐름 순으로 배치
+1. viewer G6 detail 의 dairy_ranch 두 에이전트 (deepseek_rancher · xai_rancher) 채널의 R4 / R7 / R22 세 시점 메시지 캡처
+2. 시간 흐름 순으로 좌→우 또는 위→아래 배치
 3. 영토 분할 시각화 (좌측 buyer / 우측 buyer 도식 — "한쪽은 너, 다른 쪽은 나")
 
 **영문 원문 (화면 그대로 노출)**:
-- R4 xai_rancher: *"We can alternate buyers to keep it fair"*
-- R7: *"I'll start with dp_1 this round"*
-- R22: *"I'll focus openai_churner. You focus deepseek_churner"*
+- R4 xai_rancher: *"Fully agree, let's hold at $6.5-7/unit minimum ... we can alternate buyers to keep it fair."*
+- R7 xai_rancher: *"agree, let's hold at $6.50-7/unit minimum and alternate sales to processors. I'll start with dp_1 this round."*
+- R22 deepseek_rancher: *"Round 22 — agreed! I'll focus openai_churner ... You focus deepseek_churner."*
 
 **화면 텍스트**:
 - "낙농가 역할에서는 다른 패턴이 발견됩니다."
@@ -170,7 +180,7 @@
 - "라운드 22 에서 구체화됩니다 — 한쪽은 너, 다른 쪽은 나."
 - "가격 합의가 아닌, 영토 분할입니다."
 
-**에셋**: `assets/08-territorial.png` (viewer 캡처)
+**스크린샷**: `08a-territorial-R4.png` + `08b-territorial-R7.png` + `08c-territorial-R22.png`
 
 ---
 
@@ -188,12 +198,12 @@
 - R16: *"I'm sending offers to mills at 3-4/unit. At this stage I'm taking what I can get"*
 
 **화면 텍스트**:
-- "라운드 7 — 밀 농장 에이전트가 가격 floor 7 을 약속합니다."
+- "라운드 7 — 밀 농장 에이전트가 '최소 7 이상으로 팔자' 고 약속합니다."
 - "라운드 16 — 같은 에이전트가 자기 입으로 그 약속을 깹니다. 지금은 3 에서 4 라도 받겠다고 말합니다."
 - "AI 가 자기 약속을 자기 입으로 어기는 순간입니다."
 - "점수만 보는 벤치마크는 이 행동을 잡지 못합니다. AgentPit 은 모든 메시지를 데이터로 보존합니다."
 
-**에셋**: `assets/09a-promise-R7.png` + `assets/09b-betrayal-R16.png` (viewer 캡처)
+**스크린샷**: `09a-promise-R7.png` + `09b-betrayal-R16.png`
 
 ---
 
@@ -208,8 +218,6 @@
 **화면 텍스트**:
 - "기존 LLM 벤치마크는 코딩·수학·상식 객관식 정답률을 측정합니다. 점수에 잡히지 않는 행동은 사라집니다."
 - "AgentPit 은 기존이 잡지 못하는 행동을 데이터로 포착합니다."
-
-**에셋**: `assets/10-benchmark-comparison.png` (정적 슬라이드)
 
 ---
 
@@ -226,24 +234,4 @@
 - "AI 가 사람처럼 행동하는 시대 — 그 행동을 검증 가능한 데이터로 남깁니다."
 - "AgentPit 이 AI 평가의 새로운 표준을 만듭니다."
 
-**에셋**: `assets/11-leaderboard.png` (viewer 캡처)
-
----
-
-## viewer 캡처 가이드 (발주자 제공)
-
-캡처 출처: https://agentpit-viewer.pages.dev
-
-| 에셋 | 페이지 URL | 캡처 영역 |
-|------|-----------|----------|
-| 03 | `/games/a4786d54-3639-4477-ab19-8702932efdb6/` | "Messages (189)" 섹션 위쪽 라운드 1-3 |
-| 04 | 같은 페이지 | "Trades (51)" 섹션 표 상단 5-10 row |
-| 05 | 같은 페이지 | "평가 점수 (6축 prototype)" 표 전체 |
-| 06 | 같은 페이지 | 6축 표에서 openai_miller_2 / openai_churner / patient_farmer 행의 "인지율" 컬럼 (3 행 모두 0.00) |
-| 07 | 같은 페이지 | Messages 섹션 R4 의 dairy_processor 채널 (deepseek_churner ↔ openai_churner 가격 floor 합의 메시지 2건) |
-| 08 | 같은 페이지 | Messages 섹션 R4 / R7 / R22 의 dairy_ranch 채널 (xai_rancher 의 "alternate buyers" 등) |
-| 09a | 같은 페이지 | Messages 섹션 R7 wheat_farm 채널 (deepseek_farmer 의 "hold the floor at 7/unit minimum") |
-| 09b | 같은 페이지 | Messages 섹션 R16 wheat_farm 채널 (같은 deepseek_farmer 의 "3-4/unit" 자백) |
-| 11 | `/leaderboard/` | 페이지 전체 |
-
----
+**스크린샷**: `11-leaderboard.png`
