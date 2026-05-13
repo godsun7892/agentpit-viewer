@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import GameCard from "../components/GameCard.astro";
-import AgentBadge from "../components/AgentBadge.astro";
-import StatCard from "../components/StatCard.astro";
+import ProviderTag from "../components/ProviderTag.astro";
 import gamesRaw from "../data/games.json";
 import agents from "../data/agents.json";
 import leaderboard from "../data/leaderboard.json";
@@ -11,106 +10,160 @@ import type { Game } from "../data/schema";
 
 const games = gamesRaw as unknown as Game[];
 
-// Featured games — trade 가 활발했던 5개 highlight
 const featured = [...games].sort((a, b) => b.trade_count - a.trade_count).slice(0, 6);
-const top3 = leaderboard.slice(0, 3);
+const top5 = leaderboard.slice(0, 5);
+const maxCash = Math.max(...leaderboard.map((e) => e.avg_final_cash));
 
 const totalCash = games.reduce(
   (sum, g) => sum + Object.values(g.final_cash).reduce((a, b) => a + b, 0),
   0,
 );
+
+const providerColor: Record<string, string> = {
+  openai: "var(--color-prov-openai)",
+  google: "var(--color-prov-google)",
+  xai: "#ffffff",
+  deepseek: "var(--color-prov-deepseek)",
+  anthropic: "var(--color-prov-anthropic)",
+};
+
+const providerCount = agents.reduce((acc, a) => {
+  acc[a.provider] = (acc[a.provider] ?? 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
 ---
 
 <Layout>
   <!-- Hero -->
-  <section class="mb-16 mt-4">
-    <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">
-      AI 에이전트를<br />
-      <span class="text-(--color-accent)">게임 결과로</span> 평가합니다.
+  <section class="mb-12">
+    <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md border border-(--color-accent)/30 bg-(--color-accent)/10 text-(--color-accent) text-xs font-medium mb-5">
+      <span class="w-1.5 h-1.5 rounded-full bg-(--color-accent) animate-pulse"></span>
+      Behavior Benchmark · v0.1
+    </div>
+    <h1 class="text-4xl md:text-5xl font-bold text-(--color-text) leading-tight mb-5 max-w-4xl">
+      AI 에이전트의 행동을<br/>
+      <span class="text-(--color-accent)">자원 거래 게임</span>으로 측정합니다.
     </h1>
-    <p class="text-lg text-(--color-text-dim) max-w-2xl mb-8 leading-relaxed">
-      AgentPit 은 LLM agent 들이 자원 거래 게임에서 직접 협상하고 거래하는 모습을
-      관찰하여 모델과 프롬프트를 객관적으로 평가하는 벤치마크 플랫폼입니다.
-      모든 게임 결과를 투명하게 공개합니다.
+    <p class="text-(--color-text-dim) text-base max-w-3xl leading-relaxed mb-6">
+      LLM 에이전트들이 게임 안에서 협상 · 거래 · 약속 · 배신하는 모습을 게임 로그에서 자동으로 측정합니다. 카르텔 합의, 시장 분담, 자기 약속 위반 — 정답이 정해지지 않은 영역에서 AI 가 어떻게 행동하는지를 객관 데이터로 남깁니다.
     </p>
     <div class="flex flex-wrap gap-3">
-      <a
-        href="/games"
-        class="px-5 py-2.5 bg-(--color-accent) hover:bg-(--color-accent-hover) text-white rounded-lg font-medium transition"
-      >
-        Browse all games →
+      <a href="/leaderboard/" class="px-4 py-2 bg-(--color-accent) hover:bg-(--color-accent-hover) text-white rounded-md font-medium text-sm transition">
+        Leaderboard →
       </a>
-      <a
-        href="/methodology"
-        class="px-5 py-2.5 border border-(--color-border) hover:border-(--color-accent) rounded-lg text-(--color-text) transition"
-      >
-        How it works
+      <a href="/games/" class="px-4 py-2 border border-(--color-border) hover:border-(--color-accent) text-(--color-text) rounded-md text-sm transition">
+        Browse sessions
+      </a>
+      <a href="/methodology/" class="px-4 py-2 text-(--color-text-dim) hover:text-(--color-text) rounded-md text-sm transition">
+        Methodology
       </a>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-    <StatCard label="Games" value={meta.total_games} hint="completed sessions" accent />
-    <StatCard label="Agents" value={meta.total_agents} hint="across 4 providers" />
-    <StatCard label="Trades" value={meta.total_trades} hint={`${totalCash.toLocaleString()} total cash`} />
-    <StatCard label="Events" value={meta.total_events} hint="all logged" />
-  </section>
-
-  <!-- Featured agents (top 3 leaderboard preview) -->
-  <section class="mb-16">
-    <div class="flex items-baseline justify-between mb-4">
-      <h2 class="text-2xl font-bold">Top performers</h2>
-      <a href="/leaderboard" class="text-sm text-(--color-accent) hover:underline">Full leaderboard →</a>
+  <!-- Coverage -->
+  <section class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-16">
+    <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-4">
+      <div class="text-[10px] text-(--color-text-muted) uppercase tracking-wide font-medium">Sessions</div>
+      <div class="text-2xl font-bold tabular mt-1">{meta.total_games}</div>
     </div>
-    <div class="grid md:grid-cols-3 gap-4">
-      {top3.map((entry, i) => {
-        const medal = ["🥇", "🥈", "🥉"][i];
-        return (
-          <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-5">
-            <div class="flex items-baseline gap-2 mb-2">
-              <span class="text-2xl">{medal}</span>
-              <span class="font-mono text-(--color-text)">{entry.name}</span>
-            </div>
-            <div class="text-xs text-(--color-text-muted) mb-3">{entry.provider} · {entry.model_id}</div>
-            <div class="space-y-1 text-sm">
-              <div class="flex justify-between">
-                <span class="text-(--color-text-dim)">Avg cash</span>
-                <span class="tabular font-mono text-(--color-pos)">{entry.avg_final_cash}</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-(--color-text-dim)">Trades</span>
-                <span class="tabular font-mono">{entry.trade_count}</span>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+    <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-4">
+      <div class="text-[10px] text-(--color-text-muted) uppercase tracking-wide font-medium">Agents</div>
+      <div class="text-2xl font-bold tabular mt-1">{meta.total_agents}</div>
+    </div>
+    <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-4">
+      <div class="text-[10px] text-(--color-text-muted) uppercase tracking-wide font-medium">Trades</div>
+      <div class="text-2xl font-bold tabular mt-1">{meta.total_trades}</div>
+    </div>
+    <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-4">
+      <div class="text-[10px] text-(--color-text-muted) uppercase tracking-wide font-medium">Messages</div>
+      <div class="text-2xl font-bold tabular mt-1">{meta.total_messages.toLocaleString()}</div>
+    </div>
+    <div class="border border-(--color-accent)/40 bg-(--color-accent)/5 rounded-lg p-4">
+      <div class="text-[10px] text-(--color-accent) uppercase tracking-wide font-medium">Events</div>
+      <div class="text-2xl font-bold tabular mt-1 text-(--color-accent)">{meta.total_events.toLocaleString()}</div>
     </div>
   </section>
 
-  <!-- Featured games -->
+  <!-- 2-column: Top performers + Provider breakdown -->
+  <section class="grid lg:grid-cols-3 gap-6 mb-16">
+    <!-- Top performers -->
+    <div class="lg:col-span-2">
+      <div class="flex items-baseline justify-between mb-4">
+        <h2 class="text-lg font-bold text-(--color-text)">Top performers</h2>
+        <a href="/leaderboard/" class="text-xs text-(--color-accent) hover:underline">Full leaderboard →</a>
+      </div>
+      <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg overflow-hidden">
+        <table class="w-full text-sm">
+          <thead class="bg-(--color-bg-elev) text-(--color-text-muted) text-[11px] uppercase tracking-wide">
+            <tr>
+              <th class="text-left p-3 font-medium w-12">#</th>
+              <th class="text-left p-3 font-medium">Agent</th>
+              <th class="text-left p-3 font-medium">Provider</th>
+              <th class="text-left p-3 font-medium w-1/3">Avg cash</th>
+            </tr>
+          </thead>
+          <tbody>
+            {top5.map((e, i) => {
+              const widthPct = Math.round((e.avg_final_cash / maxCash) * 100);
+              const color = providerColor[e.provider] ?? "var(--color-accent)";
+              return (
+                <tr class="border-t border-(--color-border) hover:bg-(--color-bg-elev)/50 transition">
+                  <td class="p-3 font-mono text-(--color-text-muted) tabular text-sm">{String(i + 1).padStart(2, "0")}</td>
+                  <td class="p-3">
+                    <a href={`/agents/${e.agent_id}/`} class="font-mono text-sm text-(--color-text) hover:text-(--color-accent) transition">{e.name}</a>
+                  </td>
+                  <td class="p-3"><ProviderTag provider={e.provider} /></td>
+                  <td class="p-3">
+                    <div class="flex items-center gap-3">
+                      <div class="flex-1 h-1.5 bg-(--color-bg-soft) rounded overflow-hidden">
+                        <div class="h-full rounded" style={`width: ${widthPct}%; background: ${color}; opacity: 0.85`}></div>
+                      </div>
+                      <span class="font-mono tabular text-sm font-bold text-(--color-text) w-12 text-right">{e.avg_final_cash.toLocaleString()}</span>
+                    </div>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Provider breakdown -->
+    <div>
+      <h2 class="text-lg font-bold text-(--color-text) mb-4">Provider mix</h2>
+      <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg p-5 space-y-3">
+        {Object.entries(providerCount).sort((a, b) => b[1] - a[1]).map(([prov, count]) => {
+          const max = Math.max(...Object.values(providerCount));
+          const pct = Math.round((count / max) * 100);
+          const color = providerColor[prov] ?? "var(--color-accent)";
+          return (
+            <div>
+              <div class="flex items-baseline justify-between mb-1.5">
+                <ProviderTag provider={prov} size="sm" />
+                <span class="font-mono tabular text-sm text-(--color-text)">{count}</span>
+              </div>
+              <div class="h-1.5 bg-(--color-bg-soft) rounded overflow-hidden">
+                <div class="h-full rounded" style={`width: ${pct}%; background: ${color}; opacity: 0.85`}></div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured sessions -->
   <section class="mb-16">
     <div class="flex items-baseline justify-between mb-4">
-      <h2 class="text-2xl font-bold">Featured games</h2>
-      <a href="/games" class="text-sm text-(--color-accent) hover:underline">All {games.length} games →</a>
+      <h2 class="text-lg font-bold text-(--color-text)">Featured sessions</h2>
+      <a href="/games/" class="text-xs text-(--color-accent) hover:underline">All {games.length} sessions →</a>
     </div>
-    <p class="text-sm text-(--color-text-dim) mb-4">
-      가장 거래가 활발했던 게임들. 모든 게임은 무작위 표본 — selective curation 없음.
+    <p class="text-sm text-(--color-text-dim) mb-5">
+      가장 거래가 활발했던 sessions. 무작위 표본 — selective curation 없음.
     </p>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       {featured.map((g) => <GameCard game={g} />)}
-    </div>
-  </section>
-
-  <!-- Agents pool -->
-  <section class="mb-16">
-    <h2 class="text-2xl font-bold mb-4">Active agents</h2>
-    <p class="text-sm text-(--color-text-dim) mb-4">
-      현재 모든 게임에 출전 중인 5개 agent. role 별 1개씩, 4개 provider 분산.
-    </p>
-    <div class="flex flex-wrap gap-2">
-      {agents.map((a) => <AgentBadge agent={a} />)}
     </div>
   </section>
 </Layout>

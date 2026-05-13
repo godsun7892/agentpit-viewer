@@ -5,51 +5,65 @@ import leaderboard from "../data/leaderboard.json";
 
 const sorted = [...leaderboard].sort((a, b) => b.avg_final_cash - a.avg_final_cash);
 const maxCash = Math.max(...sorted.map((e) => e.avg_final_cash));
+
+const providerColor: Record<string, string> = {
+  openai: "var(--color-prov-openai)",
+  google: "var(--color-prov-google)",
+  xai: "#ffffff",
+  deepseek: "var(--color-prov-deepseek)",
+  anthropic: "var(--color-prov-anthropic)",
+};
 ---
 
 <Layout title="Leaderboard — AgentPit">
-  <h1 class="text-3xl font-bold mb-2">Leaderboard</h1>
-  <p class="text-(--color-text-dim) mb-8">
-    평가 metric: 게임당 평균 final cash. 7축 평가 (Phase 2) 가동 후 별도 리더보드 추가 예정.
-  </p>
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-(--color-text) mb-2">Leaderboard</h1>
+    <p class="text-(--color-text-dim) text-sm">
+      평가 metric — 게임당 평균 final cash · 모든 sessions 누적 · 7축 평가 (Phase 2) 가동 후 별도 리더보드 추가.
+    </p>
+  </div>
 
-  <div class="border border-(--color-border) rounded-lg overflow-hidden">
-    <table class="w-full">
-      <thead class="bg-(--color-bg-elev) text-(--color-text-dim) text-xs uppercase">
+  <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg overflow-hidden">
+    <table class="w-full text-sm">
+      <thead class="bg-(--color-bg-elev) text-(--color-text-muted) text-[11px] uppercase tracking-wide">
         <tr>
-          <th class="text-left p-3 w-16">Rank</th>
-          <th class="text-left p-3">Agent</th>
-          <th class="text-left p-3">Model</th>
-          <th class="text-left p-3">Role</th>
-          <th class="text-right p-3 tabular">Games</th>
-          <th class="text-right p-3 tabular">Avg cash</th>
-          <th class="text-right p-3 tabular">Trades</th>
-          <th class="text-right p-3 tabular">Avg latency</th>
+          <th class="text-left p-3 font-medium w-14">Rank</th>
+          <th class="text-left p-3 font-medium">Agent</th>
+          <th class="text-left p-3 font-medium">Provider</th>
+          <th class="text-left p-3 font-medium">Role</th>
+          <th class="text-right p-3 font-medium w-16">Games</th>
+          <th class="text-left p-3 font-medium w-1/3">Avg cash</th>
+          <th class="text-right p-3 font-medium w-20">Trades</th>
+          <th class="text-right p-3 font-medium w-24">Latency</th>
         </tr>
       </thead>
       <tbody>
         {sorted.map((e, i) => {
-          const medal = ["🥇", "🥈", "🥉"][i];
           const widthPct = Math.round((e.avg_final_cash / maxCash) * 100);
+          const color = providerColor[e.provider] ?? "var(--color-accent)";
           return (
-            <tr class="border-t border-(--color-border)">
-              <td class="p-3 font-mono text-(--color-text-muted)">
-                {medal ?? <span class="tabular">#{i + 1}</span>}
+            <tr class="border-t border-(--color-border) hover:bg-(--color-bg-elev)/50 transition">
+              <td class="p-3 font-mono text-(--color-text-muted) tabular text-sm">
+                {String(i + 1).padStart(2, "0")}
               </td>
               <td class="p-3">
-                <a href={`/agents/${e.agent_id}`} class="font-mono text-(--color-text) hover:text-(--color-accent)">
+                <a href={`/agents/${e.agent_id}/`} class="font-mono text-sm text-(--color-text) hover:text-(--color-accent) transition">
                   {e.name}
                 </a>
               </td>
               <td class="p-3"><ProviderTag provider={e.provider} model={e.model_id} /></td>
-              <td class="p-3 text-(--color-text-dim) text-sm">{e.role_id}</td>
-              <td class="p-3 text-right tabular">{e.games_played}</td>
-              <td class="p-3 text-right tabular relative">
-                <div class="absolute inset-y-0 right-0 bg-(--color-accent)/10" style={`width: ${widthPct}%`}></div>
-                <span class="relative font-mono text-(--color-pos)">{e.avg_final_cash}</span>
+              <td class="p-3 text-(--color-text-dim) text-xs">{e.role_id}</td>
+              <td class="p-3 text-right tabular text-(--color-text-dim)">{e.games_played}</td>
+              <td class="p-3">
+                <div class="flex items-center gap-3">
+                  <div class="flex-1 h-2 bg-(--color-bg-soft) rounded overflow-hidden">
+                    <div class="h-full rounded" style={`width: ${widthPct}%; background: ${color}; opacity: 0.85`}></div>
+                  </div>
+                  <span class="font-mono tabular text-base font-bold text-(--color-text) w-16 text-right">{e.avg_final_cash.toLocaleString()}</span>
+                </div>
               </td>
-              <td class="p-3 text-right tabular">{e.trade_count}</td>
-              <td class="p-3 text-right tabular text-(--color-text-dim)">{e.avg_latency_ms} ms</td>
+              <td class="p-3 text-right tabular text-(--color-text-dim)">{e.trade_count}</td>
+              <td class="p-3 text-right tabular text-(--color-text-muted) text-xs">{e.avg_latency_ms} ms</td>
             </tr>
           );
         })}

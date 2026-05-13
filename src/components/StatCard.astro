@@ -10,9 +10,9 @@ const { label, value, hint, accent = false } = Astro.props;
 ---
 
 <div class={`p-5 rounded-lg border ${accent ? "border-(--color-accent)/40 bg-(--color-accent)/5" : "border-(--color-border) bg-(--color-bg-card)"}`}>
-  <div class="text-xs text-(--color-text-muted) uppercase tracking-wide mb-1">{label}</div>
-  <div class={`text-3xl font-bold tabular ${accent ? "text-(--color-accent)" : "text-(--color-text)"}`}>
+  <div class="text-xs text-(--color-text-muted) font-medium mb-2 uppercase tracking-wide">{label}</div>
+  <div class={`text-3xl font-bold tabular leading-none ${accent ? "text-(--color-accent)" : "text-(--color-text)"}`}>
     {typeof value === "number" ? value.toLocaleString() : value}
   </div>
-  {hint && <div class="text-xs text-(--color-text-dim) mt-1">{hint}</div>}
+  {hint && <div class="text-xs text-(--color-text-dim) mt-2">{hint}</div>}
 </div>

@@ -1,27 +1,42 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
 @theme {
-  --color-bg: #0a0a0f;
-  --color-bg-elev: #14141c;
-  --color-bg-card: #1a1a26;
-  --color-border: #2a2a3a;
-  --color-text: #e5e7eb;
-  --color-text-dim: #9ca3af;
-  --color-text-muted: #6b7280;
+  /* Background — pure dark, lmarena/artificialanalysis 영감 */
+  --color-bg: #0a0a0c;
+  --color-bg-elev: #131316;
+  --color-bg-card: #18181c;
+  --color-bg-soft: #22222a;
 
-  --color-accent: #6366f1;
-  --color-accent-hover: #818cf8;
+  /* Borders */
+  --color-border: #27272f;
+  --color-border-soft: #1d1d23;
 
+  /* Text */
+  --color-text: #fafafa;
+  --color-text-dim: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-text-faint: #52525b;
+
+  /* Accent — 파란색 (modern AI tech) */
+  --color-accent: #3b82f6;
+  --color-accent-hover: #60a5fa;
+  --color-accent-soft: #3b82f620;
+
+  /* Provider colors — vivid, 표/차트/배지 모두 사용 */
   --color-prov-openai: #10a37f;
   --color-prov-google: #4285f4;
-  --color-prov-xai: #fbbf24;
-  --color-prov-deepseek: #a855f7;
+  --color-prov-xai: #ffffff;
+  --color-prov-deepseek: #4d6bfe;
   --color-prov-anthropic: #d97757;
 
+  /* Pos / Neg */
   --color-pos: #10b981;
   --color-neg: #ef4444;
   --color-warn: #f59e0b;
 
+  /* Typography — Sans-serif 단일 */
   --font-sans: "Inter", "Pretendard", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "D2Coding", ui-monospace, monospace;
 }
@@ -30,20 +45,54 @@ html {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   min-height: 100vh;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 code,
 pre,
 .font-mono {
   font-family: var(--font-mono);
+  font-variant-ligatures: none;
 }
 
-/* numbers / IDs in tables */
 .tabular {
   font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
 }

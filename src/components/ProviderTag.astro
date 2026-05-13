@@ -10,15 +10,15 @@ const { provider, model, size = "sm" } = Astro.props;
 const colorMap: Record<string, string> = {
   openai: "bg-(--color-prov-openai)/15 text-(--color-prov-openai) border-(--color-prov-openai)/30",
   google: "bg-(--color-prov-google)/15 text-(--color-prov-google) border-(--color-prov-google)/30",
-  xai: "bg-(--color-prov-xai)/15 text-(--color-prov-xai) border-(--color-prov-xai)/30",
-  deepseek: "bg-(--color-prov-deepseek)/15 text-(--color-prov-deepseek) border-(--color-prov-deepseek)/30",
+  xai: "bg-white/10 text-white border-white/20",
+  deepseek: "bg-(--color-prov-deepseek)/15 text-(--color-prov-deepseek) border-(--color-prov-deepseek)/40",
   anthropic: "bg-(--color-prov-anthropic)/15 text-(--color-prov-anthropic) border-(--color-prov-anthropic)/30",
 };
 const cls = colorMap[provider] ?? "bg-(--color-bg-card) text-(--color-text-dim) border-(--color-border)";
-const padding = size === "sm" ? "px-2 py-0.5 text-xs" : "px-3 py-1 text-sm";
+const padding = size === "sm" ? "px-2 py-0.5 text-[11px]" : "px-2.5 py-1 text-xs";
 ---
 
-<span class={`inline-flex items-center gap-1.5 ${padding} rounded border ${cls} font-mono`}>
-  <span class="font-semibold">{provider}</span>
-  {model && <span class="opacity-70">{model}</span>}
+<span class={`inline-flex items-center gap-1.5 ${padding} rounded-md border ${cls} font-mono font-semibold`}>
+  <span>{provider}</span>
+  {model && <span class="opacity-70 font-normal">{model}</span>}
 </span>

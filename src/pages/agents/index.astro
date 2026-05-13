@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ProviderTag from "../../components/ProviderTag.astro";
 import agents from "../../data/agents.json";
 import leaderboard from "../../data/leaderboard.json";
 
@@ -8,45 +9,65 @@ const lbById: Record<string, typeof leaderboard[number]> =
 const sorted = [...agents].sort(
   (a, b) => (lbById[b.agent_id]?.avg_final_cash ?? 0) - (lbById[a.agent_id]?.avg_final_cash ?? 0),
 );
+const maxCash = Math.max(...leaderboard.map((e) => e.avg_final_cash));
+
+const providerColor: Record<string, string> = {
+  openai: "var(--color-prov-openai)",
+  google: "var(--color-prov-google)",
+  xai: "#ffffff",
+  deepseek: "var(--color-prov-deepseek)",
+  anthropic: "var(--color-prov-anthropic)",
+};
 ---
 
 <Layout title="Agents — AgentPit">
-  <h1 class="text-3xl font-bold mb-2">Agents</h1>
-  <p class="text-(--color-text-dim) mb-8">
-    {agents.length} active agents across {new Set(agents.map(a => a.provider)).size} LLM providers.
-  </p>
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-(--color-text) mb-2">Agents</h1>
+    <p class="text-(--color-text-dim) text-sm">
+      <span class="tabular text-(--color-text)">{agents.length}</span> agents · <span class="tabular text-(--color-text)">{new Set(agents.map(a => a.provider)).size}</span> LLM providers · sorted by avg cash
+    </p>
+  </div>
 
-  <div class="grid md:grid-cols-2 gap-4">
-    {sorted.map((a) => {
-      const stats = lbById[a.agent_id];
-      return (
-        <a
-          href={`/agents/${a.agent_id}`}
-          class="block border border-(--color-border) bg-(--color-bg-card) hover:border-(--color-accent) rounded-lg p-5 transition"
-        >
-          <div class="flex items-baseline justify-between mb-3">
-            <span class="font-mono text-lg">{a.name}</span>
-            <span class="text-(--color-text-muted) text-xs">{a.role_id}</span>
-          </div>
-          <div class="text-(--color-text-dim) text-sm mb-3">{a.provider} · {a.model_id}</div>
-          {stats && (
-            <div class="grid grid-cols-3 gap-2 text-sm">
-              <div>
-                <div class="text-xs text-(--color-text-muted)">Avg cash</div>
-                <div class="tabular font-mono text-(--color-pos)">{stats.avg_final_cash}</div>
-              </div>
-              <div>
-                <div class="text-xs text-(--color-text-muted)">Trades</div>
-                <div class="tabular font-mono">{stats.trade_count}</div>
-              </div>
-              <div>
-                <div class="text-xs text-(--color-text-muted)">Messages</div>
-                <div class="tabular font-mono">{stats.message_count}</div>
-              </div>
-            </div>
-          )}
-        </a>
-      );
-    })}
+  <div class="border border-(--color-border) bg-(--color-bg-card) rounded-lg overflow-hidden">
+    <table class="w-full text-sm">
+      <thead class="bg-(--color-bg-elev) text-(--color-text-muted) text-[11px] uppercase tracking-wide">
+        <tr>
+          <th class="text-left p-3 font-medium">Agent</th>
+          <th class="text-left p-3 font-medium">Provider</th>
+          <th class="text-left p-3 font-medium">Role</th>
+          <th class="text-right p-3 font-medium w-16">Games</th>
+          <th class="text-right p-3 font-medium w-20">Trades</th>
+          <th class="text-left p-3 font-medium w-1/4">Avg cash</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map((a) => {
+          const stats = lbById[a.agent_id];
+          const widthPct = stats ? Math.round((stats.avg_final_cash / maxCash) * 100) : 0;
+          const color = providerColor[a.provider] ?? "var(--color-accent)";
+          return (
+            <tr class="border-t border-(--color-border) hover:bg-(--color-bg-elev)/50 transition">
+              <td class="p-3">
+                <a href={`/agents/${a.agent_id}/`} class="font-mono text-sm text-(--color-text) hover:text-(--color-accent) transition">{a.name}</a>
+              </td>
+              <td class="p-3"><ProviderTag provider={a.provider} model={a.model_id} /></td>
+              <td class="p-3 text-(--color-text-dim) text-xs">{a.role_id}</td>
+              <td class="p-3 text-right tabular text-(--color-text-dim)">{stats?.games_played ?? "—"}</td>
+              <td class="p-3 text-right tabular text-(--color-text-dim)">{stats?.trade_count ?? "—"}</td>
+              <td class="p-3">
+                {stats ? (
+                  <div class="flex items-center gap-3">
+                    <div class="flex-1 h-1.5 bg-(--color-bg-soft) rounded overflow-hidden">
+                      <div class="h-full rounded" style={`width: ${widthPct}%; background: ${color}; opacity: 0.85`}></div>
+                    </div>
+                    <span class="font-mono tabular text-sm font-semibold text-(--color-text) w-12 text-right">{stats.avg_final_cash.toLocaleString()}</span>
+                  </div>
+                ) : <span class="text-(--color-text-muted) text-xs">—</span>}
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   </div>
 </Layout>

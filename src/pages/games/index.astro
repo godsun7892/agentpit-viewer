@@ -6,15 +6,16 @@ import type { Game } from "../../data/schema";
 
 const games = gamesRaw as unknown as Game[];
 
-// 시간순 정렬 (최신 → 오래된)
 const sorted = [...games].sort((a, b) => b.started_at.localeCompare(a.started_at));
 ---
 
-<Layout title="Games — AgentPit">
-  <h1 class="text-3xl font-bold mb-2">All games</h1>
-  <p class="text-(--color-text-dim) mb-8">
-    {games.length} sessions · 모든 게임 공개 · sorted by date (newest first)
-  </p>
+<Layout title="Sessions — AgentPit">
+  <div class="mb-8">
+    <h1 class="text-3xl font-bold text-(--color-text) mb-2">Sessions</h1>
+    <p class="text-(--color-text-dim) text-sm">
+      <span class="tabular text-(--color-text)">{games.length}</span> completed sessions · 모든 게임 공개 · sorted by date (newest first)
+    </p>
+  </div>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
     {sorted.map((g) => <GameCard game={g} />)}
